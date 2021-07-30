@@ -19,7 +19,6 @@ Save and submit the completed file for your homework submission.
 
     ![description](IMAGE/sysdID.png)
 
-
 4. Give your secret user the same GID:
     - `sudo groupmod -g 869 sysd`
 
@@ -43,7 +42,12 @@ Save and submit the completed file for your homework submission.
 6. Test that `sudo` access works without your password:
 
     - sudo -l 
-    - (ALL : ALL) NOPASSWD: ALL
+    - (ALL : ALL) NOPASSWD: ALL   
+
+NOTE: there are many other ways to modify your user. Here is another example that accomplishes similar tasks that are asked in the homework questions but done in one command: 
+
+sudo adduser --no-create-home --uid 869 --disabled-password sysd
+
 **Step 2: Smooth Sailing**
 
 1. Edit the `sshd_config` file:
