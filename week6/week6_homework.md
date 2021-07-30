@@ -7,12 +7,8 @@ Save and submit the completed file for your homework submission.
 **Step 1: Shadow People** 
 
 1. Create a secret user named `sysd`. Make sure this user doesn't have a home folder created:
-    - `sudo adduser sysd` 
-
-    <img src="/week6/IMAGE/addusr.png"> 
-
-    ![description](IMAGE/addusr.png)
-
+    - `sudo adduser --no-create-home sysd` 
+   
 2. Give your secret user a password: 
     - `no command, answered promps as directed`
 
@@ -25,11 +21,11 @@ Save and submit the completed file for your homework submission.
 
 
 4. Give your secret user the same GID:
-   - `sudo groupmod -g 869 sysd`
+    - `sudo groupmod -g 869 sysd`
 
-   <img src="/week6/IMAGE/sysdID.png"> 
+    <img src="/week6/IMAGE/sysdID.png"> 
 
-    ![description](IMAGE/sysdID.png)
+        ![description](IMAGE/sysdID.png)
 
 5. Give your secret user full `sudo` access without the need for a password:
    -  sudo visudo
