@@ -22,7 +22,7 @@ Save and submit the completed file for your homework submission.
 
     - `sudo usermod -u 869 sysd`
 
-      <img src="University-of-Minnesota-/week6/IMAGE/sysdID.png" alt="">  
+      <img src="University-of-Minnesota-/week6/sysdID.png" alt="">  
        
       
                          
