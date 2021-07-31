@@ -18,7 +18,7 @@ Save and submit the completed file for your homework submission.
 
     - `sudo usermod -u 869 sysd`
 
-        <img src="\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
+        <img src="sysdID.png"> 
 
         ![picture](IMAGE/sysdID.png)
      
@@ -39,7 +39,9 @@ Save and submit the completed file for your homework submission.
    -  root    ALL=(ALL:ALL) ALL
    -  sysd    ALL=(ALL:ALL) NOPASSWD:ALL
 
-      <img src="IMAGE/su_acc_nopass.png"> ![description](IMAGE/su_acc_nopass.png)
+      <img src="IMAGE/su_acc_nopass.png"> 
+      
+      ![description](IMAGE/su_acc_nopass.png)
 
 6. Test that `sudo` access works without your password:
 
