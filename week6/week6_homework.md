@@ -18,30 +18,28 @@ Save and submit the completed file for your homework submission.
 
     - `sudo usermod -u 869 sysd`
 
-      <img src="\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png">
+        <img src="\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
 
-      ![description](IMAGE/sysdID.png)
-
-    4. Give your secret user the same GID:
+        ![picture](IMAGE/sysdID.png)
+     
+4. Give your secret user the same GID:
 
     - `sudo groupmod -g 869 sysd`
 
-        <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
-
-        ![description](IMAGE/sysdID.png)
+       <img src="\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
+       
+       ![picture](IMAGE/sysdID.png)
 
 5. Give your secret user full `sudo` access without the need for a password:
 
    -  sudo visudo
    -  enter pass word
    -  /etc/sudoers.tmp folder
-   -  # User privilege specification
+   
    -  root    ALL=(ALL:ALL) ALL
    -  sysd    ALL=(ALL:ALL) NOPASSWD:ALL
 
-    <img src="IMAGE/su_acc_nopass.png"> 
-
-    ![description](IMAGE/su_acc_nopass.png)
+      <img src="IMAGE/su_acc_nopass.png"> ![description](IMAGE/su_acc_nopass.png)
 
 6. Test that `sudo` access works without your password:
 
