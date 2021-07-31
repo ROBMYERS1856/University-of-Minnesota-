@@ -69,10 +69,10 @@ sudo adduser --no-create-home --uid 869 --disabled-password sysd
 3. SSH to the target machine using your `sysd` account and port `2222`:
     - `ssh sysadmin@192.168.6.105 -p 2222`
 
+![description](IMAGE/step3_1.PNG)
+
 4. Use `sudo` to switch to the root user:
     - `sudo su`
-
-     ![description](IMAGE/step3_1.PNG)
 
 **Step 4: Crack All the Passwords**
 
