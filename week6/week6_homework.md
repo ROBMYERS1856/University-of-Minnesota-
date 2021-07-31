@@ -17,9 +17,10 @@ Save and submit the completed file for your homework submission.
 3. Give your secret user a system UID < 1000:
 
     - `sudo usermod -u 869 sysd`
-        <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE/sysdID.png"> 
+
+    <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE/sysdID.png"> 
        
-       ![picture](IMAGE\sysdID.png)
+     ![picture](IMAGE\sysdID.png)
                               
                 
                         
