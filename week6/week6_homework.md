@@ -1,4 +1,4 @@
-## Week 6 Homework Submission File: Advanced Bash - Owning the System
+## Rob Myers Week 6 Homework Submission File: Advanced Bash - Owning the System
 
 Please edit this file by adding the solution commands on the line below the prompt. 
 
