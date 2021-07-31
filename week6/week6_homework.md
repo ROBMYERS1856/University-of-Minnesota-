@@ -10,12 +10,13 @@ Save and submit the completed file for your homework submission.
     - `sudo adduser --no-create-home sysd` 
    
 2. Give your secret user a password: 
+
     - `no command, answered promps as directed`
 
 3. Give your secret user a system UID < 1000:
     - `sudo usermod -u 869 sysd`
 
-      <img src"C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png">
+      <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png">
 
         ![description](IMAGE/sysdID.png)
 
