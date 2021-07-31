@@ -18,12 +18,11 @@ Save and submit the completed file for your homework submission.
 
     - `sudo usermod -u 869 sysd`
 
-    <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE/sysdID.png"> 
+    <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6"> 
        
      ![picture](IMAGE\sysdID.png)
-                              
-                
-                        
+                         
+                                   
 4. Give your secret user the same GID:
 
     - `sudo groupmod -g 869 sysd`
