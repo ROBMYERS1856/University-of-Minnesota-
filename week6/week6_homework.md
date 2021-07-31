@@ -22,18 +22,17 @@ Save and submit the completed file for your homework submission.
 
     - `sudo usermod -u 869 sysd`
 
-      <img src="University-of-Minnesota-/week6/sysdID.png" alt="">  
+         
+      ![picture](IMAGE/sysdID.PNG)  
        
-      
-                         
+   
+                        
                                    
 4. Give your secret user the same GID:
 
     - `sudo groupmod -g 869 sysd`
-
-      <img src="\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
        
-       ![picture](IMAGE/sysdID.png)
+      ![picture](IMAGE/sysdID.PNG)
 
 5. Give your secret user full `sudo` access without the need for a password:
 
@@ -51,9 +50,8 @@ Save and submit the completed file for your homework submission.
     - sudo -l 
     - (ALL : ALL) NOPASSWD: ALL  
 
-      <img src="IMAGE/su_acc_nopass.png"> 
-      
-      ![description](IMAGE/su_acc_nopass.png) 
+         
+      ![description](IMAGE/su_acc_nopass.PNG) 
 
 NOTE: there are many other ways to modify your user. Here is another example that accomplishes similar tasks that are asked in the homework questions but done in one command: 
 
@@ -66,9 +64,8 @@ sudo adduser --no-create-home --uid 869 --disabled-password sysd
     -sudo nano /etc/ssh/sshd_config
     - Port 2222
 
-    <img src="/week6/IMAGE/step_2.png"> 
 
-    ![description](IMAGE/step_2.png)
+    ![description](IMAGE/step_2.PNG)
 
 **Step 3: Testing Your Configuration Update**
 1. Restart the SSH service:
@@ -83,9 +80,7 @@ sudo adduser --no-create-home --uid 869 --disabled-password sysd
 4. Use `sudo` to switch to the root user:
     - `sudo su`
 
-    <img src="/week6/IMAGE/step3_1.png"> 
-
-    ![description](IMAGE/step3_1.png)
+     ![description](IMAGE/step3_1.PNG)
 
 **Step 4: Crack All the Passwords**
 
@@ -96,10 +91,9 @@ sudo adduser --no-create-home --uid 869 --disabled-password sysd
 2. Escalate your privileges to the `root` user. Use John to crack the entire `/etc/shadow` file:
 
     - `sudo john /etc/shadow`
+ 
 
-    <img src="/week6/IMAGE/passwd8.png"> 
-
-    ![description](IMAGE/passwd8.png)
+    ![description](IMAGE/passwd8.PNG)
 
 ---
 
