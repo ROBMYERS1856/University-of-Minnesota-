@@ -21,13 +21,9 @@ Save and submit the completed file for your homework submission.
 3. Give your secret user a system UID < 1000:
 
     - `sudo usermod -u 869 sysd`
-
          
-      ![picture](IMAGE/sysdID.PNG)  
-       
-   
-                        
-                                   
+      ![picture](IMAGE/sysdID.PNG)    
+                                                      
 4. Give your secret user the same GID:
 
     - `sudo groupmod -g 869 sysd`
@@ -41,15 +37,12 @@ Save and submit the completed file for your homework submission.
    -  /etc/sudoers.tmp folder
    
    -  root    ALL=(ALL:ALL) ALL
-   -  sysd    ALL=(ALL:ALL) NOPASSWD:ALL
-
-      
+   -  sysd    ALL=(ALL:ALL) NOPASSWD:ALL      
 
 6. Test that `sudo` access works without your password:
 
     - sudo -l 
     - (ALL : ALL) NOPASSWD: ALL  
-
          
       ![description](IMAGE/su_acc_nopass.PNG) 
 
@@ -63,7 +56,6 @@ sudo adduser --no-create-home --uid 869 --disabled-password sysd
 
     -sudo nano /etc/ssh/sshd_config
     - Port 2222
-
 
     ![description](IMAGE/step_2.PNG)
 
@@ -92,10 +84,7 @@ sudo adduser --no-create-home --uid 869 --disabled-password sysd
 
     - `sudo john /etc/shadow`
  
-
     ![description](IMAGE/passwd8.PNG)
-
----
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
