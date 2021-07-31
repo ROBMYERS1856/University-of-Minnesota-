@@ -15,16 +15,16 @@ Save and submit the completed file for your homework submission.
 3. Give your secret user a system UID < 1000:
     - `sudo usermod -u 869 sysd`
 
-   <img src= "C:\Users\Rob\Desktop\University-of-Minnesota-\week6"> 
+        <img src= "C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png">
 
-    ![description](IMAGE/sysdID.png)
+        ![description](IMAGE/sysdID.png)
 
     4. Give your secret user the same GID:
     - `sudo groupmod -g 869 sysd`
 
-    <img src="IMAGE/sysdID.png"> 
+        <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
 
-        ![description](/IMAGE/sysdID.png)
+        ![description](IMAGE/sysdID.png)
 
 5. Give your secret user full `sudo` access without the need for a password:
    -  sudo visudo
