@@ -12,22 +12,26 @@ Save and submit the completed file for your homework submission.
    
 2. Give your secret user a password: 
 
-    - `no command, answered promps as directed`
+    - `no command, answered promps as directed after creating user sysd`   
+                     or
+    - `if logged in as sysd, then enter passwd`                 
+                     or
+    - `if logged in as sysadmin, then enter passwd sysd`
 
 3. Give your secret user a system UID < 1000:
 
     - `sudo usermod -u 869 sysd`
 
-    <img src="C:\Users\Rob\Desktop\University-of-Minnesota-\week6"> 
+      <img src="University-of-Minnesota-/week6/IMAGE/sysdID.png" alt="">  
        
-     ![picture](IMAGE\sysdID.png)
+      
                          
                                    
 4. Give your secret user the same GID:
 
     - `sudo groupmod -g 869 sysd`
 
-       <img src="\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
+      <img src="\Rob\Desktop\University-of-Minnesota-\week6\IMAGE\sysdID.png"> 
        
        ![picture](IMAGE/sysdID.png)
 
@@ -40,14 +44,16 @@ Save and submit the completed file for your homework submission.
    -  root    ALL=(ALL:ALL) ALL
    -  sysd    ALL=(ALL:ALL) NOPASSWD:ALL
 
-      <img src="IMAGE/su_acc_nopass.png"> 
       
-      ![description](IMAGE/su_acc_nopass.png)
 
 6. Test that `sudo` access works without your password:
 
     - sudo -l 
-    - (ALL : ALL) NOPASSWD: ALL   
+    - (ALL : ALL) NOPASSWD: ALL  
+
+      <img src="IMAGE/su_acc_nopass.png"> 
+      
+      ![description](IMAGE/su_acc_nopass.png) 
 
 NOTE: there are many other ways to modify your user. Here is another example that accomplishes similar tasks that are asked in the homework questions but done in one command: 
 
