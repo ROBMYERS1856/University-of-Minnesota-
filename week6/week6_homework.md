@@ -18,8 +18,6 @@ Save and submit the completed file for your homework submission.
 
       <img src="IMAGE\sysdID.png">
 
-        ![description](IMAGE/sysdID.png)
-
     4. Give your secret user the same GID:
     - `sudo groupmod -g 869 sysd`
 
