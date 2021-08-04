@@ -14,8 +14,7 @@ Save and submit the completed file for your homework submission.
 
     - `no command, answered promps as directed after creating user sysd`   
                      or
-    - `if logged in as sysd, then enter passwd`                 
-                     or
+    - `if logged in as sysd, then enter passwd`           
     - `if logged in as sysadmin, then enter passwd sysd`
 
 3. Give your secret user a system UID < 1000:
