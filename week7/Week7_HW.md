@@ -26,6 +26,8 @@ Enable this policy.
 
 Exit the Group Policy Management Editor and link the GPO to the GC Computers organizational unit you previously created.
 
+<br>
+
 ![picture](IMAGE/linkLLMNR.PNG)
 
 
