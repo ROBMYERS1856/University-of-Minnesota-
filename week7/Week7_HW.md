@@ -1,6 +1,6 @@
 # Rob Myers WEEK 7 Home work
 
-## Task 1: Create a GPO: Disable Local Link Multicast Name Resolution (LLMNR)
+# Task 1: Create a GPO: Disable Local Link Multicast Name Resolution (LLMNR)
     Instructions
 
     Name the Group Policy Object No LLMNR.
@@ -13,10 +13,13 @@
 
 <br>
 
-"Picture of  LLMNR enabled" 
+### "Picture of  LLMNR enabled" 
+
 ![picture](IMAGE/No_LLMNR.PNG)
 
  <br>
+
+### "Picture linking the GPO to the GC Computers
 
  ![picture](IMAGE/linkLLMNR.PNG)
 
@@ -26,27 +29,28 @@
 
 <br>
 
+### "GPO is linked"
+
 ![picture](IMAGE/LLMNR_Enabled.PNG)
 
-## Task 2: Create a GPO: Account Lockout
+# Task 2: Create a GPO: Account Lockout
 
     Create what you believe to be a reasonable account lockout Group Policy for the Windows 10 machine.
 
-
     Name the Group Policy Object Account Lockout.
-
 
     When editing policies for this new GPO, keep in mind that you're looking for computer configuration policies to apply to your GC Computers OU. Also, these policies involve Windows security settings and accounts.
 
-
     Don't forget to link the GPO to your GC Computers organizational unit.
+ 
 
-<br>
-"Creating a reasonable account lockout Group Policy"
+### "Creating a reasonable account lockout Group Policy"
 
 ![picture](IMAGE/account_lockout.PNG)
 
 <br>
-"Linking the Account Lockout GPO to the GC Computers 
+
+### "Linking the Account Lockout GPO to the GC Computers 
+<br>
 
 ![picture](IMAGE/Account_lockout_Linked.PNG)
