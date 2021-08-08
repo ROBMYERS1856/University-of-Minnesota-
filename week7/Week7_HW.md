@@ -100,3 +100,7 @@ Create a Group Policy Object to enable PowerShell logging and transcription. Thi
 
 Picture of the GPO linked with all the other GPO's
 ![picture](IMAGE/step3_7.PNG)
+
+8. Note that the next time you log into your Windows 10 machine, run gpupdate
+
+![picture](IMAGE/step3_gpupdate.PNG)
