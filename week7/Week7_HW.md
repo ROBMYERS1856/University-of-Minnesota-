@@ -119,10 +119,17 @@ Create a PowerShell script that will enumerate the Access Control List of each f
 5. Test this script by moving to any directory (cd C:\Windows), and running C:\Users\sysadmin\Documents\enum_acls.ps1 (enter the full path and file name).
 
 NOTE: Screen shot of all the steps above for Task 4. Created a script and tested it.
+
+
 ![picture](IMAGE/step4_1.PNG)
 
 # Bonus Task 5: Verify Your PowerShell Logging GPO
 
 Here is a screen shot for the bonus
+
+$directory = $(Get-ChildItem '*')
+foreach ( $item in $directory) {
+  Get-Acl $item | Out-File -FilePath C:\Users\sysadmin\Documents\enum_acls.txt -Append
+}
 
 ![picture](IMAGE/bonus.PNG)
