@@ -104,3 +104,25 @@ Picture of the GPO linked with all the other GPO's
 8. Note that the next time you log into your Windows 10 machine, run gpupdate
 
 ![picture](IMAGE/step3_gpupdate.PNG)
+
+# Task 4: Create a Script: Enumerate Access Control Lists
+Create a PowerShell script that will enumerate the Access Control List of each file or subdirectory within the current working directory.
+
+1. Create a foreach loop. 
+
+2. Above the foreach condition, set a variable, $directory, to the contents of the current directory.
+
+3. Replace the script block placeholder with the command to enumerate the ACL of a file, using the $item variable in place of the file name.
+
+4. Save this script in C:\Users\sysadmin\Documents as enum_acls.ps1.
+
+5. Test this script by moving to any directory (cd C:\Windows), and running C:\Users\sysadmin\Documents\enum_acls.ps1 (enter the full path and file name).
+
+NOTE: Screen shot of all the steps above for Task 4. Created a script and tested it.
+![picture](IMAGE/step4_1.PNG)
+
+# Bonus Task 5: Verify Your PowerShell Logging GPO
+
+Here is a screen shot for the bonus
+
+![picture](IMAGE/bonus.PNG)
