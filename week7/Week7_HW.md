@@ -54,3 +54,6 @@
 <br>
 
 ![picture](IMAGE/Account_lockout_Linked.PNG)
+
+# Task 3: Create a GPO: Enabling Verbose PowerShell Logging and Transcription
+
