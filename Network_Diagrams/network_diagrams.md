@@ -1,5 +1,3 @@
-
-
 # Rob Myers: Practice Network Diagrams
 ## Instructions
 Design the office with the following computer and network devicces
@@ -20,7 +18,4 @@ Design the office with the following computer and network devicces
 
 (1) Wireless access point with (1) firewall to protect 
 
-
-         ![picture](IMMAGE/practice_map.png)
-
-C:\Users\Rob\Desktop\University-of-Minnesota-\Network_Diagrams\IMMAGE
+![picture](IMMAGE/paractice_map.PNG)
