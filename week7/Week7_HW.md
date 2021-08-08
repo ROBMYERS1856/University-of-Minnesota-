@@ -57,3 +57,46 @@
 
 # Task 3: Create a GPO: Enabling Verbose PowerShell Logging and Transcription
 
+Create a Group Policy Object to enable PowerShell logging and transcription. This GPO will combine multiple policies into one, although they are all under the same policy collection.
+
+
+1. Name the Group Policy Object PowerShell Logging.
+
+![picture](IMAGE/step3_GP.PNG)
+
+2. Enable the Turn on Module Logging and do the following:
+
+
+    Click Show next to Module Names.
+
+![picture](IMAGE/step3_1.PNG)
+
+3. Enable the Turn on PowerShell Script Block Logging policy
+
+![picture](IMAGE/step3_2.PNG)
+
+4. Enable the Turn on Script Execution policy and do the following:
+
+
+    Set Execution Policy to Allow all scripts.
+
+![picture](IMAGE/step3_3.PNG)
+
+5. Enable the Turn on PowerShell Transcription policy and do the following:
+
+
+    Leave the Transcript output directory blank (this defaults to the user's ~\Documents directory).
+
+![picture](IMAGE/step3_4.PNG)
+
+6. Leave the Set the default source path for Update-Help policy as Not configured.
+
+![picture](IMAGE/step3_5.PNG)
+
+7. Link this new PowerShell Logging GPO to the GC Computers OU.
+
+![picture](IMAGE/step3_6.PNG)s
+
+
+Picture of the GPO linked with all the other GPO's
+![picture](IMAGE/step3_7.PNG)
