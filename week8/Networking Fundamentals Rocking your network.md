@@ -21,10 +21,10 @@ SOLUTIONS:
 
     * Created fping.txt in nano containing all the IP Addresses
 
-![picture](IMAGE/fping_TXT.png)
+ ![picture](IMAGE1/fping_TXT.png) 
 
     * From command line ran: fping < fping.txt to show what IP Address is "Alive" and what IP address is "unreachale"
 
-![picture](IMAGE/fping_running.png)
+![picture](IMAGE1/fping_running.png)
 
     * Last, the OSI layer  corresponding with the IP Address is the Network Layer
