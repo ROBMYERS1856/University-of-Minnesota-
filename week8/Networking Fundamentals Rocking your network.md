@@ -19,15 +19,15 @@ INSTRUCTIONS:
 
 SOLUTIONS: 
 
-   ## * Created fping.txt in nano containing all the IP Addresses
+   ## Created fping.txt in nano containing all the IP Addresses
 
  ![picture](IMAGE1/fping_TXT.PNG) 
 
-## * From command line ran: fping < fping.txt to show what IP Address is "Alive" and what IP address is "unreachale"
+## From command line ran: fping < fping.txt to show what IP Address is "Alive" and what IP address is "unreachale"
 
 ![picture](IMAGE1/fping_running.PNG)
 
-   ## * Last, the OSI layer  corresponding with the IP Address is the Network Layer
+   ## Last, the OSI layer  corresponding with the IP Address is the Network Layer
 
 ## Phase 2:  "Some Syn for Nothin`"
 
