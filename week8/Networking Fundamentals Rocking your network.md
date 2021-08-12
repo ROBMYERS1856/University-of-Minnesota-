@@ -43,17 +43,17 @@ INSTRUCTIONS:
 
 ## Phase 3: "I Feel a DNS Change Comin' On"
 
-Try to figure out which port/service would be used for remote system administration, and then using these credentials, attempt to log into the IP that responded to pings from Phase 1.
+   * Try to figure out which port/service would be used for remote system administration, and then using these credentials, attempt to log into the IP that responded to pings from Phase 1.
 
 ## Logged in as Jimi Hendrix using IP 167.172.144.11
 ![picture](IMAGE1/phase3_sshport22_tab1.PNG)
 
-While logged into the RockStar server from the previous step, determine if something was modified on this system that might affect viewing rollingstone.com within the browser. When you successfully find the configuration file, record the entry that is set to rollingstone.com.
+   * While logged into the RockStar server from the previous step, determine if something was modified on this system that might affect viewing rollingstone.com within the browser. When you successfully find the configuration file, record the entry that is set to rollingstone.com.
 
 ## Used Nanohosts to find 98.137.246.8 rollingstone.com
 ![picture](IMAGE1/phase3_nano_hosts.PNG)
 
-Terminate your ssh session to the rollingstone server, and use nslookup to determine the real domain of the IP address you found from the previous step.
+   * Terminate your ssh session to the rollingstone server, and use nslookup to determine the real domain of the IP address you found from the previous step.
 
 ## Used nslookup 98.137.246.8 to find the right domain
 
