@@ -1,7 +1,7 @@
 # Rob Myers Week 8 Homework
 ## Networking Fundamentals Homework: Rocking your Network!
 
-## Phase 1: "I'd like to Teach the World to Ping"
+# Phase 1: "I'd like to Teach the World to Ping"
 
 INSTRUCTIONS: 
 
@@ -29,7 +29,7 @@ SOLUTIONS:
 
    ## Last, the OSI layer  corresponding with the IP Address is the Network Layer
 
-## Phase 2:  "Some Syn for Nothin`"
+# Phase 2:  "Some Syn for Nothin`"
 
 INSTRUCTIONS:
 
@@ -41,7 +41,7 @@ INSTRUCTIONS:
 
 ## Also the OSI layer SYN scans run on is Transport Layer (Layer 4)
 
-## Phase 3: "I Feel a DNS Change Comin' On"
+# Phase 3: "I Feel a DNS Change Comin' On"
 
    * Try to figure out which port/service would be used for remote system administration, and then using these credentials, attempt to log into the IP that responded to pings from Phase 1.
 
