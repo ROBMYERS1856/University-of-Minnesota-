@@ -59,3 +59,31 @@ INSTRUCTIONS:
 
 ![picture](IMAGE1/phase3_answer.PNG) 
 ## We used HTTP and DNS and that per the OSI layer is the Application Layer (layer 7) 
+
+# Phase 4:  "ShARP Dressed Man"
+
+   * View the file to find where to recover the packet captures.
+
+## picture documenting I am logged in as Jimi, in the ETC Directory and a picture of the file packetcaptureinfo.txt
+
+   ![picture](IMAGE1/phase4_packetcapture.PNG)
+
+## picture of the information inside jimi's file packetcaptureinfo.txt
+
+   ![picture](IMAGE1/phase4_jimipackets.PNG)
+
+   * Use Wireshark to analyze this pcap file and determine if there was any suspicious activity that could be attributed to a hacker. 
+
+## picture of jimi packet being downloaded to wireshark
+
+![picture](IMAGE1/downloaded_jimi_packet_wireshark.PNG)
+
+## screen shot of all the suspicious activity 
+   ###     - Duplicate IP Adress
+   ###     - GET/POST commands
+   ###     - Appears to be trying to hack using PHP Malware 
+
+![picture](IMAGE1/phase4_suspiciousActivity.PNG) 
+
+## ARP and HTTP is layer 2 of the OSI model or the Data Layer
+
