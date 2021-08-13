@@ -101,7 +101,7 @@ INSTRUCTIONS:
 List the steps and commands used to complete the tasks.
  - used NANO to creat a TXT Document containing all of the IP Address's
  - ran the fping command
- - ran sudo -d to switch to root user
+ - ran sudo -s to switch to root user
  - ran ssh jimi@167.177.144.11 
  - ran nslookup
  - ran NANO to open up packetcaptureinfo.txt
