@@ -58,7 +58,7 @@ INSTRUCTIONS:
 ## Used nslookup 98.137.246.8 to find the right domain
 
 ![picture](IMAGE1/phase3_answer.PNG) 
-## We used HTTP and DNS and that per the OSI layer is the Application Layer (layer 7) 
+## HTTP and DNS is layer 7 of the OSI model or the Application Layer
 
 # Phase 4:  "ShARP Dressed Man"
 
@@ -85,5 +85,22 @@ INSTRUCTIONS:
 
 ![picture](IMAGE1/phase4_suspiciousActivity.PNG) 
 
-## ARP and HTTP is layer 2 of the OSI model or the Data Layer
+## ARP is layer 3 of the OSI model or the Network Layer
+## HTTP is layer 7 of the OSI model or the Application Layer
+
+# Guidelines for your Submission:
+
+List the steps and commands used to complete the tasks.
+
+
+List any vulnerabilities discovered.
+
+
+List any findings associated to a hacker.
+
+
+Document the mitigation recommendations to protect against the discovered vulnerabilities.
+
+
+Document the OSI layer where the findings were found.
 
