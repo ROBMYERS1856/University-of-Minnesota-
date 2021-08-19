@@ -27,7 +27,7 @@ Topics Covered in Your Assignments
 
 ## Explain why the Resistance isn't receiving any emails.
 
-    * The resistance needs to update the DNS MX Record so the primary and secondary servers  are documented corectly
+    * The resistance needs to update the DNS MX Record so the primary and secondary servers are documented corectly
 
     * currently the primary and secondary servers are not listed in the MX Record for starwars.com
 
