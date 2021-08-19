@@ -16,10 +16,10 @@ Topics Covered in Your Assignments
 
 # Mission 1: 
 
-## Determine and document the mail servers for www.starwars.com using NSLOOKUP.
+### Determine and document the mail servers for www.starwars.com using NSLOOKUP.
 
     * used DNS Record: MX
-    * OSI Layer: 
+    * OSI Layer: Layer 7 - Application Layer
     * nslookup -type=MX starwars.com
     * mail servers listed in picture below
 
@@ -40,10 +40,9 @@ Topics Covered in Your Assignments
 
 # Mission 2
 
-## Your mission:
-
 ### Determine and document the SPF for theforce.net using NSLOOKUP.
     * used DNS record: TXT
+    * OSI Layer: Layer 4 - Transport Layer
     * nslookup -type=TXT starwars.com
 
 ![picture](IMAGE/mission2_txt.PNG) 
@@ -66,14 +65,9 @@ Topics Covered in Your Assignments
 
 # Mission 3
 
-## Your mission:
-
 ### Document how a CNAME should look by viewing the CNAME of www.theforce.net using NSLOOKUP.
-
-<brk>
-
-Used DNS report: TXT
-
+    * used DNS record: TXT
+    * OSI Layer: Layer 4 - Transport Layer
     * nslookup -type=CNAME www.theforce.net
 
 ![picture](IMAGE/mission3_number1.PNG)
@@ -98,8 +92,12 @@ Here is what an updated DNS CNAME Reprot should look like:
     * Address: 104.156.250.80
 
     * Non-authoritative answer:
-    * Theforce.net	canonical name = resistance.theforce.net.
+    * resistance.theforce.net	canonical name = theforce.net.
     * Name:	theforce.net
     * Address: 104.156.250.80
 
+# Mission 4
 
+### Confirm the DNS records for princessleia.site.
+
+### Document how you would fix the DNS record to prevent this issue from happening again.
