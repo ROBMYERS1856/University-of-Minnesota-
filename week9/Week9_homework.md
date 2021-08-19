@@ -25,13 +25,14 @@ Topics Covered in Your Assignments
 ![picture](IMAGE/mission1_nslookup_MX.PNG) 
 
 ## Explain why the Resistance isn't receiving any emails.
-    * The resistance needs to update the MX Record so the       primary and secondary servers  are documented corectly
+
+    * The resistance needs to update the MX Record so the primary and secondary servers  are documented corectly
 
     * currently the primary and secondary servers are not listed in the MX Report for starwars.com
 
 ## Document what a corrected DNS record should be.
 
-### The following should be listed in the MX report:
+ The following should be listed in the MX report:
 
     * starwars.com mail exchanger = 1 asltx.l.google.com
     * starwars.com mail exchanger = 5 asltx.2.google.com
@@ -47,6 +48,7 @@ Topics Covered in Your Assignments
 ![picture](IMAGE/mission2_txt.PNG) 
 
 ### Explain why the Force's emails are going to spam.
+
     * The resistance needs to update the TXT Record so that 45.23.176.21 is included in the text = "v=spf1 a mx mx:smtp.secureserver.net include:aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215" 
 
 ### Document what a corrected DNS record should be.
@@ -62,6 +64,9 @@ Topics Covered in Your Assignments
 ## Your mission:
 
 ### Document how a CNAME should look by viewing the CNAME of www.theforce.net using NSLOOKUP.
+
+<brk>
+
 used DNS report: TXT
 
     * nslookup -type=CNAME www.theforce.net
