@@ -1,5 +1,5 @@
 
-# Rob Myers Week 9 Homework
+# Rob Myers: Week 9 Homework
  
 ## Networks Fundamentals II: In a Network Far, Far Away!
 
@@ -40,9 +40,8 @@ Topics Covered in Your Assignments
 
 ## Your mission:
 
-
 ### Determine and document the SPF for theforce.net using NSLOOKUP.
-used DNS report: TXT
+    * used DNS report: TXT
     * nslookup -type=TXT starwars.com
 
 ![picture](IMAGE/mission2_txt.PNG) 
@@ -62,20 +61,20 @@ used DNS report: TXT
 
 ## Your mission:
 
-## Document how a CNAME should look by viewing the CNAME of www.theforce.net using NSLOOKUP.
+### Document how a CNAME should look by viewing the CNAME of www.theforce.net using NSLOOKUP.
 used DNS report: TXT
 
     * nslookup -type=CNAME www.theforce.net
 
 ![picture](IMAGE/mission3_number1.PNG)
 
-## Explain why the sub page of resistance.theforce.net isn't redirecting to theforce.net.
+### Explain why the sub page of resistance.theforce.net isn't redirecting to theforce.net.
 
     * the CNAME Report needs to be updated to include the alias: resistance.theforce.net
 
 ![picture](IMAGE/mission3_duce.PNG)
 
-## Document what a corrected DNS record should be.
+### Document what a corrected DNS record should be.
 
     * here is what an updated DNS CNAME Reprot should look like:
 
