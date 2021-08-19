@@ -71,7 +71,7 @@ Topics Covered in Your Assignments
 
 <brk>
 
-used DNS report: TXT
+Used DNS report: TXT
 
     * nslookup -type=CNAME www.theforce.net
 
@@ -85,7 +85,7 @@ used DNS report: TXT
 
 ### Document what a corrected DNS record should be.
 
-    * here is what an updated DNS CNAME Reprot should look like:
+Here is what an updated DNS CNAME Reprot should look like:
 
     * sysadmin@UbuntuDesktop:~$ nslookup -text=CNAME www.theforce.net
     * Server:		8.8.8.8
