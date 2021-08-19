@@ -18,7 +18,8 @@ Topics Covered in Your Assignments
 
 ## Determine and document the mail servers for www.starwars.com using NSLOOKUP.
 
-    * used DNS report: MX
+    * used DNS Record: MX
+    * OSI Layer: 
     * nslookup -type=MX starwars.com
     * mail servers listed in picture below
 
@@ -26,13 +27,13 @@ Topics Covered in Your Assignments
 
 ## Explain why the Resistance isn't receiving any emails.
 
-    * The resistance needs to update the MX Record so the primary and secondary servers  are documented corectly
+    * The resistance needs to update the DNS MX Record so the primary and secondary servers  are documented corectly
 
-    * currently the primary and secondary servers are not listed in the MX Report for starwars.com
+    * currently the primary and secondary servers are not listed in the MX Record for starwars.com
 
 ## Document what a corrected DNS record should be.
 
- The following should be listed in the MX report:
+ The following should be listed in the MX record:
 
     * starwars.com mail exchanger = 1 asltx.l.google.com
     * starwars.com mail exchanger = 5 asltx.2.google.com
@@ -42,7 +43,7 @@ Topics Covered in Your Assignments
 ## Your mission:
 
 ### Determine and document the SPF for theforce.net using NSLOOKUP.
-    * used DNS report: TXT
+    * used DNS record: TXT
     * nslookup -type=TXT starwars.com
 
 ![picture](IMAGE/mission2_txt.PNG) 
