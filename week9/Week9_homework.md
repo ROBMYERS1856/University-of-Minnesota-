@@ -161,14 +161,14 @@ The OSPF shortest path from Planet Batuu to Planet Jedha:
 
 Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
 
-The host IP and MAC Address is the following:
-    * Host IP Address: 172.16.0.101
+The host IP and MAC Address is the following: 
+
+    * Host IP Address: 172.16.0.101  
     * Host MAC Address: 00:13:ce:55:ef
-    * 
-
-
 
 Document these IP and MAC Addresses, as the resistance will use these IP addresses to launch a retaliatory attack.
+
+    * ?????????????????????????????????????????????
 
 # Mission 7
 ### As a thank you for saving the galaxy, the Resistance wants to send you a secret message!
