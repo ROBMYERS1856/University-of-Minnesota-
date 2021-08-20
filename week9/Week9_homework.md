@@ -126,14 +126,14 @@ Here is what an updated DNS CNAME Reprot should look like:
 
 ![picture](IMAGE/Mission5_MAP.PNG)
 
-The OSPF shortest path from Plant Batuu to Jedha:  
+The OSPF shortest path from Planet Batuu to Planet Jedha:  
     * D C E F J I L Q T V JEDHA   
     * 1 2 1 1 1 1 6 4 2 2  2 = 23 Total Hops
 
 ### Confirm your path does not include Planet N in its route.
 
-    * The OSPF does not include Planet N
-    * OSPF path: BATUU D C E F J I L Q T V JEDHA
+    * The OSPF Planet path does not include Planet N
+    * OSPF Planet path: BATUU D C E F J I L Q T V JEDHA
 
 ### Document this shortest path so it can be used by the Resistance to develop a static route to improve the traffic.
 
