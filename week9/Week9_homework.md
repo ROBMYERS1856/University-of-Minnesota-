@@ -33,7 +33,7 @@ Topics Covered in Your Assignments
 
 ## Document what a corrected DNS record should be.
 
- The following should be listed in the MX record:
+ The following should be added to the DNS MX record:
 
     * starwars.com mail exchanger = 1 asltx.l.google.com
     * starwars.com mail exchanger = 5 asltx.2.google.com
