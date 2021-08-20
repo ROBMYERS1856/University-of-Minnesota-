@@ -53,8 +53,7 @@ Topics Covered in Your Assignments
 
     * The Resistance changed their IP Address FROM 104.156.250.80 TO 45.23.176.21
 
-    * The resistance needs to update the TXT Record so that
-    ip4:45.23.176.21 is included in the text = "v=spf1 a mx mx:smtp.secureserver.net include:
+    * The resistance needs to update the TXT Record so that  ip4:45.23.176.21 is included in the text = "v=spf1 a mx mx:smtp.secureserver.net include:
     aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215" 
 
 ### Document what a corrected DNS record should be.
@@ -104,4 +103,17 @@ Here is what an updated DNS CNAME Reprot should look like:
 
 ### Confirm the DNS records for princessleia.site.
 
+    * used DNS record: NS
+    * OSI Layer: NS Protocol = Layer 3 - Network Layer
+    * nslookup -type=NS princessleia.site
+    * Name Server record listed in picture below
+
+![picture](IMAGE/mission4_NS.PNG)
+
 ### Document how you would fix the DNS record to prevent this issue from happening again.
+
+    * Without properly configured NS records, users will be unable to load a website or application
+
+    * The Resistance needs to update the NS records and add the following DNS Server: ns2.galaxybackup.com
+
+
