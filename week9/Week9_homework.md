@@ -54,7 +54,7 @@ Topics Covered in Your Assignments
     * The Resistance changed their IP Address FROM 104.156.250.80 TO 45.23.176.21
 
     * The resistance needs to update the TXT Record so that
-    45.23.176.21 is included in the text = "v=spf1 a mx mx:smtp.secureserver.net include:
+    ip4:45.23.176.21 is included in the text = "v=spf1 a mx mx:smtp.secureserver.net include:
     aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215" 
 
 ### Document what a corrected DNS record should be.
