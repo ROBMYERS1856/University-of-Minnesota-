@@ -18,7 +18,7 @@ Topics Covered in Your Assignments
 
 ### Determine and document the mail servers for www.starwars.com using NSLOOKUP.
 
-    * used DNS Record: MX
+    * Used DNS Record: MX
     * OSI Layer: MP Protocol = Layer 7 - Application Layer
     * nslookup -type=MX starwars.com
     * mail servers listed in picture below
@@ -41,7 +41,7 @@ Topics Covered in Your Assignments
 # Mission 2
 
 ### Determine and document the SPF for theforce.net using NSLOOKUP.
-    * used DNS record: TXT
+    * Used DNS record: TXT
     * OSI Layer: TXT Protocol = Layer 4 - Transport Layer
     * OSI Layer: SPF Protocol = Layer 3 - Network Layer
     * nslookup -type=TXT starwars.com
@@ -69,7 +69,8 @@ Topics Covered in Your Assignments
 # Mission 3
 
 ### Document how a CNAME should look by viewing the CNAME of www.theforce.net using NSLOOKUP.
-    * used DNS record: TXT
+
+    * Used DNS record: TXT
     * OSI Layer: Layer 4 - Transport Layer
     * nslookup -type=CNAME www.theforce.net
 
@@ -103,7 +104,7 @@ Here is what an updated DNS CNAME Reprot should look like:
 
 ### Confirm the DNS records for princessleia.site.
 
-    * used DNS record: NS
+    * Used DNS record: NS
     * OSI Layer: NS Protocol = Layer 3 - Network Layer
     * nslookup -type=NS princessleia.site
     * Name Server record listed in picture below
@@ -139,8 +140,49 @@ The OSPF shortest path from Planet Batuu to Planet Jedha:
 
     * Planet Batuu   >   Planet D   >   Planet C   >   Planet E   >   Planet F   >   Planet J   >   Planet I   >   Planet L   >   Planet Q   >   Planet T   >   Planet V   >   Planet Jedha
 
+# Mission 6
+    * Used Aircrack-ng and Wireshark
+    * OSI Layer: Layer 5 - Session Layer
+    * aircrack-ng Darkside.pcap
+    
+### Figure out the Dark Side's secret wireless key by using Aircrack-ng.
+    * aircrack-ng Darkside.pcap
+    * using the aircrack-ng command the Dark Side's secret wireless key is the following: dictionary
+    * picture of command below
+
+![picture](IMAGE/mission6_aircrack.PNG)
+  
+### Use the Dark Side's key to decrypt the wireless traffic in Wireshark.
+
+    * see picture below that the secret wireless key "dictionary" was correct
+![picture](IMAGE/mission6-dictionary.PNG)
+
+### Once you have decrypted the traffic, figure out the following Dark Side information:
+
+Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
+
+The host IP and MAC Address is the following:
+    * Host IP Address: 172.16.0.101
+    * Host MAC Address: 00:13:ce:55:ef
+    * 
 
 
+
+Document these IP and MAC Addresses, as the resistance will use these IP addresses to launch a retaliatory attack.
+
+# Mission 7
+### As a thank you for saving the galaxy, the Resistance wants to send you a secret message!
+
+    * nslookup -type=txt princessleia.site
+    * see picture below of results
+
+![picture](IMAGE/mission7.PNG)
+
+    * www.asciimation.co.nz
+    * Star Wars A New Hope
+    * see picture below
+
+![picture](IMAGE/star.PNG)
 
 
 
