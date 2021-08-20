@@ -136,7 +136,7 @@ The OSPF shortest path from Planet Batuu to Planet Jedha:
     * The OSPF Planet path does not include Planet N
     * OSPF Planet path: BATUU D C E F J I L Q T V JEDHA
 
-### Document this shortest path so it can be used by the Resistance to develop a static route to improve the traffic.
+### Document the shortest path so it can be used by the Resistance to develop a static route to improve the traffic.
 
     * Planet Batuu   >   Planet D   >   Planet C   >   Planet E   >   Planet F   >   Planet J   >   Planet I   >   Planet L   >   Planet Q   >   Planet T   >   Planet V   >   Planet Jedha
 
