@@ -159,9 +159,7 @@ The OSPF shortest path from Planet Batuu to Planet Jedha:
 
 ### Once you have decrypted the traffic, figure out the following Dark Side information:
 
-### Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
-
-The host IP and MAC Address is the following: 
+Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
 
     * Host IP Address: 172.16.0.101  
     * Host MAC Address: 00:13:ce:55:ef
