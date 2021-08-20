@@ -45,6 +45,7 @@ Topics Covered in Your Assignments
     * OSI Layer: TXT Protocol = Layer 4 - Transport Layer
     * OSI Layer: SPF Protocol = Layer 3 - Network Layer
     * nslookup -type=TXT starwars.com
+    * Sender Policy Framework listed in picture below
 
 ![picture](IMAGE/mission2_txt.PNG) 
 
