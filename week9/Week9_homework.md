@@ -126,7 +126,7 @@ Here is what an updated DNS CNAME Reprot should look like:
 
 ![picture](IMAGE/Mission5_MAP.PNG)
 
-The OSPF shortest path from Plant Batuu to Jedha:
+The OSPF shortest path from Plant Batuu to Jedha:  
     * D C E F J I L Q T V JEDHA   
     * 1 2 1 1 1 1 6 4 2 2  2 = 23 Total Hops
 
