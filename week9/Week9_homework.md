@@ -142,19 +142,24 @@ The OSPF shortest path from Planet Batuu to Planet Jedha:
 
 # Mission 6
     * Used Aircrack-ng and Wireshark
+    * Used sudo locate to find rockyou.txt
+    * aircrack-ng Darkside.pcap -w /usr/share/wordlists/rockyou.txt 
     * OSI Layer: Layer 5 - Session Layer
-    * aircrack-ng Darkside.pcap
-    
+        
 ### Figure out the Dark Side's secret wireless key by using Aircrack-ng.
-    * aircrack-ng Darkside.pcap
-    * using the aircrack-ng command the Dark Side's secret wireless key is the following: dictionary
+    * aircrack-ng Darkside.pcap -w /usr/share/wordlists/rockyou.txt
+    * using the aircrack-ng command the Dark Side's secret wireless key is the following: KEYFOUND! [ dictionary ]
     * picture of command below
 
-![picture](IMAGE/mission6_aircrack.PNG)
+![picture](IMAGE/mission6_1.PNG)
+![picture](IMAGE/mission6_2.PNG)
   
 ### Use the Dark Side's key to decrypt the wireless traffic in Wireshark.
 
+From Wireshark: Edit/Preferences/Protocols/Ieee 802.11/ Decryption Keys Edit/ wpa-pwd/ dictionary
+
     * see picture below that the secret wireless key "dictionary" was correct
+
 ![picture](IMAGE/mission6-dictionary.PNG)
 
 ### Once you have decrypted the traffic, figure out the following Dark Side information:
@@ -162,14 +167,21 @@ The OSPF shortest path from Planet Batuu to Planet Jedha:
 Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
 
     * Host IP Address: 172.16.0.101  
-    * Host MAC Address: 00:13:ce:55:ef
+    * Host MAC Address: 00:13:ce:55:98:ef
 
 ![picture](IMAGE/mission7host.PNG)
 
 Document these IP and MAC Addresses, as the resistance will use these IP addresses to launch a retaliatory attack.
 
-    * ?????????????????????????????????????????????
-
+    * IP Address: 172.16.0.1 & MAC Address: 00:0f:66:e3:e4:01 appear to have attempted to attack the network
+    * IP Address: 172.16.0.101 Time to Live: 1 
+    * IP Address: 172.16.0.9 (RST, ACK) and TCP Flag 
+    * IP Address: 10.1.1.50 possible DNS Spoofing
+    * IP Address: 10.50.50.30 possible DNS Spoofing
+    * IP Address: 68.9.16.30 possible DNS Spoofing
+    * IP Address: 68.9.16.25 possible DNS Spoofing
+    * AruhaaHe_c2:a4:85 wlan flag/MAC ADDRESS: 00:0b:86:c2:a4:85
+ 
 # Mission 7
 ### As a thank you for saving the galaxy, the Resistance wants to send you a secret message!
 
