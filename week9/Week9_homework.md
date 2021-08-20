@@ -116,4 +116,31 @@ Here is what an updated DNS CNAME Reprot should look like:
 
     * The Resistance needs to update the NS records and add the following DNS Server: ns2.galaxybackup.com
 
+# Mission 5
+
+### View the Galaxy Network Map and determine the OSPF shortest path from Batuu to Jedha. 
+
+    * OSPF = Open Shortest Path First
+    * OSI Layer: IP Protocol = Layer 3 - Network Layer
+    * Picture of the Galaxcy Network Map below
+
+![picture](IMAGE/Mission5_MAP.PNG)
+
+The OSPF shortest path from Plant Batuu to Jedha:
+    * D C E F J I L Q T V JEDHA
+    * 1 2 1 1 1 1 6 4 2 2  2 = 23 Total Hops
+
+### Confirm your path does not include Planet N in its route.
+
+    * The OSPF does not include Planet N
+    * OSPF path: BATUU D C E F J I L Q T V JEDHA
+
+### Document this shortest path so it can be used by the Resistance to develop a static route to improve the traffic.
+
+    * Planet Batuu   >   Planet D   >   Planet C   >   Planet E   >   Planet F   >   Planet J   >   Planet I   >   Planet L   >   Planet Q   >   Planet T   >   Planet V   >   Planet Jedha
+
+
+
+
+
 
