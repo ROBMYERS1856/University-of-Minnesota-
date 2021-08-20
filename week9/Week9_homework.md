@@ -19,7 +19,7 @@ Topics Covered in Your Assignments
 ### Determine and document the mail servers for www.starwars.com using NSLOOKUP.
 
     * used DNS Record: MX
-    * OSI Layer: Layer 7 - Application Layer
+    * OSI Layer: MP Protocol = Layer 7 - Application Layer
     * nslookup -type=MX starwars.com
     * mail servers listed in picture below
 
@@ -42,7 +42,8 @@ Topics Covered in Your Assignments
 
 ### Determine and document the SPF for theforce.net using NSLOOKUP.
     * used DNS record: TXT
-    * OSI Layer: Layer 4 - Transport Layer
+    * OSI Layer: TXT Protocol = Layer 4 - Transport Layer
+    * OSI Layer: SPF Protocol = Layer 3 - Network Layer
     * nslookup -type=TXT starwars.com
 
 ![picture](IMAGE/mission2_txt.PNG) 
