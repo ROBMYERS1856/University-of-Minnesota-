@@ -111,7 +111,6 @@ Here is what an updated DNS CNAME Reprot should look like:
 ### Document how you would fix the DNS record to prevent this issue from happening again.
 
     * Without properly configured NS records, users will be unable to load a website or application
-
     * The Resistance needs to update the NS records and add the following DNS Server: ns2.galaxybackup.com
 
 # Mission 5
