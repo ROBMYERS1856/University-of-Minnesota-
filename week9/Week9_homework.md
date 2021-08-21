@@ -194,6 +194,7 @@ Remaining IP and MAC addresses in the Darkside PCAP File:
     * BSS ID: 00:0b:86:c2:c4:85
     * wlad: 00:14:bf:of:03:32
  ![picture](IMAGE/end.PNG)
+ 
  ![picture](IMAGE/tc.PNG)
 
 ## Warning: 
