@@ -51,7 +51,6 @@ Topics Covered in Your Assignments
 ### Explain why the Force's emails are going to spam.
 
     * The Resistance changed their IP Address FROM 104.156.250.80 TO 45.23.176.21
-
     * The resistance needs to update the TXT Record so that  ip4:45.23.176.21 is included in the text = "v=spf1 a mx mx:smtp.secureserver.net include:
     aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215" 
 
