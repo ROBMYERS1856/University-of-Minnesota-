@@ -166,21 +166,42 @@ From Wireshark: Edit/Preferences/Protocols/Ieee 802.11/ Decryption Keys Edit/ wp
 
 Host IP Addresses and MAC Addresses by looking at the decrypted ARP traffic.
 
-    * Host IP Address: 172.16.0.101  
-    * Host MAC Address: 00:13:ce:55:98:ef
+    * ARP Protocol:
+    * Host IP/MAC Address: 172.16.0.101 / 00:13:ce:55:98:ef 
+    * Host IP/MAC Address: 172.16.0.1 / 00:0f:66:e3:e4:01 
 
 ![picture](IMAGE/mission7host.PNG)
 
 Document these IP and MAC Addresses, as the resistance will use these IP addresses to launch a retaliatory attack.
 
-    * IP Address: 172.16.0.1 & MAC Address: 00:0f:66:e3:e4:01 appear to have attempted to attack the network
-    * IP Address: 172.16.0.101 Time to Live: 1 
-    * IP Address: 172.16.0.9 (RST, ACK) and TCP Flag 
-    * IP Address: 10.1.1.50 possible DNS Spoofing
-    * IP Address: 10.50.50.30 possible DNS Spoofing
-    * IP Address: 68.9.16.30 possible DNS Spoofing
-    * IP Address: 68.9.16.25 possible DNS Spoofing
-    * AruhaaHe_c2:a4:85 wlan flag/MAC ADDRESS: 00:0b:86:c2:a4:85
+The resistance will use the following to attack the Empire:   
+    
+    * IP: 172.16.0.101    MAC: 00:13:ce:55:98:ef     
+    * IP: 172.16.0.1      MAC: 00:0f:66:e3:e4:01  
+
+IP and MAC Address's of interest:
+
+    * IP: 172.16.09   MAC: 00:14:bf:of:03:30 (TCP Protocol)    
+    * IP: 10.50.50.30 MAC: 00:13:ce:55:98:ef   
+
+Duplicate IP and MAC Address:
+
+    * the following have the same MAC Address IP and MAC Addressess as 172.16.0.1
+    * IP: 10.1.1.50    MAC: 00:0f:66:e3:e4:01 
+    * IP: 68.9.16.25   MAC: 00:0f:66:e3:e4:01
+    * IP: 68.9.16.30   MAC: 00:0f:66:e3:e4:01
+
+Remaining IP and MAC addresses in the Darkside PCAP File:
+
+    * 224.0.0.22  /  01:00;5e:00:00:16
+    * 239.255.255.250   /   01:00:5e:7f:ff:gfa
+    * BSS ID: 00:0b:86:c2:c4:85
+    * wlad: 00:14:bf:of:03:32
+ ![picture](IMAGE/end.PNG)
+ ![picture](IMAGE/tc.PNG)
+ 
+## Warning: 
+IP: 172.16.09 Mac: 00:14:bf:of:03:30 PORT: 5431 be open to TCP reset attack 
  
 # Mission 7
 ### As a thank you for saving the galaxy, the Resistance wants to send you a secret message!
