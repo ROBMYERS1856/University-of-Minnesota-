@@ -58,7 +58,6 @@ Topics Covered in Your Assignments
 
     * ADD the following to the below text: 
     ip4:45-23-176-21.lightspeed.rcsntx.sbcglobal.net
-
     * text = "v=spf1 a mx mx:smtp.secureserver.net include:
     aspmx.googlemail.com ip4:104.156.250.80 ip4:45.63.15.159 ip4:45.63.4.215 ip4:45-23-176-21.lightspeed.rcsntx.sbcglobal.net" 
 
