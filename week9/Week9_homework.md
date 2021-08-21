@@ -193,16 +193,18 @@ Remaining IP and MAC addresses in the Darkside PCAP File:
     * 239.255.255.250   /   01:00:5e:7f:ff:gfa
     * BSS ID: 00:0b:86:c2:c4:85
     * wlad: 00:14:bf:of:03:32
- ![picture](IMAGE/end.PNG)
-
- ![picture](IMAGE/tc.PNG)
 
 ## Warning: 
  IP: 172.16.09 Mac: 00:14:bf:of:03:30 PORT: 5431 be open to TCP reset attack
 ![picture](IMAGE/tcp1.PNG)
 
-
 ### * NOTE: I went through all IP and MAC address listed in Endpoints to also include the IEEE 802.11.8 Address's as well looking for duplicate MAC Address associated with one IP Address and ways to navigate and explore Wireshark
+
+ ![picture](IMAGE/end.PNG)
+
+ ![picture](IMAGE/tc.PNG)
+
+
  
 
 # Mission 7
