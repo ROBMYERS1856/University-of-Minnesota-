@@ -200,8 +200,9 @@ Remaining IP and MAC addresses in the Darkside PCAP File:
 ## Warning: 
  IP: 172.16.09 Mac: 00:14:bf:of:03:30 PORT: 5431 be open to TCP reset attack
 
-    * NOTE: I went through all IP and MAC address listed in Endpoints to also include the IEEE 802.11.8 Address's as well looking for duplicate MAC Address and ways to navigate and explore Wireshark
+* NOTE: I went through all IP and MAC address listed in Endpoints to also include the IEEE 802.11.8 Address's as well looking for duplicate MAC Address and ways to navigate and explore Wireshark
  
+
 # Mission 7
 ### As a thank you for saving the galaxy, the Resistance wants to send you a secret message!
 
