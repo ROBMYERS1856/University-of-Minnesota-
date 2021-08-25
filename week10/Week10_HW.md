@@ -83,7 +83,7 @@ Objective is to solve the 6 riddles and recieve key codes inorder to get access 
 ![picture](IMAGE/Riddle6_A.PNG) 
 ![picture](IMAGE/Riddle6_B.PNG)
 
-# THE END: Succesfully solved all 6 questions and saved the network from the bag guys
+# THE END: Succesfully solved all 6 questions and saved the network from the bad guys
 
 ![picture](IMAGE/THeEND.PNG)
 
