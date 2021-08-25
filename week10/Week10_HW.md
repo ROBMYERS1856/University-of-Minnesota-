@@ -20,9 +20,9 @@ Topics Covered in Your Assignments
     * Steghide
 
 ## Homework scenario is doctor at Nakatomi Hospital opened up an email containing ransomware.
-    The Ransomeware has given two options:
-            * Pay 100 Bitcoins
-            * Solve 6 Riddles
+The Ransomeware has given two options:
+    * Pay 100 Bitcoins
+    * Solve 6 Riddles
 
 ## Objective is to solve the 6 riddles and recieve key codes inorder to get access back to the network
 
