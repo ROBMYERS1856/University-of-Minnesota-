@@ -182,7 +182,7 @@ IP and MAC Address's of interest:
 
 Duplicate IP and MAC Address:
 
-    * the following have the same MAC Address IP and MAC Addressess as 172.16.0.1
+    * the following have the same MAC Address (MAC: 00:0f:66:e3:e4:01) associated with differentIP Addresses 
     * IP: 10.1.1.50    MAC: 00:0f:66:e3:e4:01 
     * IP: 68.9.16.25   MAC: 00:0f:66:e3:e4:01
     * IP: 68.9.16.30   MAC: 00:0f:66:e3:e4:01
