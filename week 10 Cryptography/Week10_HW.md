@@ -33,7 +33,6 @@ The Ransomeware has given two options:
     * Decoded Messege = Gruber
     * Answer Key: 6skd8s
 
-
  ![picture](IMAGE/Riddle1.PNG)
 
  # Scenario 2:
