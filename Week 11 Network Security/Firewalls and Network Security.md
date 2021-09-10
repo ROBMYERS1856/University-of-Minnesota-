@@ -62,7 +62,7 @@ Name each of the seven stages for the Cyber Kill chain and provide a brief examp
 
 ### Snort Rule Analysis
 
-    A snort rule is composed of two parts: the header and its options. The header matches packets and the options serve to filter and perform actions on those matches.
+A snort rule is composed of two parts: the header and its options. The header matches packets and the options serve to filter and perform actions on those matches.
 
     
 Use the Snort rule to answer the following questions:
