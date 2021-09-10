@@ -17,6 +17,8 @@ The concept of defense in depth can be broken down into three different security
 
     - Answer: TECHNICAL 
 
+![picture](IMAGE/sec.PNG)
+
 ### Intrusion Detection and Attack indicators
 
 1. What's the difference between an IDS and an IPS?
