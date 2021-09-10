@@ -58,27 +58,36 @@ Name each of the seven stages for the Cyber Kill chain and provide a brief examp
 7. Actions on Objective: 
     * Once the attacker / intruder gains persistent access, they finally take action to fullfil their purpose, such as encryption for ransom, data exfiltration or even data destruction.
 
+        ![picture](IMAGE/kill.PNG)
+
 ### Snort Rule Analysis
 
+    A snort rule is composed of two parts: the header and its options. The header matches packets and the options serve to filter and perform actions on those matches.
+
+    
 Use the Snort rule to answer the following questions:
 
-Snort Rule #1
+1. Break down the Snort Rule header and explain what is happening.
+ 
+Snort Rule Header: alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820
 
-```bash
-alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC Scan 5800-5820"; flags:S,12; threshold: type both, track by_src, count 5, seconds 60; reference:url,doc.emergingthreats.net/2002910; classtype:attempted-recon; sid:2002910; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
-```
+    - Rule Action: alert
+    - Protocol: tcp (Transport Layer OSI Model Layer 4)
+    - Source IP: $EXTERNAL_NET
+    - Source Port: any 
+    - Direction: ->
+    - Destination IP: $HOME_NET 
+    - Destination Port:5800:5820 
 
-1. Break down the Sort Rule header and explain what is happening.
-
-   Answer:
+This rule logs the message “ET SCAN Potential VNC Scan 5800-5820” when it detects TCP packet coming from the external network on any ports going into the local network on ports 5800 to 5820
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
-   Answer:
+    * This alert is violating stage 4: Explitation
 
 3. What kind of attack is indicated?
 
-   Answer:
+    * Indicator of Attack (IOA) 
 
 Snort Rule #2
 
