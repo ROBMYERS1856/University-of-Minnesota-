@@ -68,15 +68,15 @@ A snort rule is composed of two parts: the header and its options. The header ma
 Use the Snort rule to answer the following questions:
 
 1. Break down the Snort Rule header and explain what is happening.
- 
-Snort Rule Header: alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820
+### Snort Header example: 
+alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC Scan 5800-5820"; flags:S,12; threshold: type both, track by_src, count 5, seconds 60; reference:url,doc.emergingthreats.net/2002910; classtype:attempted-recon; sid:2002910; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
     - Rule Action: alert
     - Protocol: tcp (Transport Layer OSI Model Layer 4)
-    - Source IP: $EXTERNAL_NET
+    - Source IP: $EXTERNAL_NET (external network)
     - Source Port: any 
     - Direction: ->
-    - Destination IP: $HOME_NET 
+    - Destination IP: $HOME_NET (local network) 
     - Destination Port:5800:5820 
 
 This rule logs the message “ET SCAN Potential VNC Scan 5800-5820” when it detects TCP packet coming from the external network on any ports going into the local network on ports 5800 to 5820
@@ -90,22 +90,28 @@ This rule logs the message “ET SCAN Potential VNC Scan 5800-5820” when it de
     * Indicator of Attack (IOA) 
 
 Snort Rule #2
+### Snort Header example:
 
-```bash
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or DLL Windows file download HTTP"; flow:established,to_client; flowbits:isnotset,ET.http.binary; flowbits:isnotset,ET.INFO.WindowsUpdate; file_data; content:"MZ"; within:2; byte_jump:4,58,relative,little; content:"PE|00 00|"; distance:-64; within:4; flowbits:set,ET.http.binary; metadata: former_category POLICY; reference:url,doc.emergingthreats.net/bin/view/Main/2018959; classtype:policy-violation; sid:2018959; rev:4; metadata:created_at 2014_08_19, updated_at 2017_02_01;)
-```
 
 1. Break down the Sort Rule header and explain what is happening.
 
-   Answer:
+    - Rule Action: alert
+    - Protocol: tcp (Transport Layer OSI Model Layer 4)
+    - Source IP: $EXTERNAL_NET (external network)
+    - Source Port: $HTTP_PORTS (Port 80) 
+    - Direction: ->
+    - Destination IP: $HOME_NET (local network) 
+    - Destination Port:any 
 
 2. What layer of the Defense in Depth model does this alert violate?
 
-   Answer:
+    * This alert is violating stage 5: Instalation
 
 3. What kind of attack is indicated?
 
-   Answer:
+    * Indicator of Compromise (IOP)
+
 
 Snort Rule #3
 
