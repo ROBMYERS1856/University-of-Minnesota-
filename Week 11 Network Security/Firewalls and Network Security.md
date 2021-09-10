@@ -71,13 +71,15 @@ Use the Snort rule to answer the following questions:
 ### Snort Header example: 
 alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC Scan 5800-5820"; flags:S,12; threshold: type both, track by_src, count 5, seconds 60; reference:url,doc.emergingthreats.net/2002910; classtype:attempted-recon; sid:2002910; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 
-    - Rule Action: alert
-    - Protocol: tcp (Transport Layer OSI Model Layer 4)
-    - Source IP: $EXTERNAL_NET (external network)
-    - Source Port: any 
-    - Direction: ->
-    - Destination IP: $HOME_NET (local network) 
-    - Destination Port:5800:5820 
+<brk>                       
+  
+- Rule Action: alert
+- Protocol: tcp (Transport Layer OSI Model Layer 4)
+- Source IP: $EXTERNAL_NET (external network)
+- Source Port: any 
+- Direction: ->
+- Destination IP: $HOME_NET (local network) 
+- Destination Port:5800:5820 
 
 This rule logs the message “ET SCAN Potential VNC Scan 5800-5820” when it detects TCP packet coming from the external network on any ports going into the local network on ports 5800 to 5820
 
@@ -112,29 +114,21 @@ alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or D
 
     * Indicator of Compromise (IOP)
 
-
 Snort Rule #3
 
-- Your turn! Write a Snort rule that alerts when traffic is detected inbound on port 4444 to the local network on any port. Be sure to include the `msg` in the Rule Option.
+Write a Snort rule that alerts when traffic is detected inbound on port 4444 to the local network on any port. Be sure to include the `msg` in the Rule Option.
 
-    Answer:
+- alert tcp $EXTERNAL_NET 4444 -> $HOME_NET any (msg:”Traffic detected from port 4444”)
 
-### Part 2: "Drop Zone" Lab
-
-#### Log into the Azure `firewalld` machine
-
-Log in using the following credentials:
-
-- Username: `sysadmin`
-- Password: `cybersecurity`
+## Part 2: "Drop Zone" Lab
 
 #### Uninstall `ufw`
-
-Before getting started, you should verify that you do not have any instances of `ufw` running. This will avoid conflicts with your `firewalld` service. This also ensures that `firewalld` will be your default firewall.
 
 - Run the command that removes any running instance of `ufw`.
 
     * sudo apt -y remove ufw
+
+    ![picture](IMAGE/pic1_uninstall.PNG)
 
 #### Enable and start `firewalld`
 
@@ -145,14 +139,15 @@ By default, these service should be running. If not, then run the following comm
     * sudo systemctl enable firewalld
     * sudo systemctl start firewalld
     
-    
-  Note: This will ensure that `firewalld` remains active after each reboot.
+ Note: This will ensure that `firewalld` remains active after each reboot.
 
 #### Confirm that the service is running.
 
 - Run the command that checks whether or not the `firewalld` service is up and running.
 
     * sudo firewall-cmd --state
+
+![picture](IMAGE/pic2_statusrunning.PNG)
 
 
 #### List all firewall rules currently configured.
@@ -162,8 +157,8 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that lists all currently configured firewall rules:
 
     * sudo firewall-cmd --list-all
-    * NOTE: Public is the only zone currently configured
-    
+     
+![picture](IMAGE/pic3_listALL.PNG)
 
 - Take note of what Zones and settings are configured. You many need to remove unneeded services and settings.
 
@@ -173,18 +168,15 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
     * sudo firewall-cmd --get-services
 
-
-- We can see that the `Home` and `Drop` Zones are created by default.
-
+![picture](IMAGE/pic4_getSERVICES.PNG)
 
 #### Zone Views
 
 - Run the command that lists all currently configured zones.
 
     * firewall-cmd --list-all-zones
-    
 
-- We can see that the `Public` and `Drop` Zones are created by default. Therefore, we will need to create Zones for `Web`, `Sales`, and `Mail`.
+![picture](IMAGE/pic5_listALLzones.PNG)
 
 #### Create Zones for `Web`, `Sales` and `Mail`.
 
@@ -194,6 +186,10 @@ Next, lists all currently configured firewall rules. This will give you a good i
     * sudo firewall-cmd --new-zone=Sales --permanent
     * sudo firewall-cmd --new-zone=Mail --permanent
 
+![picture](IMAGE/pic6_NewZONES.PNG) 
+
+## NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have been updated
+
 #### Set the zones to their designated interfaces:
 
 - Run the commands that sets your `eth` interfaces to your zones.
@@ -202,6 +198,10 @@ Next, lists all currently configured firewall rules. This will give you a good i
     * sudo firewall-cmd --zone=Web --change-interface=eth1
     * sudo firewall-cmd --zone=Sales --change-interface=eth2
     * sudo firewall-cmd --zone=Mail --change-interface=eth3
+
+![picture](IMAGE/pic8_changeTOETH.PNG) 
+
+## NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have been updated
     
 #### Add services to the active sudo firewall-cmd --zone=Web --change-interface=eth1zones:
 
