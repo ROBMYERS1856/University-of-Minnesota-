@@ -85,7 +85,7 @@ This rule logs the message “ET SCAN Potential VNC Scan 5800-5820” when it de
 
 2. What stage of the Cyber Kill Chain does this alert violate?
 
-    * This alert is violating stage 4: Explitation
+    * This alert is violating stage 4: Exploitation
 
 3. What kind of attack is indicated?
 
@@ -152,8 +152,6 @@ By default, these service should be running. If not, then run the following comm
 
 #### List all firewall rules currently configured.
 
-Next, lists all currently configured firewall rules. This will give you a good idea of what's currently configured and save you time in the long run by not doing double work.
-
 - Run the command that lists all currently configured firewall rules:
 
     * sudo firewall-cmd --list-all
@@ -175,8 +173,6 @@ Next, lists all currently configured firewall rules. This will give you a good i
 - Run the command that lists all currently configured zones.
 
     * firewall-cmd --list-all-zones
-
-![picture](IMAGE/pic5_listALLzones.PNG)
 
 #### Create Zones for `Web`, `Sales` and `Mail`.
 
@@ -262,10 +258,9 @@ Add the following to the Drop Zone:
 
 ![picture](IMAGE/black1.PNG) 
 
+Picture of all IP address's added to the drop zone:
+
 ![picture](IMAGE/drop.PNG)  
-
-IP address's added to the drop zone:
-
 
 #### Make rules permanent then reload them:
 
