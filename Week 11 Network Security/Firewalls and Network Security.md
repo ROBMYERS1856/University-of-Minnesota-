@@ -122,7 +122,7 @@ Write a Snort rule that alerts when traffic is detected inbound on port 4444 to 
 
 ## Part 2: "Drop Zone" Lab
 
-#### Uninstall `ufw`
+#### Uninstall "Uncomplicated Firewall" (UFW)
 
 - Run the command that removes any running instance of `ufw`.
 
