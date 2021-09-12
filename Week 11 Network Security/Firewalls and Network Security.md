@@ -254,21 +254,24 @@ NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have b
 
 - Run the command that will add all current and any future blacklisted IPs to the Drop Zone.
 
-     ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+Add the following to the Drop Zone:
+
+    * 10.208.56.23
+    * 135.95.103.76
+    * 76.34.169.118
+
+![picture](IMAGE/black1.PNG) 
+
+![picture](IMAGE/drop.PNG)  
+
+IP address's added to the drop zone:
+
 
 #### Make rules permanent then reload them:
 
-It's good practice to ensure that your `firewalld` installation remains nailed up and retains its services across reboots. This ensure that the network remains secured after unplanned outages such as power failures.
-
 - Run the command that reloads the `firewalld` configurations and writes it to memory
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+    * sudo firewall-cmd --reload
 
 #### View active Zones
 
@@ -276,18 +279,19 @@ Now, we'll want to provide truncated listings of all currently **active** zones.
 
 - Run the command that displays all zone services.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
-
+    * sudo firewall-cmd --list-all-zones
 
 #### Block an IP address
 
 - Use a rich-rule that blocks the IP address `138.138.0.3`.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+    * sudo firewall-cmd --permanent --add-rich-rule="rule family='ipv4' source address='138.138.0.3' reject"
+
+![picture](IMAGE/rich.PNG) 
+
+Picture of all rich rules: 
+
+ ![picture](IMAGE/rich1.PNG)  
 
 #### Block Ping/ICMP Requests
 
