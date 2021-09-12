@@ -243,7 +243,7 @@ NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have b
 
 - What is the status of `http`, `https`, `smtp` and `pop3`?
 
-to check the staus of HTTP, HTTPS, SMTP, and POP3:
+    - To check the staus of HTTP, HTTPS, SMTP, and POP3, use command:
 
     * sudo firewall-cmd --list-all
 
