@@ -305,13 +305,20 @@ Picture of icmp-blocks:
 
 #### Rule Check
 
-- Run the command that lists all  of the rule settings. Do one command at a time for each zone.
+- Run the command that lists all of the rule settings. Do one command at a time for each zone.
 
 * sudo firewall-cmd --list-all --zone=public
 * sudo firewall-cmd --list-all --zone=Mail
 * sudo firewall-cmd --list-all --zone=Sales
 * sudo firewall-cmd --list-all --zone=Web
 * sudo firewall-cmd --list-all --zone=drop
+* sudo firewall-cmd --list-all --zone=block
+* sudo firewall-cmd --list-all --zone=dmz
+* sudo firewall-cmd --list-all --zone=external
+* sudo firewall-cmd --list-all --zone=home
+* sudo firewall-cmd --list-all --zone=internal
+* sudo firewall-cmd --list-all --zone=trusted
+* sudo firewall-cmd --list-all --zone=work
 
 ### Part 3: IDS, IPS, DiD and Firewalls
 
