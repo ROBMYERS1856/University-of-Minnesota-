@@ -294,30 +294,24 @@ Harden your network against `ping` scans by blocking `icmp ehco` replies.
 
 - Run the command that blocks `pings` and `icmp` requests in your `public` zone.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+    * sudo firewall-cmd --zone=public --add-icmp-block={echo-request,echo-reply} 
+
+![picture](IMAGE/block.PNG) 
+
+Picture of icmp-blocks:
+
+![picture](IMAGE/echo.PNG)  
+
 
 #### Rule Check
 
-Now that you've set up your brand new `firewalld` installation, it's time to verify that all of the settings have taken effect.
-
 - Run the command that lists all  of the rule settings. Do one command at a time for each zone.
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
-
-- Are all of our rules in place? If not, then go back and make the necessary modifications before checking again.
-
-
-Congratulations! You have successfully configured and deployed a fully comprehensive `firewalld` installation.
-
----
+* sudo firewall-cmd --list-all --zone=public
+* sudo firewall-cmd --list-all --zone=Mail
+* sudo firewall-cmd --list-all --zone=Sales
+* sudo firewall-cmd --list-all --zone=Web
+* sudo firewall-cmd --list-all --zone=drop
 
 ### Part 3: IDS, IPS, DiD and Firewalls
 
