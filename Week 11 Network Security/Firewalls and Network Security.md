@@ -188,7 +188,7 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 ![picture](IMAGE/pic6_NewZONES.PNG) 
 
-## NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have been updated
+ NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have been updated
 
 #### Set the zones to their designated interfaces:
 
@@ -201,41 +201,54 @@ Next, lists all currently configured firewall rules. This will give you a good i
 
 ![picture](IMAGE/pic8_changeTOETH.PNG) 
 
-## NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have been updated
+NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have been updated
     
-#### Add services to the active sudo firewall-cmd --zone=Web --change-interface=eth1zones:
+- Run the commands that add services to the **public**, **web**, **sales**, and the **mail** zone.
 
-- Run the commands that add services to the **public** zone, the **web** zone, the **sales** zone, and the **mail** zone.
+- Public Zone:
 
-- Public:
+    * sudo firewall-cmd --permanent --add-service=http --zone=
+    public
+    * sudo firewall-cmd --permanent --add-service=https --zone=
+    public
+    * sudo firewall-cmd --permanent --add-service=pop3 --zone=
+    public
+    * sudo firewall-cmd --permanent --add-service=smtp --zone=
+    public
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+ <brk> 
+     
+![picture](IMAGE/serv.PNG) 
 
-- Web:
+- Web Zone:
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+    * sudo firewall-cmd --permanent --add-service=http --zone=Web
+    
+![picture](IMAGE/web.PNG)
 
-- Sales
+- Sales Zone:
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    ```
+    * sudo firewall-cmd --permanent --add-service=https --zone=Sales
 
-- Mail
+![picture](IMAGE/sales.PNG)
 
-    ```bash
-    $ <ADD COMMAND HERE>
-    $ <ADD COMMAND HERE>
-    ```
+- Mail Zone:
+
+    * sudo firewall-cmd --permanent --add-service=smpt --zone=
+    Mail
+    * sudo firewall-cmd --permanent --add-service=pop3 --zone=
+    Mail
+
+![picture](IMAGE/mail.PNG)
 
 - What is the status of `http`, `https`, `smtp` and `pop3`?
+
+to check the staus of HTTP, HTTPS, SMTP, and POP3:
+
+    * sudo firewall-cmd --list-all
+
+![picture](IMAGE/status.PNG)
+
 
 #### Add your adversaries to the Drop Zone.
 
