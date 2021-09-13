@@ -130,7 +130,7 @@ Write a Snort rule that alerts when traffic is detected inbound on port 4444 to 
 
     ![picture](IMAGE/pic1_uninstall.PNG)
 
-#### Enable and start `firewalld`
+#### Enable and start Firewalld
 
 By default, these service should be running. If not, then run the following commands:
 
@@ -252,6 +252,8 @@ NOTE: dont forget to run sudo firewall-cmd --reload to ensure all changes have b
 
 Add the following to the Drop Zone:
 
+    - sudo firewall-cmd --permanent --zone=drop --add-source=
+
     * 10.208.56.23
     * 135.95.103.76
     * 76.34.169.118
@@ -328,21 +330,21 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 1. Name and define two ways an IDS connects to a network.
 
-   Answer 1:
+   Answer 1: IDS must connect to a port that can see all traffic between the LAN and the Internet
 
-   Answer 2:
+   Answer 2: IDS must be connected to a mirroe switch port or a hub located between the Internet connection and the LAN
 
 2. Describe how an IPS connects to a network.
 
-   Answer:
+   Answer: It will be connected to the network as any other piece of hardware. The difference is that IPS should be positioned where it will see the bare minimum of traffic it needs to monitor traffic inorder to keep performance issues under control.
 
 3. What type of IDS compares patterns of traffic to predefined signatures and is unable to detect Zero-Day attacks?
 
-   Answer:
+   Answer: Signature-based intrusion detection system (SIDS)
 
 4. Which type of IDS is beneficial for detecting all suspicious traffic that deviates from the well-known baseline and is excellent at detecting when an attacker probes or sweeps a network?
 
-   Answer:
+   Answer: Statistical anomaly-based detection
 
 #### Defense in Depth
 
@@ -350,74 +352,72 @@ Now, we will work on another lab. Before you start, complete the following revie
 
     1.  A criminal hacker tailgates an employee through an exterior door into a secured facility, explaining that they forgot their badge at home.
 
-        Answer:
+        Answer: Physical
 
     2. A zero-day goes undetected by antivirus software.
 
-        Answer:
+        Answer: Technical
 
     3. A criminal successfully gains access to HR’s database.
 
-        Answer:
+        Answer: Technical
 
     4. A criminal hacker exploits a vulnerability within an operating system.
 
-        Answer:
+        Answer: Technical
 
     5. A hacktivist organization successfully performs a DDoS attack, taking down a government website.
 
-        Answer:
+        Answer: Technical
 
     6. Data is classified at the wrong classification level.
 
-        Answer:
+        Answer: Administrative
 
     7. A state sponsored hacker group successfully firewalked an organization to produce a list of active services on an email server.
 
-        Answer:
+        Answer: Technical
 
 2. Name one method of protecting data-at-rest from being readable on hard drive.
 
-    Answer:
+    Answer: Encrypting hard drives is one of the best ways to ensure the security of data at rest.
 
 3. Name one method to protect data-in-transit.
 
-    Answer:
+    Answer: Encryption
 
 4. What technology could provide law enforcement with the ability to track and recover a stolen laptop.
 
-   Answer:
+   Answer: Security/Tracking software like Hidden, Prey and LoJack for example
 
 5. How could you prevent an attacker from booting a stolen laptop using an external hard drive?
 
-    Answer:
+    Answer: ?????????????????????
 
 
 #### Firewall Architectures and Methodologies
 
 1. Which type of firewall verifies the three-way TCP handshake? TCP handshake checks are designed to ensure that session packets are from legitimate sources.
 
-  Answer:
+  Answer: Firewalls that perform Network Layer Inspections
 
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
-  Answer:
+  Answer: Firewalls that allow UDP
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
-  Answer:
+  Answer: Intrusion Prevention Systems (IPS) 
 
 
 4. Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type- all without opening the packet to inspect its contents?
 
-  Answer:
+  Answer: Intrusion Detection Systems (IDS)
 
 
 5. Which type of firewall filters based solely on source and destination MAC address?
 
-  Answer:
-
-
+  Answer: Access List
 
 ### Bonus Lab: "Green Eggs & SPAM"
 In this activity, you will target spam, uncover its whereabouts, and attempt to discover the intent of the attacker.
