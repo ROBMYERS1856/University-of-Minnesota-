@@ -315,6 +315,8 @@ Picture of icmp-blocks:
 * sudo firewall-cmd --list-all --zone=trusted
 * sudo firewall-cmd --list-all --zone=work
 
+NOTE: not all of the zones listed are active
+
 ### Part 3: IDS, IPS, DiD and Firewalls
 
 Now, we will work on another lab. Before you start, complete the following review questions.
@@ -436,35 +438,30 @@ Answer the following:
 1. What was the indicator of an attack?
    - Hint: What do the details of the reveal? 
 
-    Answer: 
-
+    Answer:alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any
 
 2. What was the adversarial motivation (purpose of attack)?
 
-    Answer: 
+    Answer: The motivation/purpose of the attack was to spam Italian campaigns using JS/Nemucod downloader
 
 3. Describe observations and indicators that may be related to the perpetrators of the intrusion. Categorize your insights according to the appropriate stage of the cyber kill chain, as structured in the following table.
 
 | TTP | Example | Findings |
 | --- | --- | --- | 
-| **Reconnaissance** |  How did they attacker locate the victim? | 
-| **Weaponization** |  What was it that was downloaded?|
-| **Delivery** |    How was it downloaded?|
-| **Exploitation** |  What does the exploit do?|
-| **Installation** | How is the exploit installed?|
-| **Command & Control (C2)** | How does the attacker gain control of the remote machine?|
-| **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?|
-
-
-    Answer: 
-
-
+| **Reconnaissance** |  How did they attacker locate the victim? | Via Email in phishing attempt
+| **Weaponization** |  What was it that was downloaded?| A zip file the user believes is a legitimate invoce
+| **Delivery** |    How was it downloaded?| User opens the zip file and double clicks the JavaScript, the default file type associatins in Windows will cause Internet Explorer to open and excecute the JavaScript
+| **Exploitation** |  What does the exploit do?| It takes over the user computer via Command & Control Servers (C&C) typically excecuted through spam and email attachments 
+| **Installation** | How is the exploit installed?| Nemucod will instantiate three different ActiveX Controls. Short answer is Nemucod will open a legitimate PDF file in the browser that the user will beleive is a legitimate invoce
+| **Command & Control (C2)** | How does the attacker gain control of the remote machine?|  The attacker gains control of the remote machine via malicious email attachments that come in the format of a .zip or .exe file. However, they can also be distributed via p2p networks and other unsecured locations
+| **Actions on Objectives** | What does the software that the attacker sent do to complete it's tasks?| It depends on what the Malware is intended to do. It's purpose might be to collect a ransom or disupt a network. 
+  
 4. What are your recommended mitigation strategies?
 
-
-    Answer: 
-
+    Answer: Establish rules that will block any known Nemucod Malware, add any known Ip address, websites, spam, attachements to the drop zone.  
 
 5. List your third-party references.
 
-    Answer: 
+    * https://www.cisecurity.org/blog/malware-analysis-report-nemucod-ransomware/ 
+
+    * https://www.2-spyware.com/remove-js-nemucod.html
