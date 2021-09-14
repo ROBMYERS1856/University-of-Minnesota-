@@ -37,7 +37,7 @@ The concept of defense in depth can be broken down into three different security
 
 Name each of the seven stages for the Cyber Kill chain and provide a brief example of each.
 
-1. econnaissance: Information gathering stage against targeted victim. Information sources include, DNS registration websites, LinkedIn, Facebook, Twitter, etc.
+1. Reconnaissance: Information gathering stage against targeted victim. Information sources include, DNS registration websites, LinkedIn, Facebook, Twitter, etc.
 
 2. Weaponization: After collecting information regarding infrastructure and employees, adversaries have the capability to establish attack vectors and technical profiles of targets such as: logical and administrative security controls, infil/exfil points, etc.
 
