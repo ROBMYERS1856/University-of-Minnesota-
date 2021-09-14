@@ -37,28 +37,21 @@ The concept of defense in depth can be broken down into three different security
 
 Name each of the seven stages for the Cyber Kill chain and provide a brief example of each.
 
-1. Reconnaissance: 
-    * In this step, the attacker / intruder chooses their target. Then they conduct an in-depth research on this target to identify its vulnerabilities that can be exploited.
+1. econnaissance: Information gathering stage against targeted victim. Information sources include, DNS registration websites, LinkedIn, Facebook, Twitter, etc.
 
-2. Weaponization: 
-    * In this step, the intruder creates a malware weapon like a virus, worm or such in order to exploit the vulnerabilities of the target. Depending on the target and the purpose of the attacker, this malware can exploit new, undetected vulnerabilities (also known as the zero-day exploits) or it can focus on a combination of different vulnerabilities.
+2. Weaponization: After collecting information regarding infrastructure and employees, adversaries have the capability to establish attack vectors and technical profiles of targets such as: logical and administrative security controls, infil/exfil points, etc.
 
-3. Delivery: 
-    * This step involves transmitting the weapon to the target. The intruder / attacker can employ different methods like USB drives, e-mail attachments and websites for this purpose.
+3. Delivery: The delivering of the weaponized payload, via email, website, USB, etc.
 
-4. Exploitation: 
-    * In this step, the malware starts the action. The program code of the malware is triggered to exploit the target’s vulnerability/vulnerabilities.
+4. Exploitation: Actively compromise adversary’s applications and servers while averting the physical, logical, and administrative controls. Exploiting employees through social engineering. This stage prepares for escalation during the installation phase.
 
-5. Installation: 
-    * In this step, the malware installs an access point for the intruder / attacker. This access point is also known as the backdoor.
+5. Installation: a.k.a, the persistence preparation phase. Activities include, malicious software installation, backdoor implants, persistence mechanism (cron jobs), AutoRun keys, services, log file deletion, and timestamp manipulation.
 
-6. Command and Control: 
-    * The malware gives the intruder / attacker access in the network/system.
+6. Command & Control (C2): A command channel, most typically Internet Relay Chat (IRC), used for remote control of a victim’s computer.
 
-7. Actions on Objective: 
-    * Once the attacker / intruder gains persistent access, they finally take action to fullfil their purpose, such as encryption for ransom, data exfiltration or even data destruction.
+7. Actions on Objectives: After achieving the equivalent of “Hands on Keyboard” access to a victim’s systems, adversaries are now able to act their objectives.
 
-        ![picture](IMAGE/kill.PNG)
+    ![picture](IMAGE/kill.PNG)
 
 ### Snort Rule Analysis
 
@@ -392,7 +385,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 5. How could you prevent an attacker from booting a stolen laptop using an external hard drive?
 
-    Answer: ?????????????????????
+    Answer: Two potential ways to prevent an attacker booting a stolen laptop using an external hard drive would be to encrypt the hard drive and dissable ports/ability to access the hard drive externaly through USB or other methods
 
 
 #### Firewall Architectures and Methodologies
