@@ -398,25 +398,37 @@ Now, we will work on another lab. Before you start, complete the following revie
 
   Answer: Circuit-Level Gateways 
 
+  ![picture](IMAGE/1.PNG)
+
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
-  Answer: Stateless Firewalls
+  Answer: Stateful Firewalls 
+
+  ![picture](IMAGE/2.PNG) 
+
+  NOTE: could also be Stateless Firewall however Stateful Firewalls do the same as a Stateless Firewall but are capable of doing more
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
   Answer: Proxy Server  
 
+  ![picture](IMAGE/3.PNG)
+
 
 4. Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type- all without opening the packet to inspect its contents?
 
-  Answer: Packet Filtering Firewall
+  Answer: Next-Generation Firewall 
+
+  ![picture](IMAGE/4.PNG)
 
 
 5. Which type of firewall filters based solely on source and destination MAC address?
 
-  Answer: MAC Layer Firewall
+  Answer: MAC Layer Firewall (Software or Host Firewall)
 
-### Bonus Lab: "Green Eggs & SPAM"
+    * The MAC (Media Access Control) layer firewall vets incoming traffic through a rather unique process. By operating in the media access control layer of the OSI model , this firewall identifies the MAC addresses of the host computer that’s attempting to access it.
+
+ ### Bonus Lab: "Green Eggs & SPAM"
 In this activity, you will target spam, uncover its whereabouts, and attempt to discover the intent of the attacker.
  
 - You will assume the role of a Jr. Security administrator working for the Department of Technology for the State of California.
