@@ -327,7 +327,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
    Answer 1: IDS must connect to a port that can see all traffic between the LAN and the Internet
 
-   Answer 2: IDS must be connected to a mirroe switch port or a hub located between the Internet connection and the LAN
+   Answer 2: IDS must be connected to a switch port or a hub located between the Internet connection and the LAN and mirrored to a sensor
 
 2. Describe how an IPS connects to a network.
 
