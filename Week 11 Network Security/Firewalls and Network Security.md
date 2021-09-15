@@ -373,7 +373,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
         Answer: Perimiter
 
-  ![picture](IMAGE/Defense_in_Depth.jpg) 
+  ![picture](IMAGE/D.PNG)  
 
 2. Name one method of protecting data-at-rest from being readable on hard drive.
 
