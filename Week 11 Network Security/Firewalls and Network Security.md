@@ -396,7 +396,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 1. Which type of firewall verifies the three-way TCP handshake? TCP handshake checks are designed to ensure that session packets are from legitimate sources.
 
-  Answer: Circuit-Level Gateways 
+  Answer: Circuit-Level Gateway Firwalls
 
   ![picture](IMAGE/1.PNG)
 
@@ -410,7 +410,7 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
-  Answer: Proxy Server  
+  Answer: Proxy Server Firewall
 
   ![picture](IMAGE/3.PNG)
 
