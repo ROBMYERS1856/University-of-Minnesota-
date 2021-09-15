@@ -351,27 +351,29 @@ Now, we will work on another lab. Before you start, complete the following revie
 
     2. A zero-day goes undetected by antivirus software.
 
-        Answer: Technical
+        Answer: Application
 
     3. A criminal successfully gains access to HR’s database.
 
-        Answer: Technical
+        Answer: Data
 
     4. A criminal hacker exploits a vulnerability within an operating system.
 
-        Answer: Technical
+        Answer: Host
 
     5. A hacktivist organization successfully performs a DDoS attack, taking down a government website.
 
-        Answer: Technical
+        Answer: Internal Network 
 
     6. Data is classified at the wrong classification level.
 
-        Answer: Administrative
+        Answer: Policies, Procedures, and Awareness
 
     7. A state sponsored hacker group successfully firewalked an organization to produce a list of active services on an email server.
 
-        Answer: Technical
+        Answer: Perimiter
+
+  ![picture](IMAGE/Defense_in_Depth.jpg) 
 
 2. Name one method of protecting data-at-rest from being readable on hard drive.
 
@@ -387,32 +389,32 @@ Now, we will work on another lab. Before you start, complete the following revie
 
 5. How could you prevent an attacker from booting a stolen laptop using an external hard drive?
 
-    Answer: Two potential ways to prevent an attacker booting a stolen laptop using an external hard drive would be to encrypt the hard drive and dissable ports/ability to access the hard drive externaly through USB or other methods
+    Answer: Two potential ways to prevent an attacker booting a stolen laptop using an external hard drive would be to encrypt the hard drive and dissable ports/ability to access the hard drive externaly through USB or other methods. One example may also be to have a start up password.
 
 
 #### Firewall Architectures and Methodologies
 
 1. Which type of firewall verifies the three-way TCP handshake? TCP handshake checks are designed to ensure that session packets are from legitimate sources.
 
-  Answer: Firewalls that perform Network Layer Inspections
+  Answer: Circuit-Level Gateways 
 
 2. Which type of firewall considers the connection as a whole? Meaning, instead of looking at only individual packets, these firewalls look at whole streams of packets at one time.
 
-  Answer: Firewalls that allow UDP
+  Answer: Stateless Firewalls
 
 3. Which type of firewall intercepts all traffic prior to being forwarded to its final destination. In a sense, these firewalls act on behalf of the recipient by ensuring the traffic is safe prior to forwarding it?
 
-  Answer: Intrusion Prevention Systems (IPS) 
+  Answer: Proxy Server  
 
 
 4. Which type of firewall examines data within a packet as it progresses through a network interface by examining source and destination IP address, port number, and packet type- all without opening the packet to inspect its contents?
 
-  Answer: Intrusion Detection Systems (IDS)
+  Answer: Packet Filtering Firewall
 
 
 5. Which type of firewall filters based solely on source and destination MAC address?
 
-  Answer: Access List
+  Answer: MAC Layer Firewall
 
 ### Bonus Lab: "Green Eggs & SPAM"
 In this activity, you will target spam, uncover its whereabouts, and attempt to discover the intent of the attacker.
@@ -438,7 +440,7 @@ Answer the following:
 1. What was the indicator of an attack?
    - Hint: What do the details of the reveal? 
 
-    Answer:alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any
+    Answer: alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any
 
 2. What was the adversarial motivation (purpose of attack)?
 
