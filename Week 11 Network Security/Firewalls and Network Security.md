@@ -454,9 +454,15 @@ Answer the following:
 
     Answer: alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any
 
+    ![picture](IMAGE/9.PNG)
+
 2. What was the adversarial motivation (purpose of attack)?
 
-    Answer: The motivation/purpose of the attack was to spam Italian campaigns using JS/Nemucod downloader
+    Answer: The motivation/purpose of the attack was to spam Italian campaigns using JS/Nemucod downloader 
+
+    Also important for any company/analysis professional is to understand the Motivation Parameter. 
+
+    ![picture](IMAGE/8.PNG)
 
 3. Describe observations and indicators that may be related to the perpetrators of the intrusion. Categorize your insights according to the appropriate stage of the cyber kill chain, as structured in the following table.
 
@@ -472,10 +478,16 @@ Answer the following:
   
 4. What are your recommended mitigation strategies?
 
-    Answer: Establish rules that will block any known Nemucod Malware, add any known Ip address, websites, spam, attachements to the drop zone.  
+    Answer: Establish rules that will block any known Nemucod Malware, add any known Ip address, websites, spam, attachements to the drop zone.
+
+    Also you will want to install a reputable anti-malware program 
+
+    Afterward, scan the entire system for compromised objects by using SpyHunter 5 or Malwarebytes. When the program detects all of the components, try repairing the damaged products by employing a program such as Reimage. 
 
 5. List your third-party references.
 
     * https://www.cisecurity.org/blog/malware-analysis-report-nemucod-ransomware/ 
 
     * https://www.2-spyware.com/remove-js-nemucod.html
+
+    * https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/understanding-cyberthreat-motivations-to-improve-defense-paper.pdf
