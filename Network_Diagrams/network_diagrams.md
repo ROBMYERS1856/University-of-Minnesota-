@@ -18,4 +18,4 @@ Design the office with the following computer and network devicces
 
 (1) Wireless access point with (1) firewall to protect 
 
-![picture](IMMAGE/paractice_map.png)
+![picture](IMAGE/paractice_map.png)
