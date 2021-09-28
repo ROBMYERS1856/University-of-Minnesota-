@@ -25,9 +25,13 @@ The files in this repository were used to configure the network depicted below.
   - **Hosts File**
     * [Hosts File](Ansible/hosts.yml) 
       * /etc/ansible
+  
+  - **Pentest**
+    * [Pentest](Ansible/pentest.yml)
+      * /etc/ansible
 
 ![picture](IMAGE/1.PNG)
-  
+
   - **ELK-Configuration** 
 
     * [ELK-Playbook](Ansible/install-elk.yml)
