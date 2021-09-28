@@ -8,6 +8,8 @@ You’ll learn from skilled instructors and gain real-world experience by collab
 
     - Packet Analysis
     - Wireshark
+    - Security Onion
+    - SNORT 
 
 ## Systems:
 
@@ -27,7 +29,6 @@ You’ll learn from skilled instructors and gain real-world experience by collab
     - Metasploit
     - Hashcat
     - Burp Suite
-    - WireShark
     - Web Vulnerabilities and Security
 
 ## Cybersecurity Careers:
@@ -41,11 +42,6 @@ You’ll learn from skilled instructors and gain real-world experience by collab
 
     - Bash Scripting
     - PowerShell Scripting
-    
-## Operating Systems:
-
-    - Windows Operating System
-    - Linux Operating Systems
     
 ## What you can expect upon graduating:
 
