@@ -27,6 +27,7 @@ You’ll learn from skilled instructors and gain real-world experience by collab
     - Metasploit
     - Hashcat
     - Burp Suite
+    - WireShark
     - Web Vulnerabilities and Security
 
 ## Cybersecurity Careers:
@@ -40,7 +41,12 @@ You’ll learn from skilled instructors and gain real-world experience by collab
 
     - Bash Scripting
     - PowerShell Scripting
+    
+## Operating Systems:
 
+    - Windows Operating System
+    - Linux Operating Systems
+    
 ## What you can expect upon graduating:
 
 By the time you complete the program, you will know how to:
