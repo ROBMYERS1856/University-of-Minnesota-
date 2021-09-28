@@ -13,7 +13,7 @@ The files in this repository were used to configure the network depicted below.
 
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **yaml** file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above or select portions of the **yaml** file's may be used to install only certain pieces of it. Below are links to the files: 
 
   - **ANSIBLE** 
 
@@ -47,12 +47,33 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly **efficient and flexible**, in addition to restricting **traffic** to the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- What aspect of security do load balancers protect? 
+  * Load balaners help protect the network against hackers and attacks like DDoS attacks. 
+  * They allow for daily rule updates and help protect against unauthorized access.   
+  * They also also reduce the load inorder to achive optimal traffic speed.
+  * Load balencers are also helpfull at accomodating failed or under performing servers/componenents to maintain user service.
+  
+<brk>
+
+- What is the advantage of a jump box?
+
+  * A Jump Box Provisioner is also important as it prevents Azure VMs from being exposed via a public IP Address. This allows us to do monitoring and logging on a single box. 
+  * The main benefits of JumpBox are its extensive software library, automated backups, and customizations.
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the  **network** and system **logs**.
+
+
+- What does Filebeat watch for?
+
+  * Filebeat is a lightweight shipper for forwarding and centralizing log data.
+  * Filebeat watches and monitors the log files, user specific locations, collects log events and forwards them either to Elasticsearch or Logstash for indexing. 
+
+- What does Metricbeat record?
+
+  * Metricbeat is a lightweight shipper that records and periodically collects metrics from the operating system.
+  * It also takes metrics and statistics from services running on the server and takes the data collected and ships them to the output that users specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -60,27 +81,32 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| ELK VM   | ELK Stack |  10.0.0.4 | Linux            |
+| Robert-WEB-1    | DVWA Server| 10.0.0.5|Linux       |
+| Robert-WEB-2    | DVWA Server| 10.0.0.6| Linux      |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the **Jump-Box-Provisioner** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- My Home/Personal IP Address listed in INCOMING RULES/NETWORKING SECURITY GROUPS
+- also can only be accesed using SSH
+ 
+Machines within the network can only be accessed by **Jump-Box-Provisioner 10.0.0.4**.
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+- Which machine did you allow to access your ELK VM AND what was its IP Address? 
+    * Jump-Box VM: 10.0.0.4 via port 22 (SSH)
+    * MyHOME/Personal IP Address: Port 5601 (TCP)
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes              |     MY Home/Personal IP |
+| ELK VM   | Yes              |     MY Home/Personal IP |
+| WEB-1    | No               |     10.0.0.6            |
+| WEB-2    | No               |     10.0.0.7            |  
 
 ### Elk Configuration
 
