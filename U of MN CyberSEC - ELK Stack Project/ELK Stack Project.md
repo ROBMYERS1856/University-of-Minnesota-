@@ -14,6 +14,10 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - _TODO: Enter the playbook file._
 
+[Ansible Hosts 1234](Ansible/hosts.md)
+
+
+
   [Ansible Host](https://umn.bootcampcontent.com/University-of-Minnesota-Boot-Camp/uofm-virt-cyber-pt-06-2021-u-lol/-/blob/master/13-Elk-Stack-Project/Activities/Stu_Day_1/Unsolved/Resources/hosts.yml)
   
 
