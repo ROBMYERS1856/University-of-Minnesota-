@@ -16,7 +16,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **yaml** file may be used to install only certain pieces of it, such as Filebeat.
 
-  - **ANSIBLE Config and Hosts** 
+  - **ANSIBLE** 
 
     * [Ansible Configuration](Ansible/ansible.yml) 
     * [Hosts](Ansible/hosts.yml) 
@@ -27,13 +27,13 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - **Filebeat**
 
-    * [Filebeat Configuration](FileBeat/filebeat-config)
-    * [Filebeat Playbook](FileBeat/filebeat-playbook)
+    * [Filebeat Configuration](FileBeat/filebeat-config.yml)
+    * [Filebeat Playbook](FileBeat/filebeat-playbook.yml)
 
   - **MetricBeat**
 
-    * [MetricBeat Configuration](MetricBeat/metricbeat-config)
-    * [MetricBeat Playbook](MetricBeat/metricbeat-playbook)
+    * [MetricBeat Configuration](MetricBeat/metricbeat-config.yml)
+    * [MetricBeat Playbook](MetricBeat/metricbeat-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
