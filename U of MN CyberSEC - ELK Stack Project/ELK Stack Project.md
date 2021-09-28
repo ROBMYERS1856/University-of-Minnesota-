@@ -15,14 +15,15 @@ The files in this repository were used to configure the network depicted below.
 
 ### These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above or select portions of the **yaml** file's may be used to install only certain pieces of it. Below are links to the files: 
 
-  - **ANSIBLE** 
+  - **Ansible** 
 
     * [Ansible Configuration File](Ansible/ansible.yml)
       *  /ETC/Ansible 
 
-![picture](IMAGE/1.png)
-
-    * [Hosts](Ansible/hosts.yml) 
+  ![picture](IMAGE/1.png)
+   
+  - **Hosts File**
+    * [Hosts File](Ansible/hosts.yml) 
 
   - **ELK-Configuration** 
 
