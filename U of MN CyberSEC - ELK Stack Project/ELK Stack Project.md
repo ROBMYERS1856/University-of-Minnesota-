@@ -1,6 +1,5 @@
-## Rob Myers -- ELK Stack Project
-
-October 6th, 2021 -- University of Minnesota - Cybersecurity Boot Camp
+## Rob Myers ELK Stack Project:
+ **October 6th, 2021 -- University of Minnesota - Cybersecurity Boot Camp**
 
 ## Automated ELK Stack Deployment
 
