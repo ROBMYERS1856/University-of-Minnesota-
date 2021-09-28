@@ -6,7 +6,7 @@ October 6th, 2021 -- University of Minnesota - Cybersecurity Boot Camp
 
 The files in this repository were used to configure the network depicted below.
 
-  ![picture](IMAGE/project2.PNG) 
+  ![picture](IMAGE/project1.png) 
 
 
 
