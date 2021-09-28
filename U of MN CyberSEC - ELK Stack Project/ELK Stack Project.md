@@ -18,26 +18,40 @@ The files in this repository were used to configure the network depicted below.
   - **Ansible** 
 
     * [Ansible.cfg File](Ansible/ansible.yml)
-      *  /ETC/Ansible 
+      *  /etc/ansible 
 
    ![picture](IMAGE/1.PNG) 
    
   - **Hosts File**
     * [Hosts File](Ansible/hosts.yml) 
+      * /etc/ansible
 
+![picture](IMAGE/1.PNG)
+  
   - **ELK-Configuration** 
 
     * [ELK-Playbook](Ansible/install-elk.yml)
+      * /etc/ansible/roles
+
+![picture](IMAGE/3.PNG)
+
 
   - **Filebeat**
 
     * [Filebeat Configuration](FileBeat/filebeat-config.yml)
     * [Filebeat Playbook](FileBeat/filebeat-playbook.yml)
+      * /etc/ansible/files
+
+ ![picture](IMAGE/2.PNG) 
 
   - **MetricBeat**
 
     * [MetricBeat Configuration](MetricBeat/metricbeat-config.yml)
     * [MetricBeat Playbook](MetricBeat/metricbeat-playbook.yml)
+      * /etc/ansible/files
+
+![picture](IMAGE/2.PNG)
+  
 
 ## This document/project contains the following details:
 - Description of the Topologu
