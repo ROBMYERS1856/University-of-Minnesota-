@@ -34,7 +34,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
     * [MetricBeat Configuration](MetricBeat/metricbeat-config.yml)
     * [MetricBeat Playbook](MetricBeat/metricbeat-playbook.yml)
 
-This document contains the following details:
+## This document/project contains the following details:
 - Description of the Topologu
 - Access Policies
 - ELK Configuration
@@ -105,8 +105,8 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 | Jump Box | Yes              |     MY Home/Personal IP |
 | ELK VM   | Yes              |     MY Home/Personal IP |
-| WEB-1    | No               |     10.0.0.6            |
-| WEB-2    | No               |     10.0.0.7            |  
+| Robert-WEB-1    | No               |     10.0.0.6            |
+| Robert-WEB-2    | No               |     10.0.0.7            |  
 
 ### Elk Configuration
 
