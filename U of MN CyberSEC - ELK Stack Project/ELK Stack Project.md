@@ -25,6 +25,8 @@ The files in this repository were used to configure the network depicted below.
   - **Hosts File**
     * [Hosts File](Ansible/hosts.yml) 
       * /etc/ansible
+
+  ![picture](IMAGE/1.PNG) 
   
   - **Pentest**
     * [Pentest](Ansible/pentest.yml)
