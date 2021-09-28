@@ -17,7 +17,7 @@ The files in this repository were used to configure the network depicted below.
 
   - **Ansible** 
 
-    * [Ansible Configuration File](Ansible/ansible.yml)
+    * [Ansible.cfg File](Ansible/ansible.yml)
       *  /ETC/Ansible 
 
    ![picture](IMAGE/1.PNG) 
