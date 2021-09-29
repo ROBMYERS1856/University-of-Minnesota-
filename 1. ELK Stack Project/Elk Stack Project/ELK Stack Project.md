@@ -119,9 +119,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+**The machines on the internal network are not exposed to the public Internet.** 
 
-Only the **Jump-Box-Provisioner** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the **Jump-Box-Provisioner** machine can accept connections from the Internet. **Access to this machine is only allowed from the following IP addresses:**
+
 - **My Home/Personal IP Address listed in INCOMING RULES/NETWORKING SECURITY GROUPS**
 - **also can only be accesed using SSH**
  
@@ -145,20 +146,19 @@ Machines within the network can only be accessed by **Jump-Box-Provisioner 10.0.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because.
 
-- What is the main advantage of automating configuration with Ansible?
+- **What is the main advantage of automating configuration with Ansible?**
+
   * One main advantage is Ansible is an open-source tool.
   * Ansible uses a simple syntax written in YAML, called playbooks.
   * Ansible lets you define your hosts (remote machines) and allows you to control multiple servers via SSH.
   * Automation advantage vs manual configuration is time. That is why Ansible is such a usefull tool.
   * Automation with Ansible also reduces the chance of errors and improves consistantcy
  
-The playbook implements the following tasks:
+**The playbook implements the following tasks:**
 
-- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
-
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 
   [ELK-Playbook](IMAGE/install-elk.yml) 
-
 
 **1. Name the playbook: Configure elk with Docker**
 
