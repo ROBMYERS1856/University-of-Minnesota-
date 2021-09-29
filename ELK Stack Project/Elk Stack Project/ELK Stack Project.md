@@ -213,9 +213,13 @@ These Beats allow us to collect the following information from each machine:
 
 - **Filebeat** will be used to collect log files from very specific files such as Apache, Microsft Azure tools and web servers, MySQL databases.
 
+  [Filebeat-Status](IMAGE/Filebeat-Status.PNG)
+
 - **Metericbeat** will be used to monitor VM stats, per CPU core stats, per filesystem stats, memory stats and network stats.
 
-  - Examples of Filebeat and Metricbeat logs:
+  [Metricbeat-Status](IMAGE/Metricbeat-Status.PNG)
+
+- Examples of Filebeat and Metricbeat logs:
 
     [Filebeat-Chart](IMAGE/Filebeat-chart.PNG)
 
