@@ -35,26 +35,26 @@ The files in this repository were used to configure the network depicted below.
 
   - **Ansible File** 
 
-    * [Ansible.cfg File](Ansible/ansible.yml)
+    * [Ansible.cfg File](IMAGE/ansible.yml)
       *  /etc/ansible 
 
 ![picture](IMAGE/1.PNG) 
    
   - **Hosts File**
-    * [Hosts File](Ansible/hosts.yml) 
+    * [Hosts File](IMAGE/hosts.yml) 
       * /etc/ansible
 
 ![picture](IMAGE/1.PNG) 
   
   - **DVWA** 
-    * [DVWA-Pentest](Ansible/pentest.yml)
+    * [DVWA-Pentest](IMAGE/pentest.yml)
       * /etc/ansible
 
 ![picture](IMAGE/1.PNG)
 
   - **ELK-Configuration** 
 
-    * [ELK-Playbook](Ansible/install-elk.yml)
+    * [ELK-Playbook](IMAGE/install-elk.yml)
       * /etc/ansible/roles
 
 ![picture](IMAGE/3.PNG)
@@ -62,16 +62,16 @@ The files in this repository were used to configure the network depicted below.
 
   - **Filebeat**
 
-    * [Filebeat Configuration](FileBeat/filebeat-config.yml)
-    * [Filebeat Playbook](FileBeat/filebeat-playbook.yml)
+    * [Filebeat Configuration](IMAGE/filebeat-config.yml)
+    * [Filebeat Playbook](IMAGE/filebeat-playbook.yml)
       * /etc/ansible/files
 
  ![picture](IMAGE/2.PNG) 
 
   - **MetricBeat**
 
-    * [MetricBeat Configuration](MetricBeat/metricbeat-config.yml)
-    * [MetricBeat Playbook](MetricBeat/metricbeat-playbook.yml)
+    * [MetricBeat Configuration](IMAGE/metricbeat-config.yml)
+    * [MetricBeat Playbook](IMAGE/metricbeat-playbook.yml)
       * /etc/ansible/files
 
 ![picture](IMAGE/2.PNG)
@@ -157,7 +157,7 @@ The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 
 
-The [ELK-Playbook](Ansible/install-elk.yml) 
+The [ELK-Playbook](IMAGE/install-elk.yml) 
 
 
 **Name the playbook: Configure elk with Docker**
