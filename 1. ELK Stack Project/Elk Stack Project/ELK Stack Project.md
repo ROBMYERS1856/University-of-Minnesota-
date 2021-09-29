@@ -122,16 +122,17 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the **Jump-Box-Provisioner** machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- My Home/Personal IP Address listed in INCOMING RULES/NETWORKING SECURITY GROUPS
-- also can only be accesed using SSH
+- **My Home/Personal IP Address listed in INCOMING RULES/NETWORKING SECURITY GROUPS**
+- **also can only be accesed using SSH**
  
 Machines within the network can only be accessed by **Jump-Box-Provisioner 10.0.0.4**.
 
-- Which machine did you allow to access your ELK VM AND what was its IP Address? 
+- **Which machine did you allow to access your ELK VM AND what was its IP Address?**
+
     * Jump-Box VM: 10.0.0.4 via port 22 (SSH)
     * MyHOME/Personal IP Address: Port 5601 (TCP)
 
-A summary of the access policies in place can be found in the table below.
+**A summary of the access policies in place can be found in the table below.**
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
