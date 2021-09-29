@@ -1,6 +1,24 @@
 ## Rob Myers ELK Stack Project:
  **October 6th, 2021 -- University of Minnesota - Cybersecurity Boot Camp**
 
+ ## This document/project contains the following details:
+- Description of the Topology
+
+  [Azure-ELK-Network](IMAGE/ELK_NET.PNG)
+
+  [Azure-Jump-Box](IMAGE/jumpstart_network.PNG)
+
+  [Azure-VM-Network](IMAGE/Robert_virtual_network.PNG)
+
+  [Rob Myers Network Diagram](IMAGE/project1.png)
+
+- Access Policies
+- ELK Configuration
+- Beats in Use
+- Machines Being Monitored
+- How to Use the Ansible Build
+
+
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
@@ -58,18 +76,6 @@ The files in this repository were used to configure the network depicted below.
 ![picture](IMAGE/2.PNG)
   
 
-## This document/project contains the following details:
-- Description of the Topology
-
-![picture](IMAGE/ELK_NET.PNG)
-![picture](IMAGE/jumpstart_network.PNG)
-![picture](IMAGE/Robert_virtual_network.PNG)
-
-- Access Policies
-- ELK Configuration
-- Beats in Use
-- Machines Being Monitored
-- How to Use the Ansible Build
 
 
 ### Description of the Topology
