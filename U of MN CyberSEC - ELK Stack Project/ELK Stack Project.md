@@ -60,11 +60,16 @@ The files in this repository were used to configure the network depicted below.
   
 
 ## This document/project contains the following details:
-- Description of the Topologu
+- Description of the Topology
+
+![picture](IMAGE/ELK_NET.PNG)
+![picture](IMAGE/jumpstart_network.PNG)
+![picture](IMAGE/Robert_virtual_network.PNG)
+
 - Access Policies
 - ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
+- Beats in Use
+- Machines Being Monitored
 - How to Use the Ansible Build
 
 
