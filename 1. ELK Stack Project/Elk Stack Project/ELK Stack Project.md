@@ -230,7 +230,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 **SSH into the control node and follow the steps below:**
 
-- ssh <username>@< IP Address >
+- ssh < username >@< IP Address >
 
 - sudo docker start < docker container name > 
 - sudo docker attach < docker container name > 
