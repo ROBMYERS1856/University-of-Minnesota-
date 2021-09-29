@@ -179,13 +179,16 @@ The [ELK-Playbook](IMAGE/install-elk.yml)
 
 ## The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-ELK Server:
+**ELK Server:**
+
 ![picture](IMAGE/ws3.PNG)
 
-Robert-Web-1
+**Robert-Web-1**
+
 ![picture](IMAGE/w1.PNG)
 
-Robert-Web-2
+**Robert-Web-2**
+
 ![picture](IMAGE/w2.PNG)
 
 ### Target Machines & Beats
