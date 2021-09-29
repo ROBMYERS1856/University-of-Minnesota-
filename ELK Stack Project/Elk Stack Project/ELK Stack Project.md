@@ -232,8 +232,8 @@ SSH into the control node and follow the steps below:
 
 - ssh <username>@< IP Address >
 
-- sudo docker start < container name > 
-- sudo docker attach < container name > 
+- sudo docker start < docker container name > 
+- sudo docker attach < docker container name > 
 
 ![picture](IMAGE/8.PNG)
 
