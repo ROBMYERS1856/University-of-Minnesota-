@@ -201,15 +201,15 @@ The playbook implements the following tasks:
 ![picture](IMAGE/w2.PNG)
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
+**This ELK server is configured to monitor the following machines:**
 - Robert-Web-1: 10.0.0.5
 - Robert-Web-1: 10.0.0.6
 
-We have installed the following Beats on these machines:
+**We have installed the following Beats on these machines:**
 - Filebeat
 - MetribBeat
 
-These Beats allow us to collect the following information from each machine:
+**These Beats allow us to collect the following information from each machine:**
 
 - **Filebeat** will be used to collect log files from very specific files such as Apache, Microsft Azure tools and web servers, MySQL databases.
 
@@ -228,7 +228,7 @@ These Beats allow us to collect the following information from each machine:
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-SSH into the control node and follow the steps below:
+**SSH into the control node and follow the steps below:**
 
 - ssh <username>@< IP Address >
 
