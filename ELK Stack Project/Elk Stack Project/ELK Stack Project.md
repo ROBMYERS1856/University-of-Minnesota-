@@ -230,9 +230,10 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- ssh RobMyers@20.106.137.250
-- sudo docker start bold_curran
-- sudo docker attach bold curran
+- ssh <username>@< IP Address >
+
+- sudo docker start < container name > 
+- sudo docker attach < container name > 
 
 ![picture](IMAGE/8.PNG)
 
