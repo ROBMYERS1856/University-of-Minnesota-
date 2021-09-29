@@ -29,7 +29,7 @@ The files in this repository were used to configure the network depicted below.
   ![picture](IMAGE/1.PNG) 
   
   - **DVWA** 
-    * [Pentest](Ansible/pentest.yml)
+    * [DVWA-Pentest](Ansible/pentest.yml)
       * /etc/ansible
 
 ![picture](IMAGE/1.PNG)
@@ -135,13 +135,41 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because.
 
+- What is the main advantage of automating configuration with Ansible?
+  * One main advantage is Ansible is an open-source tool.
+  * Ansible uses a simple syntax written in YAML, called playbooks.
+  * Ansible lets you define your hosts (remote machines) and allows you to control them via SSH.
+  * Automation advantage vs manual configuration is time. That is why Ansible is such a usefull tool.
+  * Automation with Ansible also reduces the chance of errors and improves consistantcy
+ 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+
+- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
+
+## Name the Playbook:
+    - name: Configure Elk VM with Docker
+      hosts: elk
+      remote_user: sysadmin
+      become: true
+      tasks:
+
+## Install Docker:
+      - name: Install docker.io 
+      apt: 
+        update_cache: yes 
+        force_apt_get: yes 
+        name: docker.io 
+        state: present 
+
+
+
+
+
+
+
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
