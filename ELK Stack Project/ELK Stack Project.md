@@ -75,9 +75,6 @@ The files in this repository were used to configure the network depicted below.
 
 ![picture](IMAGE/2.PNG)
   
-
-
-
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -192,13 +189,24 @@ Robert-Web-2
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Robert-Web-1: 10.0.0.5
+- Robert-Web-1: 10.0.0.6
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeat
+- MetribBeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+- **Filebeat** will be used to collect log files from very specific files such as Apache, Microsft Azure tools and web servers, MySQL databases.
+
+- **Metericbeat** will be used to monitor VM stats, per CPU core stats, per filesystem stats, memory stats and network stats.
+
+  - Examples of Filebeat and Metricbeat logs:
+
+    [Filebeat-Chart](IMAGE/Filebeat-chart.PNG)
+
+    [Metricbeat-Chart](IMAGE/Metricbeat-chart.PNG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
