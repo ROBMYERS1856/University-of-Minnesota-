@@ -28,7 +28,7 @@ The files in this repository were used to configure the network depicted below.
 
   ![picture](IMAGE/1.PNG) 
   
-  - **Pentest**
+  - **DVWA** 
     * [Pentest](Ansible/pentest.yml)
       * /etc/ansible
 
