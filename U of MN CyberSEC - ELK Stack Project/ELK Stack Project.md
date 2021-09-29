@@ -140,7 +140,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible?
   * One main advantage is Ansible is an open-source tool.
   * Ansible uses a simple syntax written in YAML, called playbooks.
-  * Ansible lets you define your hosts (remote machines) and allows you to control them via SSH.
+  * Ansible lets you define your hosts (remote machines) and allows you to control multiple servers via SSH.
   * Automation advantage vs manual configuration is time. That is why Ansible is such a usefull tool.
   * Automation with Ansible also reduces the chance of errors and improves consistantcy
  
@@ -148,32 +148,37 @@ The playbook implements the following tasks:
 
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 
-## Name the Playbook:
-    - name: Configure Elk VM with Docker
-      hosts: elk
-      remote_user: sysadmin
-      become: true
-      tasks:
 
-## Install Docker:
-      - name: Install docker.io 
-      apt: 
-        update_cache: yes 
-        force_apt_get: yes 
-        name: docker.io 
-        state: present 
+The [ELK-Playbook](Ansible/install-elk.yml) 
 
 
+**Name the playbook: Configure elk with Docker**
+  - establish host, remote user, and root.
+**Use apt and pip modules: Install Applications**
+  - Docker.io, Python3-pip, Docker module.
+**Use command module: Increase virtual memory**
+  - command: sysctl -w vm.max_map_count=262144.
+**Use sysctl module: Use more memory**
+  - assigns more memory.
+**Use docker-container module: download and launch a docker elk container**
+  - down loads the elk container and assigns
+ ports that ELK can run on:
+     - published_ports:
+          - 5601:5601
+          - 9200:9200
+          - 5044:5044
 
 
+## The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
+ELK Server:
+![picture](IMAGE/ws3.PNG)
 
+Robert-Web-1
+![picture](IMAGE/w1.PNG)
 
-
-
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+Robert-Web-2
+![picture](IMAGE/w2.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
