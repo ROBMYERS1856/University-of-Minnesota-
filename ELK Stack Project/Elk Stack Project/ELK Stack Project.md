@@ -249,14 +249,19 @@ SSH into the control node and follow the steps below:
 
   ![picture](IMAGE/7.PNG)
 
-- Run the playbook: **ansible-playbook ELK-Server-Playbook.yml**, and navigate to **http://[your_ELK_Machine's_Public_IP]:5601/app/kibanato** check that the installation worked as expected.
+To run the playbook use command: **ansible-playbook ELK-Server-Playbook.yml**
 
-Picture of: **ansible-playbook ELK-Server-Playbook.yml**
-![picture](IMAGE/w.PNG)
+To check that the installation worked: **http://[your_ELK_Machine's_Public_IP]:5601/app/kibanato** 
 
-Picture of: **http://[your_ELK_Machine's_Public_IP]:5601/app/kibanato**
-![picture](IMAGE/e.PNG)
+  * **ansible-playbook ELK-Server-Playbook.yml**
+
+      [Run Play Book](IMAGE/w.PNG)
+
+  * **http://[your_ELK_Machine's_Public_IP]:5601/app/kibanato**
+
+      [Check Instalation](IMAGE/e.PNG)
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-![picture](IMAGE/exc.PNG)
+[Playbook and download commands](IMAGE/exc.PNG) 
+
