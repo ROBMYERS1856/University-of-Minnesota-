@@ -161,14 +161,23 @@ The [ELK-Playbook](IMAGE/install-elk.yml)
 
 
 **Name the playbook: Configure elk with Docker**
+
   - establish host, remote user, and root.
+
 **Use apt and pip modules: Install Applications**
+
   - Docker.io, Python3-pip, Docker module.
+
 **Use command module: Increase virtual memory**
+
   - command: sysctl -w vm.max_map_count=262144.
+
 **Use sysctl module: Use more memory**
+
   - assigns more memory.
+
 **Use docker-container module: download and launch a docker elk container**
+
   - down loads the elk container and assigns
  ports that ELK can run on:
      - published_ports:
