@@ -257,6 +257,6 @@ Picture of: **ansible-playbook ELK-Server-Playbook.yml**
 Picture of: **http://[your_ELK_Machine's_Public_IP]:5601/app/kibanato**
 ![picture](IMAGE/e.PNG)
 
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+![picture](IMAGE/exc.PNG)
