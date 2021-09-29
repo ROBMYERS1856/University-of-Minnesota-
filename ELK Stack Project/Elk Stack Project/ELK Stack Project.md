@@ -221,9 +221,9 @@ These Beats allow us to collect the following information from each machine:
 
 - Examples of Filebeat and Metricbeat logs:
 
-    [Filebeat-Chart](IMAGE/Filebeat-chart.PNG)
+    [Filebeat-Log](IMAGE/Filebeat-chart.PNG)
 
-    [Metricbeat-Chart](IMAGE/Metricbeat-chart.PNG)
+    [Metricbeat-Log](IMAGE/Metricbeat-chart.PNG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -250,6 +250,9 @@ SSH into the control node and follow the steps below:
   ![picture](IMAGE/7.PNG)
 
 - Run the playbook, and navigate to **http://[your_ELK_Machine's_Public_IP]:5601/app/kibanato** check that the installation worked as expected.
+
+![picture](IMAGE/e.PNG)
+
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
