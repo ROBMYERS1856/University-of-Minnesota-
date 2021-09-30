@@ -266,3 +266,5 @@ As a **Bonus**, provide the specific commands the user will need to run to downl
 
 [Playbook and download commands](IMAGE/exc.PNG) 
 
+[Cheat-Sheet](IMAGE/cheat.md) 
+
