@@ -10,6 +10,7 @@ You’ll learn from skilled instructors and gain real-world experience by collab
     - Wireshark
     - Security Onion
     - SNORT 
+    - Azure
 
 ## Systems:
 
