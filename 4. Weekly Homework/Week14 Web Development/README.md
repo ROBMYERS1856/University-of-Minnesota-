@@ -12,8 +12,6 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ## Questions 
 
-Before you work through the questions below, please create a new file and record your answers there. This will be your homework deliverable.
-
 ### HTTP Requests and Responses
 
 Answer the following questions about the HTTP request and response process.
@@ -26,30 +24,38 @@ Answer the following questions about the HTTP request and response process.
 
 2. What are the different parts of an HTTP request? 
 
-    * There are three parts to an HTTP request
-        1. Request Line
-        2. Request Header
-        3. Request Body
+    1. Request Line
 
-    Request Line: consists of three parts:
+    2. Request Header
 
-        * The HTTP Method Used
-        * The Request URI 
-        * The HTTP Protocol Version
+    3. Request Body
 
-    Request Header:
+Request Line: consists of three parts:
 
-        * HTTP headers are the code that transfers data between a Web server and a client. HTTP headers are mainly intended for the communication between the server and client in both directions.
+    * The HTTP Method Used
 
-    Request Body: 
+    * The Request URI 
+    
+    * The HTTP Protocol Version
 
-        * HTTP Body Data is the data transmitted in an HTTP transaction message
-        * It is used to send additional information to the server like a specific messege or username and password for example. 
-        * It is typicaly an API in JSON format
+Request Header:
+
+     * HTTP headers are the code that transfers data between a Web server 
+     and a client. 
+     * HTTP headers are mainly intended for the communication
+     between the server and client in both directions.
+
+Request Body: 
+
+     * HTTP Body Data is the data transmitted in an HTTP transaction message
+     * It is used to send additional information to the server like a specific messege or username and password for example. 
+     * It is typicaly an API in JSON format
 
 3. Which part of an HTTP request is optional?
 
     * The Request Body is optional
+
+<brk>
 
 4. What are the three parts of an HTTP response?
 
@@ -60,7 +66,6 @@ Answer the following questions about the HTTP request and response process.
         * The status line will typically contain an HTTP Status code like 200 OK
         *  The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.
         * The Response Body will will display a messege regarding the request; forexample if the web server could not find the requested page.
-
 
 
 5. Which number class of status codes represents errors?
