@@ -38,7 +38,9 @@ Answer the following questions about the HTTP request and response process.
 
     Request Header:
 
-     * HTTP headers are the code that transfers data between a Web server and a client. HTTP headers are mainly intended for the communication between the server and client in both directions.
+     * HTTP headers are the code that transfers data between a Web server 
+     and a client. HTTP headers are mainly intended for the communication
+     between the server and client in both directions.
 
     Request Body: 
 
