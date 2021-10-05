@@ -24,11 +24,11 @@ Answer the following questions about the HTTP request and response process.
 
 2. What are the different parts of an HTTP request? 
 
-    * 1) Request Line
+    a) Request Line
 
-    2) Request Header
+    b) Request Header
 
-    3) Request Body
+    c) Request Body
 
     Request Line: consists of three parts:
 
