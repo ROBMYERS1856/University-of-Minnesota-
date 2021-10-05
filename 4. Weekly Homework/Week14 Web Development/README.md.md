@@ -30,7 +30,7 @@ Answer the following questions about the HTTP request and response process.
 
     3. Request Body
 
-    Request Line: consists of three parts:
+Request Line: consists of three parts:
 
     * The HTTP Method Used
 
@@ -38,13 +38,13 @@ Answer the following questions about the HTTP request and response process.
     
     * The HTTP Protocol Version
 
-    Request Header:
+Request Header:
 
      * HTTP headers are the code that transfers data between a Web server 
      and a client. HTTP headers are mainly intended for the communication
      between the server and client in both directions.
 
-    Request Body: 
+Request Body: 
 
      * HTTP Body Data is the data transmitted in an HTTP transaction message
      * It is used to send additional information to the server like a specific messege or username and password for example. 
