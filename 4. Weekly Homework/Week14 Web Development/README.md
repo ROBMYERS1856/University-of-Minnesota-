@@ -109,6 +109,8 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     * The Response Body  
 
+---
+
 ### Answer the following questions about `curl`:**
 
 10. What are the advantages of using `curl` over the browser?
@@ -147,6 +149,8 @@ In this homework, we will review the many of the concepts and tools covered in t
     <br>
 
     ![picture](IMAGE/1.PNG) 
+
+---
 
 ### Answer the following questions about sessions and cookies:
 
