@@ -61,14 +61,21 @@ Answer the following questions about the HTTP request and response process.
 
     a. Status Line
 
+    * **The status line** will typically contain an HTTP Status code like 200 OK
+
+    <br>
+
     b. Response Header
 
-    c. Response Body   
+     * **The Response Header** allows the server to pass additional information about the response which cannot be placed in the Status Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.
 
-        * The status line will typically contain an HTTP Status code like 200 OK
-        * The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.
-        * The Response Body will will display a messege regarding the request; forexample if the web server could not find the requested page.
+     <br>
 
+    c. Response Body 
+
+    * **The Response Body** will display a messege regarding the request. One example might be if the web server could not find the requested webpage.
+
+    <br>
 
 5. Which number class of status codes represents errors?
 
@@ -92,6 +99,10 @@ Answer the following questions about the HTTP request and response process.
 
     
 7. Which type of HTTP request method is used for sending data?
+
+    * The Post Method is used to send data to a server
+
+    * An example of the Post Method is when a user uploads a profile picture
 
 8. Which part of an HTTP request contains the data being sent to the server?
 
