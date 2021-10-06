@@ -22,7 +22,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 
 
-    **Request Line: consists of three parts:**
+    **Request Line:** consists of three parts:
 
     * The HTTP Method Used
 
