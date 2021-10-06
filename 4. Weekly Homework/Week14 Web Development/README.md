@@ -94,7 +94,7 @@ In this homework, we will review the many of the concepts and tools covered in t
     |You can easily use GET method to request required data | You can effortlessly transmit a large amount of data using post |
 
     
-7.**Which type of HTTP request method is used for sending data?**
+7. **Which type of HTTP request method is used for sending data?**
 
     * The Post Method is used to send data to a server
 
