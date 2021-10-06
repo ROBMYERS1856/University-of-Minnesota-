@@ -101,32 +101,54 @@ In this homework, we will review the many of the concepts and tools covered in t
     * An example of the Post Method is when a user uploads a profile picture
 
 8. **Which part of an HTTP request contains the data being sent to the server?**
-
     * The Request Body
+
+<brk>   
 
 9. **In which part of an HTTP response does the browser receive the web code to generate and style a web page?** 
 
-    * The Response Body 
+    * The Response Body  
 
-### Using curl
-
-**Answer the following questions about `curl`:**
+### Answer the following questions about `curl`:**
 
 10. What are the advantages of using `curl` over the browser?
 
+    * Curl is portable and compatible with all popular operating systems. 
+    * Curl can work without user interaction and can be used in automation scripts. 
+    * Curl can provide detailed logs of what was sent and received and is very good at debugging and logging errors.
+
+<brk>
+
 11. Which `curl` option is used to change the request method?
+
+    * to change the method into something else by using the **-X** or **--request** command-line options followed by the actual method name.
+
+    * For example: curl http://google.com -X DELETE 
 
 12. Which `curl` option is used to set request headers?
 
+    * To set request headers us command line opton **-H** or **--header**
+
+    * For Example: curl -H Host: test.example http://example.com/
+
 13. Which `curl` option is used to view the response header?
+
+    * To view curl response headers, we need to use curl **-I** or **--include**
+
+    * For Example: curl -I http://google.com
 
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
 
-## Sessions and Cookies
+    * a hacker will use a GET Request to discover what HTTP Requests the server will accept
+    * A hacker will also use the Options Method to determine what Options 
+    are allowed on the server
+    * Forexample: curl -X OPTIONS https://example.org -i
 
-Recall that HTTP servers need to be able to recognize clients from one another. They do this through sessions and cookies.
+    <br>
 
-Answer the following questions about sessions and cookies:
+    ![picture](IMAGE/1.PNG) 
+
+### Answer the following questions about sessions and cookies:
 
 15. Which response header sends a cookie to the client?
 
