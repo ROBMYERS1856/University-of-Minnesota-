@@ -10,19 +10,15 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ---
 
-## Questions 
+### Answer the following questions about the HTTP request and response process.
 
-### HTTP Requests and Responses
-
-Answer the following questions about the HTTP request and response process.
-
-1. What type of architecture does the HTTP request and response process occur in?
+1. **What type of architecture does the HTTP request and response process occur in?**
     * The Client-Server model (OSI Layer 7: the application layer) is an exchange of information, a cycle of requests and responses between clients and servers.
 
     * HTTP is based on the client-server architecture model and a stateless request/response protocol that operates by exchanging messages across a reliable TCP/IP connection.
 
 
-2. What are the different parts of an HTTP request? 
+2. **What are the different parts of an HTTP request?** 
 
     a) Request Line
 
@@ -30,7 +26,7 @@ Answer the following questions about the HTTP request and response process.
 
     c) Request Body
 
-    Request Line: consists of three parts:
+    **Request Line: consists of three parts:**
 
     * The HTTP Method Used
 
@@ -38,26 +34,26 @@ Answer the following questions about the HTTP request and response process.
     
     * The HTTP Protocol Version
 
-    Request Header:
+    **Request Header:**
 
      * HTTP headers are the code that transfers data between a Web server 
      and a client. 
      * HTTP headers are mainly intended for the communication
      between the server and client in both directions.
 
-    Request Body: 
+    **Request Body:** 
 
      * HTTP Body Data is the data transmitted in an HTTP transaction message
      * It is used to send additional information to the server like a specific messege or username and password for example. 
      * It is typicaly an API in JSON format
 
-3. Which part of an HTTP request is optional?
+3. **Which part of an HTTP request is optional?**
 
     * The Request Body is optional
 
 <brk>
 
-4. What are the three parts of an HTTP response?
+4. **What are the three parts of an HTTP response?**
 
     a. Status Line
 
@@ -77,19 +73,19 @@ Answer the following questions about the HTTP request and response process.
 
     <br>
 
-5. Which number class of status codes represents errors?
+5. **Which number class of status codes represents errors?**
 
     * The 400 family of status codes are client errors
 
     * The 500 family of status codes are server errors
 
-6. What are the two most common request methods that a security professional will encounter?
+6. **What are the two most common request methods that a security professional will encounter?**
  
-    * The two most common request methods are *Get* and *Post*
+    * The two most common request methods are **Get** and **Post**
 
-    * **Get method** is when data is being requested from a server
+    * **Get method** is when data is being requested from a server. Get requests should only retrieve data
 
-    *  **Post method** is when data is sent to a specified resource
+    *  **Post method** the POST method requests that a web server accepts the data enclosed in the body of the request message
 
     | Advantages of GET | Advantages of POST |
     |-------------------|--------------------| 
@@ -98,19 +94,23 @@ Answer the following questions about the HTTP request and response process.
     |You can easily use GET method to request required data | You can effortlessly transmit a large amount of data using post |
 
     
-7. Which type of HTTP request method is used for sending data?
+7.**Which type of HTTP request method is used for sending data?**
 
     * The Post Method is used to send data to a server
 
     * An example of the Post Method is when a user uploads a profile picture
 
-8. Which part of an HTTP request contains the data being sent to the server?
+8. **Which part of an HTTP request contains the data being sent to the server?**
 
-9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
+    * The Request Body
+
+9. **In which part of an HTTP response does the browser receive the web code to generate and style a web page?** 
+
+    * The Response Body 
 
 ### Using curl
 
-Answer the following questions about `curl`:
+**Answer the following questions about `curl`:**
 
 10. What are the advantages of using `curl` over the browser?
 
