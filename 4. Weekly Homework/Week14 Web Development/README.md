@@ -20,11 +20,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 2. **What are the different parts of an HTTP request?** 
 
-    a) Request Line
 
-    b) Request Header
-
-    c) Request Body
 
     **Request Line: consists of three parts:**
 
