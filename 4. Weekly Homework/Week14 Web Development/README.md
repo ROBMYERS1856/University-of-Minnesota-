@@ -80,9 +80,9 @@ Answer the following questions about the HTTP request and response process.
  
     * The two most common request methods are *Get* and *Post*
 
-    * *Get method* is when data is being requested from a server
+    * **Get method** is when data is being requested from a server
 
-    *  *Post method* is when data is sent to a specified resource
+    *  **Post method** is when data is sent to a specified resource
 
     | Advantages of GET | Advantages of POST |
     |-------------------|--------------------| 
