@@ -24,11 +24,13 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     **Request Line:** consists of three parts:
 
-    * The HTTP Method Used
+    * The HTTP Method **GET**
 
-    * The Request URI 
+    * The Request URI **hello.html**
     
-    * The HTTP Protocol Version
+    * The HTTP Protocol **HTTP/1.1**
+
+    * For Example: Request-Line = Method  Request-URI  HTTP-Version
 
     **Request Header:**
 
@@ -109,7 +111,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ### Answer the following questions about `curl`:**
 
-10. What are the advantages of using `curl` over the browser?
+10. **What are the advantages of using `curl` over the browser?**
 
     * Curl is portable and compatible with all popular operating systems. 
     * Curl can work without user interaction and can be used in automation scripts. 
@@ -117,27 +119,27 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 <brk>
 
-11. Which `curl` option is used to change the request method?
+11. **Which `curl` option is used to change the request method?**
 
     * to change the method into something else by using the **-X** or **--request** command-line options followed by the actual method name.
 
     * For example: curl http://google.com -X DELETE 
 
-12. Which `curl` option is used to set request headers?
+12. **Which `curl` option is used to set request headers?**
 
     * To set request headers us command line opton **-H** or **--header**
 
     * For Example: curl -H Host: test.example http://example.com/
 
-13. Which `curl` option is used to view the response header?
+13. **Which `curl` option is used to view the response header?**
 
     * To view curl response headers, we need to use curl **-I** or **--include**
 
     * For Example: curl -I http://google.com
 
-14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
+14. **Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?**
 
-    * a hacker will use a GET Request to discover what HTTP Requests the server will accept
+    * A hacker will use a GET Request to discover what HTTP Requests the server will accept
     * A hacker will also use the Options Method to determine what Options 
     are allowed on the server
     * Forexample: curl -X OPTIONS https://example.org -i
@@ -150,27 +152,29 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ### Answer the following questions about sessions and cookies:
 
-15. Which response header sends a cookie to the client?
+15. **Which response header sends a cookie to the client?**
 
     ```HTTP
     HTTP/1.1 200 OK
     Content-type: text/html
     Set-Cookie: cart=Bob
     ```
+    * The HTTP header **Set-Cookie is a response header** and used to send cookies from the server to the client. 
 
-16. Which request header will continue the client's session?
+16. **Which request header will continue the client's session?**
 
     ```HTTP
     GET /cart HTTP/1.1
     Host: www.example.org
     Cookie: cart=Bob
     ```
+    * The Cookie HTTP request header will continue the clients session. 
 
-### Example HTTP Requests and Responses
+---
+  
+## Example HTTP Requests and Responses
 
-Look through the following example HTTP request and response and answer the following questions:
-
-**HTTP Request**
+### Look through the following example HTTP request and response and answer the following questions:
 
 ```HTTP
 POST /login.php HTTP/1.1
@@ -185,13 +189,27 @@ User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/5
 username=Barbara&password=password
 ```
 
-17. What is the request method?
+17. **What is the request method?**
 
-18. Which header expresses the client's preference for an encrypted response?
+    * POST
 
-19. Does the request have a user session associated with it?
+<brk>
 
-20. What kind of data is being sent from this request body?
+18. **Which header expresses the client's preference for an encrypted response?**
+
+    * Upgrade-Insecure-Requests
+    * Upgrade Insecure Requests essentially means that any page resource being called from a non secure source (http) should be changed to a secure source (https). Even if the webpage itself is using “http” to make that request, using upgrade-insecure-requests will override that and the browser will call the resource using https.
+
+<brk>
+
+19. **Does the request have a user session associated with it?**
+
+    * There has been NO HTTP response status code indicating that the request has been successfully completed. Therefore, **the answer is NO.**
+
+20. **What kind of data is being sent from this request body?**
+
+    * The data being sent is a USERNAME and PASSWORD
+    * Sharing your USERNAME and PASSWORD is somthing that is highly dangerous behvaior and is not recomended
 
 **HTTP Response**
 
