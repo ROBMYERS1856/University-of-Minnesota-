@@ -59,19 +59,38 @@ Answer the following questions about the HTTP request and response process.
 
 4. What are the three parts of an HTTP response?
 
-    1. Status Line
-    2. Response Header
-    3. Response Body   
+    a. Status Line
+
+    b. Response Header
+
+    c. Response Body   
 
         * The status line will typically contain an HTTP Status code like 200 OK
-        *  The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.
+        * The response-header fields allow the server to pass additional information about the response which cannot be placed in the Status- Line. These header fields give information about the server and about further access to the resource identified by the Request-URI.
         * The Response Body will will display a messege regarding the request; forexample if the web server could not find the requested page.
 
 
 5. Which number class of status codes represents errors?
 
-6. What are the two most common request methods that a security professional will encounter?
+    * The 400 family of status codes are client errors
 
+    * The 500 family of status codes are server errors
+
+6. What are the two most common request methods that a security professional will encounter?
+ 
+    * The two most common request methods are *Get* and *Post*
+
+    * *Get method* is when data is being requested from a server
+
+    *  *Post method* is when data is sent to a specified resource
+
+    | Advantages of GET | Advantages of POST |
+    |-------------------|--------------------| 
+    | The GET method retrieves Information by the URL request  |  POST method helps you to determine resource URI |
+    |GET requests can be viewed in the browser history | POST requests do not remain in browser history |
+    |You can easily use GET method to request required data | You can effortlessly transmit a large amount of data using post |
+
+    
 7. Which type of HTTP request method is used for sending data?
 
 8. Which part of an HTTP request contains the data being sent to the server?
