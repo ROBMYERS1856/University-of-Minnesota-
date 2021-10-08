@@ -123,30 +123,36 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     * to change the method into something else by using the **-X** or **--request** command-line options followed by the actual method name.
 
-    * For example: curl http://google.com -X DELETE 
+    * For example: curl google.com -X DELETE 
 
+    ### [curl -X Delete](IMAGE/x.PNG)
+ 
 12. **Which `curl` option is used to set request headers?**
 
     * To set request headers us command line opton **-H** or **--header**
 
-    * For Example: curl -H Host: test.example http://example.com/
+    * For Example: curl -H Host: google.com
+ 
+    ### [curl -H Host](IMAGE/host.PNG) 
 
 13. **Which `curl` option is used to view the response header?**
 
     * To view curl response headers, we need to use curl **-I** or **--include**
 
-    * For Example: curl -I http://google.com
+    * For Example: curl -i google.com
+
+    ### [curl -i](IMAGE/-i.PNG) 
 
 14. **Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?**
 
     * A hacker will use a GET Request to discover what HTTP Requests the server will accept
     * A hacker will also use the Options Method to determine what Options 
     are allowed on the server
-    * Forexample: curl -X OPTIONS https://example.org -i
+    * Forexample: curl -X OPTIONS google.com -i 
 
     <br>
 
-    ![picture](IMAGE/1.PNG) 
+    [curl -x OPTIONS](IMAGE/1.PNG)  
 
 ---
 
@@ -313,111 +319,17 @@ Answer the following questions about monoliths and microservices:
 
 ---
 
-## Bonus Challenge Overview: The Cookie Jar
-
-For this challenge, you'll once again be using `curl`, but this time to manage and swap sessions.
-
-:warning: **Heads Up**: You'll need to have WordPress set up from the Swapping Sessions activity from Day 1 of this unit. If you have not done it or it is improperly set up, please refer to the Day 1 student guide and the Swapping Sessions activity file.
-
-If you recall, on Day 1 of this unit you used Google Chrome's Cookie-Editor extension to swap sessions and cookies. For this homework challenge, we'll be using the command-line tool `curl` to practice swapping cookie and sessions within the WordPress app.
-
-It is important for cybersecurity professionals to know how to manage cookies with `curl`:
-
-- Web application security engineers need to regularly ensure cookies are both functional and safe from tampering.
-
-  - For example, you might need to request a cookie from a webpage and then test various HTTP responses using that cookie. Doing this over and over through the browser is tedious, but can be automated with scripts.
-
-- The same concept applies for penetration testers and hackers: `curl` is used to quickly save a cookie in order to test various exploits.
-
-  - For example, an HTTP server may be configured so that, in order to POST data to specific pages, clients need to have cookies or authentication information set in their request headers, which the server will verify.
-
-## Revisiting curl
-
-Recall that you used `curl` to craft different kinds of requests for your `curl` activity, and that you saw how to use the Chrome extension Cookie-Editor to export and import cookies and swap sessions.
-
-There will be many systems in which you will need to test requests and cookies that will not connect to a browser or browser extension. 
-
-`curl` not only allows users to look through headers, send data, and authenticate to servers, but also to save and send cookies through two `curl` options: `--cookie-jar` and `--cookie`.
-
-These two options work exactly like Cookie-Editor, but on the command line. 
-
-- `--cookie-jar` allows a curl user to save the cookies set within a response header into a text file.
-
-- `--cookie` allows a user to specify a text file where a cookie is saved, in order to send a request with the cookies embedded in the request header.
-
-Let's look at how we can create a `curl` command that will log into a web page with a supplied username and password, and also save the server's response that should contain a cookie.
-
-### Logging In and Saving Cookies with Curl
-
-If we want to use the `curl` command to log into an account, `Amanda`, with the password `password`, we use the following `curl` options:
-
-- `curl --cookie-jar ./amandacookies.txt --form "log=Amanda" --form "pwd=password" http://localhost:8080/wp-login.php --verbose`
-- `curl`: The tool that we are using.
-  
-- `--cookie-jar`: Specifies where we will save the cookies.
-  
-- `./amandacookies.txt`: Location and file where the cookies will be saved.
-  
-- `--form`: Lets us pick the login username and password forms that we set in our user info earlier. In this case it's our username.
-  
-- `log=Amanda`: How WordPress understands and accepts usernames.
-  
-- `--form`: Lets us pick the login username and password forms that we set in our user info earlier. In this case it's our password.
-  
-- `pwd=password`: How WordPress understands and accepts passwords.
-  
-- `http://localhost:8080/wp-login.php`: Our WordPress login page.
-  
-- `--verbose`: Outputs more specific description about the actions the command is taking.  
-
-Run the command:  `curl --cookie-jar ./amandacookies.txt --form "log=Amanda" --form "pwd=password" http://localhost:8080/wp-login.php --verbose`
-
-If the site confirms our credentials, it will give us a cookie in return, which `curl` will save in the cookie jar file `./amandacookies.txt`.
-
-Now let's look at how to use that saved cookie on a page that requires us to be logged in.
-
-## Using a Saved Cookie
-
-To use a saved cookie, we use the following `curl` syntax:
-
-- `curl --cookie ./amandacookies.txt http://localhost:8080/wp-admin/users.php`
-  - `curl`: The tool that we are using.
-    
-  - `--cookie`: Precedes the location of our saved cookie that we want to use.
-    
-  - `./amandacookies.txt`: Location and file where the cookies are saved.
-    
-  - `http://localhost:8080/wp-admin/users.php`: A page that requires authentication to see properly. Note that we are not going to the login page, because supplying a cookie in this instance assumes that we are already logged in.
-
-Now that we know how to use the `curl` cookie jar, let's look at what we need to do for this challenge.
-
----
-
-## Bonus Challenge Instructions: The Cookie Jar
-
-First, using Docker Compose, navigate to the Day 1 WordPress activity directory and bring up the container set:
-
-- `/home/sysadmin/Documents/docker_files`
-
-Using `curl`, you will do the following for the Ryan user:
-
-  - Log into WordPress and save the user's cookies to a cookie jar.
-
-  - Test a WordPress page by using a cookie from the cookie jar.
-
-  - Pipe the output from the cookie with `grep` to check for authenticated page access.
-
-  - Attempt to access a privileged WordPress admin page.
+## Bonus Challenge Overview: Logging In and Saving Cookies with Curl
 
 ## Step 1: Set Up
 
 ### <u> Create two new users: Amanda and Ryan. </u>   
 
+<br>  
+
 ![picture](IMAGE/4.PNG) 
 
 ### Step 2: Baselining
-
-For these "baselining" steps, you'll want to log into two different types of accounts to see how the WordPress site looks at the `localhost:8080/wp-admin/users.php` page.  We want to see how the Users page looks from the perspective of an administrator, vs. a regular user.
 
 1. Using your browser, log into your WordPress site as your sysadmin account and navigate to `localhost:8080/wp-admin/users.php`, where we previously created the user Ryan. Examine this page briefly. Log out.
 
@@ -437,8 +349,6 @@ For these "baselining" steps, you'll want to log into two different types of acc
 Log out in the browser. 
 
 ### Step 3: Using Forms and a Cookie Jar
-
-Navigate to `~/Documents` in a terminal to save your cookies.
 
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
@@ -469,13 +379,11 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 3. Read the contents of the `ryancookies.txt` file.
 
-[ryancookies.txt](IMAGE/ryan9.PNG) 
-
 <u> **Question:** How many items exist in this file? </u>
 
-* There are 3 items that exist 
+* There are 3 items that exist. **See picture in link below** 
 
-Note that each one of these is a cookie that was granted to Ryan after logging in.
+[ryancookies.txt](IMAGE/ryan9.PNG) 
 
 ## Step 4: Log in Using Cookies
 
@@ -501,15 +409,13 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 <u> **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) 
 
-    * Yes
-    * The data presented after running the above curl command appears on the actual website when you click on the HELP button.
+* Yes
+* The data presented after running the above curl command appears on the actual website when you click on the HELP button.
+* Therefore you can see that you are successfully logged in to Ryan's Editor privlege's dashboard
 
 ![pic](IMAGE/linux.PNG) 
 
 ![pic](IMAGE/help.PNG) 
-
-
-If so, you should be successfully logged in to your Editor's dashboard. </u>
 
 
 ### Step 5: Test the Users.php Page
@@ -525,11 +431,5 @@ If so, you should be successfully logged in to your Editor's dashboard. </u>
 
 ![pic](IMAGE/no.PNG) 
 
----
 
-## Submission Guidelines
 
-* Save the file where you documented your solutions and submit it as your homework deliverable. 
-
----
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
