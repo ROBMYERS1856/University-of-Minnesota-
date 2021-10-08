@@ -1,11 +1,8 @@
-
-sysadmin@UbuntuDesktop:~/Documents/docker_files$ cd ..
-sysadmin@UbuntuDesktop:~/Documents$ ls
-docker_files  epscript  missingfiles  setup_scripts  web-vulns
-sysadmin@UbuntuDesktop:~/Documents$ curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php
-
-		<!DOCTYPE html>
-
+sysadmin@UbuntuDesktop:~/Documents$ curl log='Ryan' pwd='123456' http://localhost:8080/wp-login.php
+curl: (6) Could not resolve host: log=Ryan
+curl: (6) Could not resolve host: pwd=123456
+		
+	<!DOCTYPE html>
 	<!--[if IE 8]>
 		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="en-US">
 	<![endif]-->
@@ -22,25 +19,23 @@ sysadmin@UbuntuDesktop:~/Documents$ curl -L -D cookie2.txt -d "log=Ryan&pwd=1234
 	<body class="login login-action-login wp-core-ui  locale-en-us">
 		<div id="login">
 		<h1><a href="https://wordpress.org/" title="Powered by WordPress" tabindex="-1">wordpress</a></h1>
-	<div id="login_error">	<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href="https://codex.wordpress.org/Cookies">enable cookies</a> to use WordPress.<br />
-	</div>
-
+	
 	<form name="loginform" id="loginform" action="http://localhost:8080/wp-login.php" method="post">
 	<p>
 		<label for="user_login">Username or Email<br />
-		<input type="text" name="log" id="user_login" aria-describedby="login_error" class="input" value="" size="20" /></label>
+		<input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>
 	</p>
 	<p>
 		<label for="user_pass">Password<br />
-		<input type="password" name="pwd" id="user_pass" aria-describedby="login_error" class="input" value="" size="20" /></label>
+		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
 	</p>
-		<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  checked='checked' /> Remember Me</label></p>
+		<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> Remember Me</label></p>
 	<p class="submit">
 		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In" />
 		<input type="hidden" name="redirect_to" value="http://localhost:8080/wp-admin/" />
 		<input type="hidden" name="testcookie" value="1" />
 	</p>
-	</form>
+		</form>
 
 	<p id="nav">
 	<a href="http://localhost:8080/wp-login.php?action=lostpassword">Lost your password?</a>
@@ -56,7 +51,7 @@ sysadmin@UbuntuDesktop:~/Documents$ curl -L -D cookie2.txt -d "log=Ryan&pwd=1234
 	}, 200);
 	}
 
-	wp_attempt_focus();
+		wp_attempt_focus();
 	if(typeof wpOnload=='function')wpOnload();
 	</script>
 

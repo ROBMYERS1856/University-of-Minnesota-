@@ -1,67 +1,43 @@
-
-sysadmin@UbuntuDesktop:~/Documents$ curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" --cookie-jar ./ryancookies.txt http://localhost:8080/wp-login.php
-
-    <!DOCTYPE html>
-    
-	<!--[if IE 8]>
-		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="en-US">
-	<![endif]-->
-	<!--[if !(IE 8) ]><!-->
-		<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-	<!--<![endif]-->
-	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>wordpress &lsaquo; Log In</title>
-	<link rel='dns-prefetch' href='//s.w.org' />
-    <link rel='stylesheet' href='http://localhost:8080/wp-admin/load-styles.php?c=0&amp;dir=ltr&amp;load%5B%5D=dashicons,buttons,forms,l10n,login&amp;ver=4.6.1' type='text/css' media='all' />
-    <meta name='robots' content='noindex,follow' />
-	</head>
-	<body class="login login-action-login wp-core-ui  locale-en-us">
-		<div id="login">
-		<h1><a href="https://wordpress.org/" title="Powered by WordPress" tabindex="-1">wordpress</a></h1>
-	<div id="login_error">	<strong>ERROR</strong>: Cookies are blocked or not supported by your browser. You must <a href="https://codex.wordpress.org/Cookies">enable cookies</a> to use WordPress.<br />
-    </div>
-
-    <form name="loginform" id="loginform" action="http://localhost:8080/wp-login.php" method="post">
-	<p>
-		<label for="user_login">Username or Email<br />
-		<input type="text" name="log" id="user_login" aria-describedby="login_error" class="input" value="" size="20" /></label>
-	</p>
-	<p>
-		<label for="user_pass">Password<br />
-		<input type="password" name="pwd" id="user_pass" aria-describedby="login_error" class="input" value="" size="20" /></label>
-	</p>
-		<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  checked='checked' /> Remember Me</label></p>
-	<p class="submit">
-		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In" />
-		<input type="hidden" name="redirect_to" value="http://localhost:8080/wp-admin/" />
-		<input type="hidden" name="testcookie" value="1" />
-	</p>
-    </form>
-
-    <p id="nav">
-	<a href="http://localhost:8080/wp-login.php?action=lostpassword">Lost your password?</a>
-    </p>
-
-    <script type="text/javascript">
-    function wp_attempt_focus(){
-    setTimeout( function(){ try{
-    d = document.getElementById('user_login');
-    d.focus();
-    d.select();
-    } catch(e){}
-    }, 200);
-    }
-
-    wp_attempt_focus();
-    if(typeof wpOnload=='function')wpOnload();
-    </script>
-
-	<p id="backtoblog"><a href="http://localhost:8080/">&larr; Back to wordpress</a></p>
-	
-	</div>
-
-	
-		<div class="clear"></div>
-	</body>
-	</html>
+sysadmin@UbuntuDesktop:~/Documents$ curl --cookie-jar ./ryancookies.txt --form "log=Ryan" --form "pwd=123456" http://localhost:8080/wp-login.php --verbose
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> POST /wp-login.php HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Length: 240
+> Content-Type: multipart/form-data; boundary=------------------------55b01593688bc5a6
+> 
+< HTTP/1.1 302 Found
+< Date: Fri, 08 Oct 2021 00:50:55 GMT
+< Server: Apache/2.4.10 (Debian)
+< X-Powered-By: PHP/5.6.28
+< Expires: Wed, 11 Jan 1984 05:00:00 GMT
+< Cache-Control: no-cache, must-revalidate, max-age=0
+* cookie size: name/val 21 + 15 bytes
+* cookie size: name/val 4 + 1 bytes
+* Added cookie wordpress_test_cookie="WP+Cookie+check" for domain localhost, path /, expire 0
+< Set-Cookie: wordpress_test_cookie=WP+Cookie+check; path=/
+< X-Frame-Options: SAMEORIGIN
+* cookie size: name/val 42 + 130 bytes
+* cookie size: name/val 4 + 19 bytes
+* cookie size: name/val 8 + 0 bytes
+* Added cookie wordpress_37d007a56d816107ce5b52c10342db37="Ryan%7C1633827055%7CfoRVACnywViNLj9oP595X3ePCsiPgSpOSyLBbAw7Abl%7C2b94ad8d7ad998217990e4881b2efe7bc067955a2b5b004e6738c43aab342335" for domain localhost, path /wp-content/plugins, expire 0
+< Set-Cookie: wordpress_37d007a56d816107ce5b52c10342db37=Ryan%7C1633827055%7CfoRVACnywViNLj9oP595X3ePCsiPgSpOSyLBbAw7Abl%7C2b94ad8d7ad998217990e4881b2efe7bc067955a2b5b004e6738c43aab342335; path=/wp-content/plugins; httponly
+* cookie size: name/val 42 + 130 bytes
+* cookie size: name/val 4 + 9 bytes
+* cookie size: name/val 8 + 0 bytes
+* Added cookie wordpress_37d007a56d816107ce5b52c10342db37="Ryan%7C1633827055%7CfoRVACnywViNLj9oP595X3ePCsiPgSpOSyLBbAw7Abl%7C2b94ad8d7ad998217990e4881b2efe7bc067955a2b5b004e6738c43aab342335" for domain localhost, path /wp-admin, expire 0
+< Set-Cookie: wordpress_37d007a56d816107ce5b52c10342db37=Ryan%7C1633827055%7CfoRVACnywViNLj9oP595X3ePCsiPgSpOSyLBbAw7Abl%7C2b94ad8d7ad998217990e4881b2efe7bc067955a2b5b004e6738c43aab342335; path=/wp-admin; httponly
+* cookie size: name/val 52 + 130 bytes
+* cookie size: name/val 4 + 1 bytes
+* cookie size: name/val 8 + 0 bytes
+* Added cookie wordpress_logged_in_37d007a56d816107ce5b52c10342db37="Ryan%7C1633827055%7CfoRVACnywViNLj9oP595X3ePCsiPgSpOSyLBbAw7Abl%7Ca2f885321c11716fdb1e4472d1d50eda9b0da74ae3a4f3becad9d53e94d5ef9c" for domain localhost, path /, expire 0
+< Set-Cookie: wordpress_logged_in_37d007a56d816107ce5b52c10342db37=Ryan%7C1633827055%7CfoRVACnywViNLj9oP595X3ePCsiPgSpOSyLBbAw7Abl%7Ca2f885321c11716fdb1e4472d1d50eda9b0da74ae3a4f3becad9d53e94d5ef9c; path=/; httponly
+< Location: http://localhost:8080/wp-admin/
+< Content-Length: 0
+< Content-Type: text/html; charset=UTF-8
+* HTTP error before end of send, stop sending
+< 
+* Closing connection 0

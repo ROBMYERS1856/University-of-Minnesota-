@@ -432,7 +432,7 @@ For these "baselining" steps, you'll want to log into two different types of acc
 3. Attempt to navigate to `localhost:8080/wp-admin/users.php`. Note what you see now.
 
 ![pic](IMAGE/ry.PNG)
-
+![pic](IMAGE/http.PNG)
 
 Log out in the browser. 
 
@@ -442,14 +442,14 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
-    * curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php
-
+    * curl "log=Ryan" "pwd=123456" http://localhost:8080/wp-login.php
 
 ![pic](IMAGE/11.PNG)    
 
 <u> **Question:** Did you see any obvious confirmation of a login? (Y/N)</u>
 
-   * Yes the was a confirmation because the command ran successful and created the TXT file **cooke2.txt**.
+   *  No , however the command did run and there is a HTTP Code 200
+   *  It also made changes to ryancookies.txt
 
 ![pic](IMAGE/cook.PNG) 
 
@@ -481,7 +481,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 1. Craft a new `curl` command that now uses the `--cookie` option, followed by the path to your cookies file. For the URL, use `http://localhost:8080/wp-admin/index.php`.
 
-    * curl -L --cookie ./ryancookies.txt http://localhost:8080/wp-admin/index.php
+    * curl --cookie ryancookies.txt http://localhost:8080/wp-admin/index.php
 
 ![pic](IMAGE/a.png) 
 
@@ -489,18 +489,41 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 [--cokie code](IMAGE/cookiecode.md)  
 
-
 <u> **Question:** Is it obvious that we can access the Dashboard? (Y/N) </u>
+
+* No, however after the command finished running it is easy to see that the comman did run the script in ryanscookies.txt
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 
-    - **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
+    * curl --cookie ryancookies.txt http://localhost:8080/wp-admin/index.php | grep Dashboard
+
+![pic](IMAGE/dash.PNG) 
+
+<u> **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) 
+
+    * Yes
+    * The data presented after running the above curl command appears on the actual website when you click on the HELP button.
+
+![pic](IMAGE/linux.PNG) 
+
+![pic](IMAGE/help.PNG) 
+
+
+If so, you should be successfully logged in to your Editor's dashboard. </u>
+
 
 ### Step 5: Test the Users.php Page
 
 1. Finally, write a `curl` command using the same `--cookie ryancookies.txt` option, but attempt to access `http://localhost:8080/wp-admin/users.php`.
 
-    - **Question:** What happens this time?
+    * curl --cookie ./ryancookies.txt http://localhost:8080/wp-admin/users.php
+
+<u> **Question:** What happens this time? </u> 
+
+* I am not able to log in with sysadmin privleges
+* IT brings up the "error-Page" stating I am not able to brows users
+
+![pic](IMAGE/no.PNG) 
 
 ---
 
