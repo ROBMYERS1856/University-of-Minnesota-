@@ -111,7 +111,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ### <u> Answer the following questions about curl </u>
 
-10. **What are the advantages of using `curl` over the browser?**
+10. **What are the advantages of using curl over the browser?**
 
     * Curl is portable and compatible with all popular operating systems. 
     * Curl can work without user interaction and can be used in automation scripts. 
@@ -119,7 +119,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 <brk>
 
-11. **Which `curl` option is used to change the request method?**
+11. **Which curl option is used to change the request method?**
 
     * to change the method into something else by using the **-X** or **--request** command-line options followed by the actual method name.
 
@@ -127,7 +127,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     ### <u>[curl -X Delete](IMAGE/x.PNG)</u>
  
-12. **Which `curl` option is used to set request headers?**
+12. **Which curl option is used to set request headers?**
 
     * To set request headers us command line opton **-H** or **--header**
 
@@ -135,7 +135,7 @@ In this homework, we will review the many of the concepts and tools covered in t
  
     ### <u>[curl -H Host](IMAGE/host.PNG)</u>
 
-13. **Which `curl` option is used to view the response header?**
+13. **Which curl option is used to view the response header?**
 
     * To view curl response headers, we need to use curl **-I** or **--include**
 
