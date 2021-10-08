@@ -424,7 +424,7 @@ X-XSS-Protection: 1; mode=block
 <u> **Question:** What happens this time? </u> 
 
 * I am not able to log in with sysadmin privleges
-* IT brings up the "error-Page" stating I am not able to brows users
+* IT brings up the "error-Page" stating I am not able to browse users
 
 ![pic](IMAGE/no.PNG) 
 
