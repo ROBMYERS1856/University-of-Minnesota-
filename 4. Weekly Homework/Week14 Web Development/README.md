@@ -30,8 +30,8 @@ In this homework, we will review the many of the concepts and tools covered in t
     
     * The HTTP Protocol 
 
-    * For Example: Request-Line = Method  Request-URI  HTTP-Version
-
+    * For Example: Request-Line = <Method> <Request-URI> <HTTP-Version>
+ 
     **Request Header:**
 
      * HTTP headers are the code that transfers data between a Web server 
