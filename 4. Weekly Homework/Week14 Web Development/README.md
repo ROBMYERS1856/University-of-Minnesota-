@@ -176,9 +176,9 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ---
   
-### Look through the following example HTTP request and response and answer the following questions:
+### Look through the following example of an HTTP request and response and answer the following questions:
 
-```HTTP
+```HTTP 
 POST /login.php HTTP/1.1
 Host: example.com
 Accept-Encoding: gzip, deflate, br
@@ -251,19 +251,19 @@ X-XSS-Protection: 1; mode=block
 
 25. If your class covered security headers, what security request headers have been included?
 
-* Upgrade-Insecure-Requests: 1: Tells the server to turn this HTTP connection into HTTPS, which will encrypt the response and all further communications.
+* **Upgrade-Insecure-Requests: 1:** Tells the server to turn this HTTP connection into HTTPS, which will encrypt the response and all further communications.
 
-* HTTP Strict Transport Security (HSTS): If a site is equipped with HTTPS, the server forces the browser to communicate over secure HTTPS. This way, the possibility of an HTTP connection is eliminated entirely.
+* **HTTP Strict Transport Security (HSTS):** If a site is equipped with HTTPS, the server forces the browser to communicate over secure HTTPS. This way, the possibility of an HTTP connection is eliminated entirely.
 
-* Cross Site Scripting Protection (X-XSS): X-XSS header protects against Cross-Site Scripting attacks
+* **Cross Site Scripting Protection (X-XSS):** X-XSS header protects against Cross-Site Scripting attacks
 
-* Content Security Policy (CSP): Content Security Policy protects against Cross Site Scripting and other code injection attacks. 
+* **Content Security Policy (CSP):** Content Security Policy protects against Cross Site Scripting and other code injection attacks. 
 
-* X-Frame-Options: X-Frame Options help protect against Spoofing attacks
+* **X-Frame-Options:** X-Frame Options help protect against Spoofing attacks
 
-* X-Content-Type-Options: The X-Content-Type header offers a countermeasure against MIME sniffing.
+* **X-Content-Type-Options:** The X-Content-Type header offers a countermeasure against MIME sniffing.
 
-* Connection: keep-alive: Tells the server to keep open the TCP connection used for this HTTP transfer after sending the response.
+* **Connection: keep-alive:** Tells the server to keep open the TCP connection used for this HTTP transfer after sending the response.
 
 ### Monoliths and Microservices
 
