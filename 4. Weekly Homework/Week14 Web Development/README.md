@@ -1,7 +1,7 @@
 
-# Rob Myers: Week 14 Homework: Web Development
+# <u> Rob Myers: Week 14 Homework: Web Development </u>
 
-## Overview
+## <u> Overview </u>
 
 In this homework, we will review the many of the concepts and tools covered in the Web Development unit. If needed, refer to the  reference sheets provided to you.
 
@@ -10,7 +10,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ---
 
-### Answer the following questions about the HTTP request and response process.
+### <u> Answer the following questions about the HTTP request and response process. </u>
 
 1. **What type of architecture does the HTTP request and response process occur in?**
     * The Client-Server model (OSI Layer 7: the application layer) is an exchange of information, a cycle of requests and responses between clients and servers.
@@ -24,11 +24,11 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     **Request Line:** consists of three parts:
 
-    * The HTTP Method **GET**
+    * The HTTP Method 
 
-    * The Request URI **hello.html**
+    * The Request URI 
     
-    * The HTTP Protocol **HTTP/1.1**
+    * The HTTP Protocol 
 
     * For Example: Request-Line = Method  Request-URI  HTTP-Version
 
@@ -109,7 +109,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ---
 
-### Answer the following questions about `curl`:**
+### <u> Answer the following questions about curl </u>
 
 10. **What are the advantages of using `curl` over the browser?**
 
@@ -150,7 +150,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ---
 
-### Answer the following questions about sessions and cookies:
+### <u> Answer the following questions about sessions and cookies: </u>
 
 15. **Which response header sends a cookie to the client?**
 
@@ -172,8 +172,6 @@ In this homework, we will review the many of the concepts and tools covered in t
 
 ---
   
-## Example HTTP Requests and Responses
-
 ### Look through the following example HTTP request and response and answer the following questions:
 
 ```HTTP
@@ -232,13 +230,36 @@ X-XSS-Protection: 1; mode=block
 
 21. What is the response status code?
 
+    * 200 OK
+
 22. What web server is handling this HTTP response?
+
+    * Appache
 
 23. Does this response have a user session associated to it?
 
+    * Yes
+    * Set-Cookie: SessionID=5
+
 24. What kind of content is likely to be in the [page content] response body?
 
+    * text/html
+
 25. If your class covered security headers, what security request headers have been included?
+
+* Upgrade-Insecure-Requests: 1: Tells the server to turn this HTTP connection into HTTPS, which will encrypt the response and all further communications.
+
+* HTTP Strict Transport Security (HSTS): If a site is equipped with HTTPS, the server forces the browser to communicate over secure HTTPS. This way, the possibility of an HTTP connection is eliminated entirely.
+
+* Cross Site Scripting Protection (X-XSS): X-XSS header protects against Cross-Site Scripting attacks
+
+* Content Security Policy (CSP): Content Security Policy protects against Cross Site Scripting and other code injection attacks. 
+
+* X-Frame-Options: X-Frame Options help protect against Spoofing attacks
+
+* X-Content-Type-Options: The X-Content-Type header offers a countermeasure against MIME sniffing.
+
+* Connection: keep-alive: Tells the server to keep open the TCP connection used for this HTTP transfer after sending the response.
 
 ### Monoliths and Microservices
 
@@ -246,25 +267,49 @@ Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
 
+* Services: The term illustrates the method of breaking down an application into generally small, self-contained services, written in any language, that communicate over lightweight protocols. 
+
+![picture](IMAGE/2.PNG) 
+
 27. What is a service that writes to a database and communicates to other services?
+
+* API: Application Programing interface
+* API allows Applications and/or Websites to communicate with eachother 
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
 
-### Deploying and Testing a Container Set
+* Cointainers allow microservices to be scalable and redundant 
 
-Answer the following questions about multi-container deployment:
+## Deploying and Testing a Container Set
+
+### <u> Answer the following questions about multi-container deployment: </u>
 
 29. What tool can be used to deploy multiple containers at once?
 
+    * Docker-Compose: Docker-Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. 
+
+    * Example to start your containers: Docker-Compose up -d
+
 30. What kind of file format is required for us to deploy a container set?
+
+    * A YML FIle is what is required for us to deploy a container set
 
 ### Databases
 
 31. Which type of SQL query would we use to see all of the information within a table called `customers`?
 
+* SELECT * FROM customers WHERE ID= '1' or '1' = "1"
+
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
 
+    * INSERT INTO
+
+    <u> EXAMPLE: </u> 
+    ![IMAGE](IMAGE/3.PNG) 
+
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
+
+    * It deletes the entire table since it does not have the where clause
 
 ---
 
@@ -366,38 +411,9 @@ Using `curl`, you will do the following for the Ryan user:
 
 ## Step 1: Set Up
 
-Create two new users: Amanda and Ryan.   
+### <u> Create two new users: Amanda and Ryan. </u>   
 
-1. Navigate to `localhost:8080/wp-admin/`
-
-2. On the left-hand toolbar, hover over **Users** and click **Add New**.
-
-3. Enter the following information to create the new user named Amanda.
-
-    - Username: `Amanda`
-    - Email: `amanda@email.com`
-
-4. Skip down to password:
-
-    - Password: `password`
-    - Confirm Password: Check the box to confirm use of weak password.
-    - Role: `Administrator`
-
-5. Create another user named Ryan.
-
-    - Username: `Ryan`
-    - Email: `ryan@email.com`
-
-6. Skip down to password:
-
-    - Password: `123456`
-    - Confirm Password: Check the box to confirm use of weak password.
-    - Role: `Editor`
-
-7. Log out and log in with the following credentials:
-
-    - Username: `Amanda`
-    - Password: `password`
+![picture](IMAGE/4.PNG) 
 
 ### Step 2: Baselining
 
@@ -405,11 +421,20 @@ For these "baselining" steps, you'll want to log into two different types of acc
 
 1. Using your browser, log into your WordPress site as your sysadmin account and navigate to `localhost:8080/wp-admin/users.php`, where we previously created the user Ryan. Examine this page briefly. Log out.
 
+**NOTE:  Look ar the view of the user screen when signed in as sysadmin**
+![pic](IMAGE/sys.PNG) 
+
 2. Using your browser, log into your Ryan account and attempt to navigate to `localhost:8080/wp-admin/index.php`. Note the wording on your Dashboard.
+
+**NOTE:  Look ar the view of the user screen when signed in as Ryan**
+![pic](IMAGE/ryan.PNG) 
 
 3. Attempt to navigate to `localhost:8080/wp-admin/users.php`. Note what you see now.
 
-Log out in the browser.
+![pic](IMAGE/ry.PNG)
+
+
+Log out in the browser. 
 
 ### Step 3: Using Forms and a Cookie Jar
 
@@ -417,13 +442,38 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
-    - **Question:** Did you see any obvious confirmation of a login? (Y/N)
+    * curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php
+
+
+![pic](IMAGE/11.PNG)    
+
+<u> **Question:** Did you see any obvious confirmation of a login? (Y/N)</u>
+
+   * Yes the was a confirmation because the command ran successful and created the TXT file **cooke2.txt**.
+
+![pic](IMAGE/cook.PNG) 
+
+**<u>Link to the code confirmation from command line after running the above curl command</u>** 
+
+[Curl_Command](IMAGE/RYAN.md)  
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
 
+    * curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" --cookie-jar ./ryancookies.txt http://localhost:8080/wp-login.php
+
+![pic](IMAGE/rc.png) 
+
+**<u>Link to the code confirmation from command line after running the above curl command</u>** 
+
+[Saving the cookie](IMAGE/ryan-2.md)  
+
 3. Read the contents of the `ryancookies.txt` file.
 
-   - **Question:** How many items exist in this file?
+[ryancookies.txt](IMAGE/ryan9.PNG) 
+
+<u> **Question:** How many items exist in this file? </u>
+
+* There are 3 items that exist 
 
 Note that each one of these is a cookie that was granted to Ryan after logging in.
 
@@ -431,7 +481,16 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 1. Craft a new `curl` command that now uses the `--cookie` option, followed by the path to your cookies file. For the URL, use `http://localhost:8080/wp-admin/index.php`.
 
-   - **Question:** Is it obvious that we can access the Dashboard? (Y/N)
+    * curl -L --cookie ./ryancookies.txt http://localhost:8080/wp-admin/index.php
+
+![pic](IMAGE/a.png) 
+
+**<u>Link to the code confirmation from command line after running the above curl command</u>** 
+
+[--cokie code](IMAGE/cookiecode.md)  
+
+
+<u> **Question:** Is it obvious that we can access the Dashboard? (Y/N) </u>
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 
