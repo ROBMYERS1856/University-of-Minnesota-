@@ -163,7 +163,7 @@ In this homework, we will review the many of the concepts and tools covered in t
     Content-type: text/html
     Set-Cookie: cart=Bob
     ```
-    * The HTTP header **Set-Cookie is a response header** and used to send cookies from the server to the client. 
+    * <u>The HTTP header **Set-Cookie is a response header** and used to send cookies from the server to the client.</u> 
 
 16. **Which request header will continue the client's session?**
 
@@ -172,7 +172,7 @@ In this homework, we will review the many of the concepts and tools covered in t
     Host: www.example.org
     Cookie: cart=Bob
     ```
-    * The Cookie HTTP request header will continue the clients session. 
+    * <u>The Cookie HTTP request header will continue the clients session.</u> 
 
 ---
   
