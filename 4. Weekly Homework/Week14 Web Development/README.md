@@ -267,17 +267,17 @@ X-XSS-Protection: 1; mode=block
 
 ### Monoliths and Microservices
 
-Answer the following questions about monoliths and microservices:
+<u>Answer the following questions about monoliths and microservices:</u>
 
 26. What are the individual components of microservices called?
 
-* Services: The term illustrates the method of breaking down an application into generally small, self-contained services, written in any language, that communicate over lightweight protocols. 
+* **Services:** The term illustrates the method of breaking down an application into generally small, self-contained services, written in any language, that communicate over lightweight protocols. 
 
 ![picture](IMAGE/2.PNG) 
 
 27. What is a service that writes to a database and communicates to other services?
 
-* API: Application Programing interface
+* **API:** Application Programing interface
 * API allows Applications and/or Websites to communicate with eachother 
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
@@ -290,9 +290,9 @@ Answer the following questions about monoliths and microservices:
 
 29. What tool can be used to deploy multiple containers at once?
 
-    * Docker-Compose: Docker-Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. 
+    * **Docker-Compose:** Docker-Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. 
 
-    * Example to start your containers: Docker-Compose up -d
+    * Example to start your containers: <u>Docker-Compose up -d</u>
 
 30. What kind of file format is required for us to deploy a container set?
 
