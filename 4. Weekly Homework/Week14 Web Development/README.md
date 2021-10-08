@@ -392,11 +392,11 @@ X-XSS-Protection: 1; mode=block
 
 **<u>Link to the code confirmation from command line after running the above curl command</u>** 
 
-[--cokie code](IMAGE/cookiecode.md)  
+[--cookie code](IMAGE/cookiecode.md)  
 
 <u> **Question:** Is it obvious that we can access the Dashboard? (Y/N) </u>
 
-* No, however after the command finished running it is easy to see that the comman did run the script in ryanscookies.txt
+* No, however after the command finished running it is easy to see that the command did run the script in ryanscookies.txt
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 
@@ -407,7 +407,7 @@ X-XSS-Protection: 1; mode=block
 <u> **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) 
 
 * Yes
-* The data presented after running the above curl command appears on the actual website when you click on the HELP button.
+* The data presented after running the above curl command appears on the actual website when you click on the **HELP button**.
 * Therefore you can see that you are successfully logged in to Ryan's Editor privlege's dashboard
 
 ![pic](IMAGE/linux.PNG) 
