@@ -125,7 +125,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     * For example: curl google.com -X DELETE 
 
-    ### [curl -X Delete](IMAGE/x.PNG)
+    ### <u> [curl -X Delete](IMAGE/x.PNG) </u>
  
 12. **Which `curl` option is used to set request headers?**
 
@@ -133,7 +133,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     * For Example: curl -H Host: google.com
  
-    ### [curl -H Host](IMAGE/host.PNG) 
+    ### <u> [curl -H Host](IMAGE/host.PNG) </u>
 
 13. **Which `curl` option is used to view the response header?**
 
@@ -141,7 +141,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     * For Example: curl -i google.com
 
-    ### [curl -i](IMAGE/-i.PNG) 
+    ### <u> [curl -i](IMAGE/-i.PNG) </u>
 
 14. **Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?**
 
@@ -152,7 +152,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     <br>
 
-    [curl -x OPTIONS](IMAGE/1.PNG)  
+    ### <u> [curl -x OPTIONS](IMAGE/1.PNG) </u> 
 
 ---
 
