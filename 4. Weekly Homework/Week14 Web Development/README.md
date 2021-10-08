@@ -368,7 +368,7 @@ X-XSS-Protection: 1; mode=block
 
     * curl --cookie-jar ./ryancookies.txt "log=Ryan" "pwd=123456" http://localhost:8080/wp-login.php
 
-![pic](IMAGE/rc.png) 
+![pic](IMAGE/rc.PNG) 
 
 **<u>Link to the code confirmation from command line after running the above curl command</u>** 
 
