@@ -309,6 +309,7 @@ X-XSS-Protection: 1; mode=block
     * INSERT INTO
 
     <u> EXAMPLE: </u> 
+    
     ![IMAGE](IMAGE/3.PNG) 
 
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
