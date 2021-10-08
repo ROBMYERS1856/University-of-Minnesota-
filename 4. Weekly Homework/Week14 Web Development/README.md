@@ -309,7 +309,7 @@ X-XSS-Protection: 1; mode=block
     * INSERT INTO
 
     <u> EXAMPLE: </u> 
-    
+
     ![IMAGE](IMAGE/3.PNG) 
 
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
@@ -332,20 +332,18 @@ X-XSS-Protection: 1; mode=block
 
 1. Using your browser, log into your WordPress site as your sysadmin account and navigate to `localhost:8080/wp-admin/users.php`, where we previously created the user Ryan. Examine this page briefly. Log out.
 
-**NOTE:  Look ar the view of the user screen when signed in as sysadmin**
+**NOTE:  Look at the view of the user screen when signed in as sysadmin**
 ![pic](IMAGE/sys.PNG) 
 
 2. Using your browser, log into your Ryan account and attempt to navigate to `localhost:8080/wp-admin/index.php`. Note the wording on your Dashboard.
 
-**NOTE:  Look ar the view of the user screen when signed in as Ryan**
+**NOTE:  Look at the view of the user screen when signed in as Ryan**
 ![pic](IMAGE/ryan.PNG) 
 
 3. Attempt to navigate to `localhost:8080/wp-admin/users.php`. Note what you see now.
 
 ![pic](IMAGE/ry.PNG)
 ![pic](IMAGE/http.PNG)
-
-Log out in the browser. 
 
 ### Step 3: Using Forms and a Cookie Jar
 
@@ -368,7 +366,7 @@ Log out in the browser.
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
 
-    * curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" --cookie-jar ./ryancookies.txt http://localhost:8080/wp-login.php
+    * curl --cookie-jar ./ryancookies.txt "log=Ryan" "pwd=123456" http://localhost:8080/wp-login.php
 
 ![pic](IMAGE/rc.png) 
 
