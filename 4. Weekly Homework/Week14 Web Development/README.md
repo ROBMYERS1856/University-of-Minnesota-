@@ -408,7 +408,7 @@ X-XSS-Protection: 1; mode=block
 
 * Yes
 * The data presented after running the above curl command appears on the actual website when you click on the **HELP button**.
-* Therefore you can see that you are successfully logged in to Ryan's Editor privlege's dashboard
+* Therefore you can see that you are successfully logged in as Ryan with Editor privlege's 
 
 ![pic](IMAGE/linux.PNG) 
 
@@ -423,8 +423,10 @@ X-XSS-Protection: 1; mode=block
 
 <u> **Question:** What happens this time? </u> 
 
-* I am not able to log in with sysadmin privleges
+* I am not able to log in as RYAN with USER privleges
 * IT brings up the "error-Page" stating I am not able to browse users
+* Ryan does not have administrator privleges like Amanda and sysadmin
+* You can also see the difference when you compare sysadmin and Amanda dashboard vs. Ryan's dashboard. Ryan's Dashboard does not have to USER option.
 
 ![pic](IMAGE/no.PNG) 
 
