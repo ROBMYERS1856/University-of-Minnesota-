@@ -388,7 +388,7 @@ X-XSS-Protection: 1; mode=block
 
     * curl --cookie ryancookies.txt http://localhost:8080/wp-admin/index.php
 
-![pic](IMAGE/a.png) 
+![pic](IMAGE/a.PNG) 
 
 **<u>Link to the code confirmation from command line after running the above curl command</u>** 
 
