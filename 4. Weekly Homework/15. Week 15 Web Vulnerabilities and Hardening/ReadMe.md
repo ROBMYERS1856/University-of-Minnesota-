@@ -61,7 +61,7 @@ In this homework scenario, you will continue as an application security engineer
 
 ### [etc/passwd](IMAGE/etcpass.md)
 
-**<u>Attempting to access etc/hosts:</u>**
+**<u>Attempting to access etc/hosts:</u>**s
 
 * Using the dot-dot-slash method there are 5 sub-directories 
 
@@ -71,13 +71,13 @@ In this homework scenario, you will continue as an application security engineer
 
 ## **Mitigation Strategies:**
 
-1) Implement Injection filtering by establiishing a predefined set of rules via your firewall or network security group.  
+**1) Implement Injection filtering by establishing a predefined set of rules via your firewall or network security group.** 
 
-2) Establish rules that block HTTP Headers, Query parameters, URI paths, and Request Payloads.  
+**2) Establish rules that block HTTP Headers, Query parameters, URI paths, and Request Payloads.**  
 
-3) Ensure your website URI scheme is HTTPS and has an accredited and trusted certificate  
+**3) Ensure your website URI scheme is HTTPS and has an accredited and trusted certificate**   
 
-4) If possible make sure that your website has been updated with current verions of HTML, CSS, and Javascript
+**4) If possible make sure that your website has been updated with current verions of HTML, CSS, and Javascript** 
 
 
 
