@@ -29,11 +29,11 @@ In this homework scenario, you will continue as an application security engineer
 
 * Malicious payloads
 
-# Web Application 1: Your Wish is My Command Injection
+# Web Application 1: Your Wish is My Command Injection 
 
 ## Lets get set up:
 
-## [Set-Up Commands](IMAGE/1.jpg) 
+[Set-Up Commands](IMAGE/1.PNG) 
 
 
 
