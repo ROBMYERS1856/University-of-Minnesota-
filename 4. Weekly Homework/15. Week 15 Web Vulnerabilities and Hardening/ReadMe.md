@@ -33,7 +33,7 @@ In this homework scenario, you will continue as an application security engineer
 
 ## Lets get set up:
 
-[Set-Up Commands](IMAGE/1.JPG) 
+### [Set-Up Commands](IMAGE/1.JPG) 
 
 
 
