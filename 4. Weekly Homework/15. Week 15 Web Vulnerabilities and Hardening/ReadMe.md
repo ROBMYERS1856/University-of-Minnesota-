@@ -45,6 +45,8 @@ In this homework scenario, you will continue as an application security engineer
 
 ### 3. Test if we can manipulate the input to cause an unintended result.
 
+[Test PING and PWD](IMAGE/pwd.md)
+
 
 
 
