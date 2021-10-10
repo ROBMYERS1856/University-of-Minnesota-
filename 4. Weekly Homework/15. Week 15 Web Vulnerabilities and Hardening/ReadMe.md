@@ -39,9 +39,9 @@ In this homework scenario, you will continue as an application security engineer
 
 * Test the webpage by entering the IP address 8.8.8.8. Press Submit to see the results display on the web application.
 
-        A) Behind the scenes, when you select Submit, the IP you type in the field is injected into a command that is run against the Replicants webserver. The specific command that ran on the webserver is ping <IP> and 8.8.8.8 is the field value that is injected into that command.
+    A) Behind the scenes, when you select Submit, the IP you type in the field is injected into a command that is run against the Replicants webserver. The specific command that ran on the webserver is ping <IP> and 8.8.8.8 is the field value that is injected into that command.
 
-        B) This process is no different than if we went to the command line and typed that same command: ping 8.8.8.8
+    B) This process is no different than if we went to the command line and typed that same command: ping 8.8.8.8
 
 ### [Ping 8.8.8.8](IMAGE/ping.md) 
 
