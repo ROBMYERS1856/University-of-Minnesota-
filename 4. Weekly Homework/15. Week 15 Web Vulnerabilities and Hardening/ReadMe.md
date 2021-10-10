@@ -45,7 +45,11 @@ In this homework scenario, you will continue as an application security engineer
 
 ### 3. Test if we can manipulate the input to cause an unintended result.
 
-[Test PING and PWD](IMAGE/pwd.md)
+* This type of injection attack is called Command Injection, and it is dependent on the web application taking user input to run a command against an operating system.
+
+* Were attempting to PING the DVWA website and determine if we can also access the Working Directory using the PWD command
+
+### [Test PING and PWD](IMAGE/pwd.md) 
 
 
 
