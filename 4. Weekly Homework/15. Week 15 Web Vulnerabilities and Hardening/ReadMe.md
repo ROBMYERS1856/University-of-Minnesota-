@@ -51,7 +51,7 @@ In this homework scenario, you will continue as an application security engineer
 
 ### [Test PING and PWD](IMAGE/pwd.md)
 
-### 4. Now that you have determined that Replicants new application is vulnerable to command injection, you are tasked with using the dot-dot-slash method to design two payloads that will display the contents of the following files:
+### 4. Test the dot-dot-slash method to design two payloads that will display the contents of the following files:
 
 **<u>Attempting to access etc/passwd:</u>**
 
