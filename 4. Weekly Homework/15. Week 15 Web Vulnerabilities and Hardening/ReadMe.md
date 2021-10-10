@@ -61,7 +61,7 @@ In this homework scenario, you will continue as an application security engineer
 
 ### [etc/passwd](IMAGE/etcpass.md)
 
-**<u>Attempting to access etc/hosts:</u>**s
+**<u>Attempting to access etc/hosts:</u>**
 
 * Using the dot-dot-slash method there are 5 sub-directories 
 
