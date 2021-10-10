@@ -55,13 +55,17 @@ In this homework scenario, you will continue as an application security engineer
 
 **<u>Attempting to access etc/passwd:</u>**
 
-* Using the dot-dot-slash method there are 5 sub-directories before we can access the ETC/PASSWD we will be attempting to attack
+* Using the dot-dot-slash method there are 5 sub-directories 
+
+* Using command: 8.8.8.8 && cat ../../../../../ETC/PASSWD
 
 ### [etc/passwd](IMAGE/etcpass.md)
 
 **<u>Attempting to access etc/hosts:</u>**
 
-* Using the dot-dot-slash method there are 5 sub-directories before we can access the ETC/HOST we will be attempting to attack
+* Using the dot-dot-slash method there are 5 sub-directories 
+
+* Using command: 8.8.8.8 && cat ../../../../../ETC/HOSTS
 
 ### [etc/hosts](IMAGE/etchosts.md) 
 
