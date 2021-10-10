@@ -35,7 +35,7 @@ In this homework scenario, you will continue as an application security engineer
 
 ### [Set-Up Commands](IMAGE/1.md) 
 
-### 2. Test the webpage by entering the IP address 8.8.8.8. Press Submit to see the results display on the web application.
+### 2. Test the webpage by entering the IP address 8.8.8.8. 
 
 * Behind the scenes, when you select Submit, the IP you type in the field is injected into a command that is run against the Replicants webserver. The specific command that ran on the webserver is ping <IP> and 8.8.8.8 is the field value that is injected into that command.
 
@@ -49,7 +49,34 @@ In this homework scenario, you will continue as an application security engineer
 
 * Were attempting to PING the DVWA website and determine if we can also access the Working Directory using the PWD command
 
-### [Test PING and PWD](IMAGE/pwd.md) 
+### [Test PING and PWD](IMAGE/pwd.md)
+
+### 4. Now that you have determined that Replicants new application is vulnerable to command injection, you are tasked with using the dot-dot-slash method to design two payloads that will display the contents of the following files:
+
+**<u>Attempting to access etc/passwd:</u>**
+
+* Using the dot-dot-slash method there are 5 sub-directories before we can access the ETC/PASSWD we will be attempting to attack
+
+### [etc/passwd](IMAGE/etcpass.md)
+
+**<u>Attempting to access etc/hosts:</u>**
+
+* Using the dot-dot-slash method there are 5 sub-directories before we can access the ETC/HOST we will be attempting to attack
+
+### [etc/hosts](IMAGE/etchosts.md) 
+
+## **Mitigation Strategies:**
+
+1) Implement Injection filtering by establiishing a predefined set of rules via your firewall or network security group.  
+
+* Establish rules that block HTTP Headers, Query parameters, URI paths, and Request Payloads.  
+
+2) Ensure your website URI scheme is HTTPS and has an accredited and trusted certificate 
+
+
+
+
+
 
 
 
