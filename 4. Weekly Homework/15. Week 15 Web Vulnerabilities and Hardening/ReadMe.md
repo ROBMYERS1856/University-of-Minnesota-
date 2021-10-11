@@ -89,6 +89,12 @@ In this homework scenario, you will continue as an application security engineer
 
 ### [Brute Force Setup](IMAGE/brute.md) 
 
+### 2. Use the web application tool Burp Suite, specifically the Burp Suite Intruder feature, to determine if any of the administrator accounts are vulnerable to a brute force attack on this web application.
+
+### [List of Administrators](IMAGE/adminlist.md) 
+
+### [Breached list of Passwords](IMAGE/breachedpwd.md) 
+
 
 
 

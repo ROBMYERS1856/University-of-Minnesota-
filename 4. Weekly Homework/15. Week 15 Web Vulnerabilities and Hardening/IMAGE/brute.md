@@ -19,7 +19,6 @@
 
 * Login to bWapp website and enter in the following URL: http://192.168.13.35/ba_insecure_login_1.php
 
-* If the user/password combination is correct, it will return a successful message.
 
 ![pic](login.PNG) 
 
