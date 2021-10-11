@@ -2,7 +2,7 @@
 
 ![pwd](pwd.PNG)
 
-## Testing PING and PWD (Print Working Directory) Commands via the LinuxDV Command Line 
+## Testing PING and PWD (Print Working Directory) Commands via the Linux Command Line 
 
 ![pic](pwd1.PNG) 
 

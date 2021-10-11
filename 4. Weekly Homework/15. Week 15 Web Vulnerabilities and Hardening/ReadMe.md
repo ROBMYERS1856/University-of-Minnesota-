@@ -87,10 +87,8 @@ In this homework scenario, you will continue as an application security engineer
 
 ### 1. Complete the following steps to set up the activity.
 
-![Brute Force Setup](IMAGE/brute.md) 
+### [Brute Force Setup](IMAGE/brute.md) 
 
-
-kljsjd;lkd;l;kjsf
 
 
 
