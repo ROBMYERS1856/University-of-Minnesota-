@@ -29,7 +29,7 @@ In this homework scenario, you will continue as an application security engineer
 
 * Malicious payloads
 
-## Web Application 1: Your Wish is My Command Injection 
+## <u>Web Application 1: Your Wish is My Command Injection</u>  
 
 ### 1. Lets get set up:
 
@@ -71,13 +71,21 @@ In this homework scenario, you will continue as an application security engineer
 
 ## **Mitigation Strategies:**
 
-**1) Implement Injection filtering by establishing a predefined set of rules via your firewall or network security group.** 
+**1) Establish Injection filtering firewall rules for HTTP Headers, Query parameters, URI paths, and Request Payloads.**  
 
-**2) Establish rules that block HTTP Headers, Query parameters, URI paths, and Request Payloads.**  
+**2) Ensure that code writers are checking the code and fixing security flaws on a regular basis**  
 
 **3) Ensure your website URI scheme is HTTPS and has an accredited and trusted certificate**   
 
-**4) If possible make sure that your website has been updated with current verions of HTML, CSS, and Javascript** 
+**4) Make sure that your servers and applications/software is being updated on a consitant basis.** 
+
+**5) Assume that your application is not secure and act accordingly by encrypting or hashing passwords and other confidential data including connection strings.**
+
+**6) Establish reasonable password policys and ensure that passwords are changed on a regular basis.**
+
+## <u>Web Application 2: A Brute Force to Be Reckoned With</u> 
+
+
 
 
 
