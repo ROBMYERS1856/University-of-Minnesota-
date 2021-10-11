@@ -71,19 +71,26 @@ In this homework scenario, you will continue as an application security engineer
 
 ## **Mitigation Strategies:**
 
-**1) Establish Injection filtering firewall rules for HTTP Headers, Query parameters, URI paths, and Request Payloads.**  
+**A) Establish Injection filtering firewall rules for HTTP Headers, Query parameters, URI paths, and Request Payloads.**  
 
-**2) Ensure that code writers are checking the code and fixing security flaws on a regular basis**  
+**B) Ensure that code writers are checking the code and fixing security flaws on a regular basis**  
 
-**3) Ensure your website URI scheme is HTTPS and has an accredited and trusted certificate**   
+**C) Ensure your website URI scheme is HTTPS and has an accredited and trusted certificate**   
 
-**4) Make sure that your servers and applications/software is being updated on a consitant basis.** 
+**D) Make sure that your servers and applications/software is being updated on a consitant basis.** 
 
-**5) Assume that your application is not secure and act accordingly by encrypting or hashing passwords and other confidential data including connection strings.**
+**E) Assume that your application is not secure and act accordingly by encrypting or hashing passwords and other confidential data including connection strings.**
 
-**6) Establish reasonable password policys and ensure that passwords are changed on a regular basis.**
+**F) Establish reasonable password policys and ensure that passwords are changed on a regular basis.**
 
 ## <u>Web Application 2: A Brute Force to Be Reckoned With</u> 
+
+### 1. Complete the following steps to set up the activity.
+
+![Brute Force Setup](IMAGE/brute.md) 
+
+
+kljsjd;lkd;l;kjsf
 
 
 
