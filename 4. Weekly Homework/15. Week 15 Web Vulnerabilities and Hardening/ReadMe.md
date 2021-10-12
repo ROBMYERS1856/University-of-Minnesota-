@@ -99,7 +99,29 @@ F) Establish reasonable password policys and ensure that passwords are changed o
 
 ### [Brute Force Attack](IMAGE/brute11.md)
 
-## **Mitigation Strategies:**
+### **Mitigation Strategies:**
+
+A) Limit failed login attempts
+
+B) Limit logins to a specified IP Address or range
+
+C) Make special characters and a reasonable amount of characters standard
+
+D) Regular schedualed/required pass word changes help mitigate bruteforce attacks
+
+E) Dont just Hash your pass words. Make sure you also add SALT as well.
+
+F) Apply the principle of least privilege. In other words, ensure that all users only have access to those resources that are absolutely necessary to their job function. Never use a domain administrator account as an SQL database connection account for example.
+
+## Web Application 3: Where's the BeEF?
+
+### 1. Set up BeEF (Browser Exploitation Framework Project)
+
+### [Beef Set Up](IMAGE/beef.md)
+
+### 2. Test the Replicants web application by using the BeEF Tool. You are tasked with using a stored XSS attack to inject a BeEF hook into Replicants' main website.
+
+### [XSS Attack](IMAGE/beeff.md)
 
 
 
