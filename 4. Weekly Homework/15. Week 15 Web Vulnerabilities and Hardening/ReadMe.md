@@ -95,7 +95,7 @@ F) Establish reasonable password policys and ensure that passwords are changed o
 
 ### [Breached list of Passwords](IMAGE/breachedpwd.md) 
 
-## Using BURP to bruteforce attack the BWAPP Website:
+### 3. Using BURP to bruteforce attack the BWAPP Website:
 
 ### [Brute Force Attack](IMAGE/brute11.md)
 
