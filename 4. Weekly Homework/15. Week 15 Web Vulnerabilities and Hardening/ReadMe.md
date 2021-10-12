@@ -71,7 +71,7 @@ In this homework scenario, you will continue as an application security engineer
 
 ## **Mitigation Strategies:**
 
-**A) Establish Injection filtering firewall rules for HTTP Headers, Query parameters, URI paths, and Request Payloads.**  
+A) Establish Injection filtering firewall rules for HTTP Headers, Query parameters, URI paths, and Request Payloads.
 
 **B) Ensure that code writers are checking the code and fixing security flaws on a regular basis**  
 
@@ -97,7 +97,7 @@ In this homework scenario, you will continue as an application security engineer
 
 ## Using BURP to bruteforce attack the BWAPP Website:
 
-[Brute Force Attack](IMAGE/brute11.md)
+### [Brute Force Attack](IMAGE/brute11.md)
 
 
 
