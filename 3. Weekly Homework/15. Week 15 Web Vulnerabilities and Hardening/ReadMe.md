@@ -105,6 +105,8 @@ F) Establish reasonable password policys and ensure that passwords are changed o
 
 ### [Brute Force Attack](IMAGE/brute11.md)
 
+<br>
+
 ## **Mitigation Strategies:**
 
 A) Limit failed login attempts
