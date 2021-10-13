@@ -1,4 +1,4 @@
-
+# Rob Myers: Week 12 Homework / Cloud Security 
 ## Networking Map
 
 <brk>
@@ -9,7 +9,5 @@
 
 #
 
-
-![picture](IMAGE/a.png)
-
+![picture](IMAGE/aa.png)
 
