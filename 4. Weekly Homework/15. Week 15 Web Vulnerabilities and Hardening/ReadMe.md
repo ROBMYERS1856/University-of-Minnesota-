@@ -121,7 +121,7 @@ F) Apply the principle of least privilege. In other words, ensure that all users
 
 ### 2. Test the Replicants web application by using the BeEF Tool. You are tasked with using a stored XSS attack to inject a BeEF hook into Replicants' main website.
 
-### [XSS Attack](IMAGE/beeff.md)
+### [XSS Attack using BeEF](IMAGE/beeff.md)
 
 
 
