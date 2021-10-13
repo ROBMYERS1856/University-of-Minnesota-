@@ -95,25 +95,17 @@ F) Establish reasonable password policys and ensure that passwords are changed o
 
 ### [Brute Force Setup](IMAGE/brute.md) 
 
-<br> 
-
 ### 2. Use the web application tool Burp Suite, specifically the Burp Suite Intruder feature, to determine if any of the administrator accounts are vulnerable to a brute force attack on this web application.
 
 ### [List of Administrators](IMAGE/adminlist.md) 
 
 ### [Breached list of Passwords](IMAGE/breachedpwd.md) 
 
-<br>
-
 ### 3. Using BURP to bruteforce attack the BWAPP Website:
 
 ### [Brute Force Attack](IMAGE/brute11.md)
 
-<br>
-
 ## **Mitigation Strategies:**
-
-<br>
 
 A) Limit failed login attempts
 
