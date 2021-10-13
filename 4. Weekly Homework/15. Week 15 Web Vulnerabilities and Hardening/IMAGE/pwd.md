@@ -8,6 +8,6 @@
 
 
 ### <u>NOTE:</u>
-* Both pictures show succesfull communication via PING and also show the Working Directory **/var/www/html/vulnerabilities**  
+* Both pictures show succesful communication via PING and also show the Working Directory **/var/www/html/vulnerabilities**  
 
-* the test was successful
+* The test was SUCCESSFUL
