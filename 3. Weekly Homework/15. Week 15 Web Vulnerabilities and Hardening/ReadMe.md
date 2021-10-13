@@ -29,7 +29,9 @@ In this homework scenario, you will continue as an application security engineer
 
 * Malicious payloads
 
-## <u>Web Application 1: Your Wish is My Command Injection</u>  
+<br>
+
+## **Web Application 1: Your Wish is My Command Injection** 
 
 ### 1. Lets get set up:
 
@@ -67,7 +69,9 @@ In this homework scenario, you will continue as an application security engineer
 
 * Using command: **8.8.8.8 && cat ../../../../../ETC/HOSTS**
 
-### [etc/hosts](IMAGE/etchosts.md) 
+### [etc/hosts](IMAGE/etchosts.md)
+
+<br>
 
 ## **Mitigation Strategies:**
 
@@ -83,11 +87,15 @@ E) Assume that your application is not secure and act accordingly by encrypting 
 
 F) Establish reasonable password policys and ensure that passwords are changed on a regular basis.
 
-## <u>Web Application 2: A Brute Force to Be Reckoned With</u> 
+<br> 
+
+## **Web Application 2: A Brute Force to Be Reckoned With** 
 
 ### 1. Complete the following steps to set up the activity.
 
 ### [Brute Force Setup](IMAGE/brute.md) 
+
+<br> 
 
 ### 2. Use the web application tool Burp Suite, specifically the Burp Suite Intruder feature, to determine if any of the administrator accounts are vulnerable to a brute force attack on this web application.
 
@@ -95,11 +103,17 @@ F) Establish reasonable password policys and ensure that passwords are changed o
 
 ### [Breached list of Passwords](IMAGE/breachedpwd.md) 
 
+<br>
+
 ### 3. Using BURP to bruteforce attack the BWAPP Website:
 
 ### [Brute Force Attack](IMAGE/brute11.md)
 
-### **Mitigation Strategies:**
+<br>
+
+## **Mitigation Strategies:**
+
+<br>
 
 A) Limit failed login attempts
 
@@ -113,7 +127,9 @@ E) Dont just Hash your pass words. Make sure you also add SALT as well.
 
 F) Apply the principle of least privilege. In other words, ensure that all users only have access to those resources that are absolutely necessary to their job function. Never use a domain administrator account as an SQL database connection account for example.
 
-## Web Application 3: Where's the BeEF?
+<br>
+
+## **Web Application 3: Where's the BeEF?** 
 
 ### 1. Set up BeEF (Browser Exploitation Framework Project)
 
@@ -122,6 +138,32 @@ F) Apply the principle of least privilege. In other words, ensure that all users
 ### 2. Test the Replicants web application by using the BeEF Tool. You are tasked with using a stored XSS attack to inject a BeEF hook into Replicants' main website.
 
 ### [XSS Attack using BeEF](IMAGE/beeff.md)
+
+<br>
+
+## **Mitigation Strategies:**
+
+
+**NOTE:** BeEF is a tool that can explit several vulnerabilities, specifically API vulnerabilities
+
+A) Validate Parameters:
+
+* Schema validation should be as restrictive as possible, using typing, ranges, sets and even explicit white
+listing whenever possible. 
+
+B) Apply Explicit Threat Detection: 
+
+* Apply virus detection to all potentially risky encoded content. 
+
+C) Turn on SSL Everywhere: 
+
+* Make SSL/TLS the rule for all APIs. Adding SSL/TLS is an effective defense against man-in-the-middle attacks and provides integrity on all data exchanged between a client and a server.
+
+D) Apply Rigorous Authentication and Authorization:
+
+* OAuth is quickly becoming the go-to resource for user-centric API authorization
+
+ 
 
 
 
