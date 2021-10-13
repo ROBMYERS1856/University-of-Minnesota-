@@ -44,6 +44,7 @@ You’ll learn from skilled instructors and gain real-world experience by collab
 
     - Bash Scripting
     - PowerShell Scripting
+    - HTML/CSS/Java
     
 ## What you can expect upon graduating:
 
