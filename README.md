@@ -10,7 +10,7 @@ You’ll learn from skilled instructors and gain real-world experience by collab
     - Wireshark
     - Security Onion
     - SNORT 
-    - Azure
+    - Azure Virtual Machines
 
 ## Systems:
 
@@ -30,6 +30,7 @@ You’ll learn from skilled instructors and gain real-world experience by collab
     - Metasploit
     - Hashcat
     - Burp Suite
+    - BeEf (Browser Exploitation Framework)
     - Web Vulnerabilities and Security
 
 ## Cybersecurity Careers:
@@ -54,4 +55,4 @@ Identify suspicious patterns of user behavior to identify bots, intruders, and o
 
 Write Bash scripts to automate security and operating systems tasks
 
-Last, you should be prepared to succesfully complete the CompTIA certification
+Last, you should be prepared to succesfully complete the **CompTIA Security +** certification
