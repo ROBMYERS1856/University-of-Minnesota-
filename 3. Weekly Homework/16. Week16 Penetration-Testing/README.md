@@ -55,11 +55,11 @@
 
 1. ### What open ports and running services did Shodan find:
 
-* Using shodan.io search: **DNS Server 65.61.137.117**
+   * <u>Using shodan.io search:</u> **DNS Server 65.61.137.117**
 
-* Ports Open are: **80/TCP and 8080/TCP** 
+   * <u>Ports Open are:</U> **80/TCP and 8080/TCP** 
 
-* **Port 443/TCP returned and error code**
+   * **Port 443/TCP returned and error code**
 
 ### [Picture of Open Ports](IMAGE/port.PNG) 
 
