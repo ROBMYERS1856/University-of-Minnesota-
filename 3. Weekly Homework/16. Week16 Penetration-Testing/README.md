@@ -65,11 +65,44 @@
 
 ## Step 4: Recon-ng
 
-- Install the Recon module `xssed`. 
-- Set the source to `demo.testfire.net`. 
-- Run the module. 
+### Install the Recon module `xssed`.
 
-Is Altoro Mutual vulnerable to XSS: 
+### **NOTE:** All commands entered are from the Kali Linux Command Line
+
+* Run: recon-ng
+* marketplace search xssed
+* marketplace install xssed
+* modules load xssed 
+
+![pic](IMAGE/load.PNG)  
+
+### Set the source to `demo.testfire.net`. 
+
+* options set SOURCE demo.testfire.net
+
+![pic](IMAGE/src.PNG) 
+
+### Run the module. 
+
+* Enter Command: **run**
+
+![pic](IMAGE/run.PNG) 
+
+### Is Altoro Mutual vulnerable to XSS: 
+
+* Yes, Altoro Mutual is vulnerable to XSS Attacks
+
+![pic](IMAGE/yes.PNG) 
+
+<u>Picture of demo.testfire.net from the XSSed.com website:</u>
+
+### [XSSed.com](IMAGE/xss.PNG)
+
+### <u>Example: Testing the vulnerability</u> 
+
+* Enter the following in the search bar: <script>alert("GOVIKINGS")</script>
+
+![XSSed.com](IMAGE/v.PNG) 
 
 ### Step 5: Zenmap
 
