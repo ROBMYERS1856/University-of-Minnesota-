@@ -56,4 +56,4 @@ Identify suspicious patterns of user behavior to identify bots, intruders, and o
 
 Write Bash scripts to automate security and operating systems tasks
 
-Last, you should be prepared to succesfully complete the <h3>**CompTIA Security +** certification
+Last, you should be prepared to succesfully complete the **<u>CompTIA Security +</u>** Certification
