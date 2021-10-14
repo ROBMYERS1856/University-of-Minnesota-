@@ -5,9 +5,9 @@
 
 1. ### Using Google, can you identify who the Chief Executive Officer of Altoro Mutual is:
 
-    * Google Dorking Command: **Intitle:**
+    * Google Dorking Command: <u>**Intitle:**</U> 
 
-    * Google Search Command: **Intitle:Altoro Mutual CEO**
+    * Google Search Command: <u>**Intitle:Altoro Mutual CEO**</u>
 
     * <u> **Altoro Mutual CEO is Karl Fitzgerald** </u>
 
