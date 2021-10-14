@@ -94,7 +94,7 @@
 
 ![pic](IMAGE/yes.PNG) 
 
-<u>Picture of demo.testfire.net from the XSSed.com website:</u>
+### NOTE: Picture of Vulnerability from the XSSed.com website:
 
 ### [XSSed.com](IMAGE/xss.PNG)
 
@@ -104,7 +104,7 @@
 
 ![XSSed.com](IMAGE/v.PNG) 
 
-### Step 5: Zenmap
+## Step 5: Zenmap
 
 Your client has asked that you help identify any vulnerabilities with their file-sharing server. Using the Metasploitable machine to act as your client's server, complete the following:
 
