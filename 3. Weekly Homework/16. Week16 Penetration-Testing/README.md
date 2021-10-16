@@ -100,7 +100,7 @@
 
 ### <u>Example: Testing the vulnerability</u> 
 
-* Enter the following in the search bar: query=<script>alert("GOVIKINGS")</script>
+* Enter the following in the search box or address bar: <script>alert("GOVIKINGS")</script>
 
 ![XSSed.com](IMAGE/4.PNG) 
 
