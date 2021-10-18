@@ -162,7 +162,7 @@
 
 * port 445 is Samba smbd 3.o.20 Debian (workgroup: WORKGROUP) It also appears that this port is associated with a Group USER : WORKGROUP that may have specific privledges.
 
-* Suspect that USER: Anonymous has been added to the WORKGROUP via the ftp-vsftdp-backdoor vulnerability
+* Suspect that USER: Anonymousmay have been added to the WORKGROUP via the ftp-vsftdp-backdoor vulnerability and may have access to sensative files
  
 ### **Once you have identified this vulnerability, answer the following questions for your client:** 
   1. **What is the vulnerability:**
@@ -170,6 +170,7 @@
   * The vulnerability is that server 192.168.0.10 is vulnerable to FTP attacks
   * Specifically server 192.168.1.10 is vulnerable to the ftp-vsftpd-backdoor attack
   * vsftpd 2.3.4 contains a backdoor which opens a shell on port 6200/TCP
+  * This vulnerability may allow unauthorized users to view confidential information
 
   2. **Why is it dangerous:**
   * This is dangerous becuase FTP helps keep file contents seccure durring transmission. If someone is able to create a back door and gain access to files that are meant to be secure then that is a security risk. A company could be exposing sensative and private information that they do not want unauthorized persons to see. 
