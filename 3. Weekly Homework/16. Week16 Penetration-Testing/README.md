@@ -13,7 +13,7 @@
 
 ![pic](IMAGE/kar1.PNG) 
 
-**Picture of the Altoro Mutual Website Executives & Management:**
+### **Picture of the Altoro Mutual Website Executives & Management:**
 
 ### [AltoroMutual Management](IMAGE/1.PNG)
  
@@ -94,7 +94,7 @@
 
 ![pic](IMAGE/yes.PNG) 
 
-### NOTE: Picture oVulnerability from the XSSed.com website:
+### NOTE: Picture of Vulnerability from the XSSed.com website:
 
 ### [XSSed.com](IMAGE/xss.PNG)
 
@@ -140,7 +140,9 @@
 
 **NOTE: Picture of the vulnerability exposed after being run in Zenmap. The scan revieled that the Metasploitable IP is exposed and vulnerable to this type of back door attack and the script was reported as showing a vulnerability since 2011 - 07 - 04.** 
 
-## [Vulnerability Exposed](IMAGE/z4.PNG)
+### [Vulnerability Exposed](IMAGE/z4.PNG)
+
+### [VSFTPD-BACKDOOR](IMAGE/z5.PNG)
 
 ### 4.  **Use Zenmap's scripting engine to identify a vulnerability. associated with the service running on the 139/445 port from your previous scan.**
 
