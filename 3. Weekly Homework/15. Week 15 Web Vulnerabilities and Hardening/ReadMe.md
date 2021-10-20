@@ -81,11 +81,11 @@ B) Ensure that code writers are checking the code and fixing security flaws on a
 
 C) Ensure your website URI scheme is HTTPS and has an accredited and trusted certificate 
 
-D) Make sure that your servers and applications/software is being updated on a consitant basis.
+D) Make sure that your servers and applications/software is being updated on a consistent basis.
 
 E) Assume that your application is not secure and act accordingly by encrypting or hashing passwords and other confidential data including connection strings.
 
-F) Establish reasonable password policys and ensure that passwords are changed on a regular basis.
+F) Establish reasonable password policy's and ensure that passwords are changed on a regular basis.
 
 <br> 
 
@@ -115,9 +115,9 @@ B) Limit logins to a specified IP Address or range
 
 C) Make special characters and a reasonable amount of characters standard
 
-D) Regular schedualed/required pass word changes help mitigate bruteforce attacks
+D) Regular scheduled/required pass word changes help mitigate bruteforce attacks
 
-E) Dont just Hash your pass words. Make sure you also add SALT as well.
+E) Don't just Hash your pass words. Make sure you also add SALT as well.
 
 F) Apply the principle of least privilege. In other words, ensure that all users only have access to those resources that are absolutely necessary to their job function. Never use a domain administrator account as an SQL database connection account for example.
 
@@ -138,7 +138,7 @@ F) Apply the principle of least privilege. In other words, ensure that all users
 ## **Mitigation Strategies:**
 
 
-**NOTE:** BeEF is a tool that can explit several vulnerabilities, specifically API vulnerabilities
+**NOTE:** BeEF is a tool that can exploit several vulnerabilities, specifically API vulnerabilities
 
 A) Validate Parameters:
 

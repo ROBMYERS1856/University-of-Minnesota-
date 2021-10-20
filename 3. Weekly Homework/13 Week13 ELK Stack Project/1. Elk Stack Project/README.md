@@ -87,10 +87,10 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly **efficient and flexible**, in addition to restricting **traffic** to the network.
 
 - **What aspect of security do load balancers protect?** 
-  * Load balaners help protect the network against hackers and attacks like DDoS attacks. 
+  * Load balancers help protect the network against hackers and attacks like DDoS attacks. 
   * They allow for daily rule updates and help protect against unauthorized access.   
-  * They also also reduce the load inorder to achive optimal traffic speed.
-  * Load balencers are also helpfull at accomodating failed or under performing servers/componenents to maintain user service.
+  * They also also reduce the load in-order to achieve optimal traffic speed.
+  * Load balancers are also helpful at accommodating failed or under performing servers/components to maintain user service.
   
 <brk>
 
@@ -128,7 +128,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 Only the **Jump-Box-Provisioner** machine can accept connections from the Internet. **Access to this machine is only allowed from the following IP addresses:**
 
 - **My Home/Personal IP Address listed in INCOMING RULES/NETWORKING SECURITY GROUPS**
-- **also can only be accesed using SSH**
+- **also can only be accessed using SSH**
  
 Machines within the network can only be accessed by **Jump-Box-Provisioner 10.0.0.4**.
 
@@ -155,8 +155,8 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
   * One main advantage is Ansible is an open-source tool.
   * Ansible uses a simple syntax written in YAML, called playbooks.
   * Ansible lets you define your hosts (remote machines) and allows you to control multiple servers via SSH.
-  * Automation advantage vs manual configuration is time. That is why Ansible is such a usefull tool.
-  * Automation with Ansible also reduces the chance of errors and improves consistantcy
+  * Automation advantage vs manual configuration is time. That is why Ansible is such a useful tool.
+  * Automation with Ansible also reduces the chance of errors and improves consistency
  
 **The playbook implements the following tasks:**
 
@@ -215,7 +215,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 **These Beats allow us to collect the following information from each machine:**
 
-- **Filebeat** will be used to collect log files from very specific files such as Apache, Microsft Azure tools and web servers, MySQL databases.
+- **Filebeat** will be used to collect log files from very specific files such as Apache, Microsoft Azure tools and web servers, MySQL databases.
 
   [Filebeat-Status](IMAGE/Filebeat-Status.PNG)
 

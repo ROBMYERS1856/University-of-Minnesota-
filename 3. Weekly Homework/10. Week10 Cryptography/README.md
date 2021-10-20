@@ -25,12 +25,12 @@ The Ransomeware has given two options:
     * Pay 100 Bitcoins
     * Solve 6 Riddles
 
-## Objective is to solve the 6 riddles and recieve key codes inorder to get access back to the network
+## Objective is to solve the 6 riddles and receive key codes in-order to get access back to the network
 
 # Scenario 1: 
 
     * Decode the following: OZCJMZ
-    * Decoded Messege = Gruber
+    * Decoded Message = Gruber
     * Answer Key: 6skd8s
 
  ![picture](IMAGE/Riddle1.PNG)
@@ -38,15 +38,15 @@ The Ransomeware has given two options:
  # Scenario 2:
 
     * Decode binary code: 
-    * Decoded Messege = Gennero
+    * Decoded Message = Gennero
     * Answer Key: cy8snd2
 
  ![picture](IMAGE/Riddle2.PNG)
 
  # Scenario 3:
 
-    * Decode a messege using OpenSSL
-    * Decoded Messege: Takagi
+    * Decode a message using OpenSSL
+    * Decoded Message: Takagi
     * Answer Key: ud6s98n
 
 ![picture](IMAGE/Riddle3.PNG)
@@ -54,7 +54,7 @@ The Ransomeware has given two options:
 # Scenario 4:
 
     * Scenario 4 had several general cryptography questions pertaining to Asymmetric questions
-    * Succesfully answered all the questions to get the Answer Key
+    * Successfully answered all the questions to get the Answer Key
     * Answer Key: 7gsn3nd2
 
 ![picture](IMAGE/Riddle4.PNG)
@@ -65,8 +65,8 @@ The Ransomeware has given two options:
 
 # Scenario 5:
 
-    * Decode a messege using Hash
-    * Decode Messege: Argyle
+    * Decode a message using Hash
+    * Decode Message: Argyle
     * Answer Key: ajy39d2
 
 ![picture](IMAGE/Riddle5.PNG) 
@@ -76,14 +76,14 @@ The Ransomeware has given two options:
 
     * Decode a message using Steganography
     * Down Load Image to find the hidden message
-    * Also used the riddle inorder to find a password
-    * Decoded Messege: mcclane
+    * Also used the riddle in-order to find a password
+    * Decoded Message: mcclane
     * Answe Key: 7skahd6
 
 ![picture](IMAGE/Riddle6_A.PNG) 
 ![picture](IMAGE/Riddle6_B.PNG)
 
-# THE END: Succesfully solved all 6 questions and saved the network from the bad guys
+# THE END: Successfully solved all 6 questions and saved the network from the bad guys
 
 ![picture](IMAGE/THeEND.PNG)
 

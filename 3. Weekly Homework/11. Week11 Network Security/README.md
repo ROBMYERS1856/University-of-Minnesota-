@@ -25,7 +25,7 @@ The concept of defense in depth can be broken down into three different security
 
     ![picture](IMAGE/IDSandIPS.PNG)
 
-    * IDS and IPS Technology is critical because they cover Automation, Complience, and Policy Enforcement
+    * IDS and IPS Technology is critical because they cover Automation, Compliance, and Policy Enforcement
 
 <brk>
 
@@ -469,7 +469,7 @@ Answer the following:
 | TTP | Example | Findings |
 | --- | --- | --- | 
 | **Reconnaissance** |  How did they attacker locate the victim? | Via Email in phishing attempt
-| **Weaponization** |  What was it that was downloaded?| A zip file the user believes is a legitimate invoce
+| **Weaponization** |  What was it that was downloaded?| A zip file the user believes is a legitimate invoice
 | **Delivery** |    How was it downloaded?| User opens the zip file and double clicks the JavaScript, the default file type associatins in Windows will cause Internet Explorer to open and excecute the JavaScript
 | **Exploitation** |  What does the exploit do?| It takes over the user computer via Command & Control Servers (C&C) typically excecuted through spam and email attachments 
 | **Installation** | How is the exploit installed?| Nemucod will instantiate three different ActiveX Controls. Short answer is Nemucod will open a legitimate PDF file in the browser that the user will beleive is a legitimate invoce

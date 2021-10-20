@@ -42,8 +42,8 @@ In this homework, we will review the many of the concepts and tools covered in t
     **Request Body:** 
 
      * HTTP Body Data is the data transmitted in an HTTP transaction message
-     * It is used to send additional information to the server like a specific messege or username and password for example. 
-     * It is typicaly an API in JSON format
+     * It is used to send additional information to the server like a specific message or username and password for example. 
+     * It is typically an API in JSON format
 
 3. **Which part of an HTTP request is optional?**
 
@@ -67,7 +67,7 @@ In this homework, we will review the many of the concepts and tools covered in t
 
     c. Response Body 
 
-    * **The Response Body** will display a messege regarding the request. One example might be if the web server could not find the requested webpage.
+    * **The Response Body** will display a message regarding the request. One example might be if the web server could not find the requested webpage.
 
     <br>
 
@@ -151,7 +151,7 @@ In this homework, we will review the many of the concepts and tools covered in t
     * Forexample: curl -X OPTIONS google.com -i 
 
     ### <u>[curl -x OPTIONS](IMAGE/1.PNG)</u> 
-
+ 
 ---
 
 ### <u> Answer the following questions about sessions and cookies: </u>
