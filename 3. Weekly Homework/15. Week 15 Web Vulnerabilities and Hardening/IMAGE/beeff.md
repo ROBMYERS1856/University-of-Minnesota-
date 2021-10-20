@@ -12,6 +12,12 @@
 
 ### 2. Launching the Pretty Theft Attack
 
+From the BeEF Control Panel: 
+
+* Click Commands
+* Click on Social Engineering
+* Click Pretty Theft
+
 ![pic](hook-3.PNG) 
 
 
