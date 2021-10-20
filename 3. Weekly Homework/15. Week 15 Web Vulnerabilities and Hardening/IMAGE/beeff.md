@@ -12,7 +12,7 @@
 
 ### 2. Launching the Pretty Theft Attack
 
-    ![pic](hook-3.PNG) 
+![pic](hook-3.PNG) 
 
 
 * Victim entered the following:
