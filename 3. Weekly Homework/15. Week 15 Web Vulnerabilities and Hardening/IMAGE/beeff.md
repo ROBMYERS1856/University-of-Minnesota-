@@ -1,6 +1,6 @@
 ## "Hooking the DVWA Website via BeEF"
 
-1. ### Successfully "hooked" URL 192.168.13.25 on port 80 / Firefox
+### 1. Successfully "hooked" URL 192.168.13.25 on port 80 / Firefox
 
     ![pic](hook-1.PNG)  
 
@@ -10,7 +10,7 @@
 
 ### [Picture of script length correct](hook-500.PNG)
 
-2. ### Launching the Pretty Theft Attack
+### 2. Launching the Pretty Theft Attack
 
     ![pic](hook-3.PNG) 
 
@@ -31,7 +31,7 @@
 
     ![pic](hook-6.PNG) 
 
-3. ### From the pictures above you can see that the attack was SUCCESSFULL
+### 3. From the pictures above you can see that the attack was SUCCESSFULL
 
 **Example of a SUCCESSFULL Fake Notification Attack**
 
