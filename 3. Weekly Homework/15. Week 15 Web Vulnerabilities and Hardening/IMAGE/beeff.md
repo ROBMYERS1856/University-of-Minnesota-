@@ -31,17 +31,17 @@
 
     ![pic](hook-6.PNG) 
 
-### 3. From the pictures above you can see that the attack was SUCCESSFULL
+### NOTE: From the pictures above you can see that the attack was SUCCESSFULL
 
-**Example of a SUCCESSFULL Fake Notification Attack**
+**A) Example of a SUCCESSFULL Fake Notification Attack**
 
 ![pic](hook-7.PNG) 
 
- **Example of a SUCCESSFULL Get Geolocation (Third Party) Attack**
+ **B) Example of a SUCCESSFULL Get Geolocation (Third Party) Attack**
 
 ![pic](hook-8.PNG)
 
- **Example of a SUCCESSFULL Port Scanner Attack**
+ **C) Example of a SUCCESSFULL Port Scanner Attack**
 
 ![pic](hook-9.PNG)
 
