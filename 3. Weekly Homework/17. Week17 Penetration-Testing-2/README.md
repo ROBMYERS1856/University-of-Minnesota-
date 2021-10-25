@@ -1,9 +1,9 @@
 
 # Rob Myers: Week 17 Homework: Penetration Testing 2
 
-This week I was given access the Icecast server, a free  software for streaming multimedia. 
+This week I was tasked with performing an internal penetration test on GoodCorp’s server. GoodCorp is an source streaming media server.
 
-For a full review of the findings here is a copy of the after action report:
+For a full review of the findings here is a copy of the after action report: (Icecast Report)
 
 ### [Icecast Report](Report.pdf)
 
