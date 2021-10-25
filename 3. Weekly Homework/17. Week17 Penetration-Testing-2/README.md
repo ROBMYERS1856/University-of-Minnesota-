@@ -5,10 +5,9 @@ This week I was given access the Icecast server, a free  software for streaming 
 
 For a full review of the findings here is a copy of the after action report:
 
+[Icecast Report](Report.pdf)
 
-[REPORT](Report.docx)
 
-[icereport](Report.pdf) 
 
 
 Below is commands and exploits used to demonstrate vulnerabilities on the Icecast Server: 
