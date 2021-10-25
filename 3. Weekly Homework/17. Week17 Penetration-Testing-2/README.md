@@ -1,7 +1,7 @@
 
 # Rob Myers: Week 17 Homework: Penetration Testing 2
 
-This week I was tasked with performing an internal penetration test on GoodCorp’s server. GoodCorp is an source streaming media server.
+This week I was tasked with performing an internal penetration test on GoodCorp’s Icecast server. GoodCorp is an open source streaming media server.
 
 For a full review of the findings here is a copy of the after action report: (Icecast Report)
 
