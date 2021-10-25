@@ -1,4 +1,14 @@
 
+# Rob Myers: Week 17 Homework: Penetration Testing 2
+
+This week I was given access the Icecast server, a free  software for streaming multimedia. 
+
+For a full review of the findings here is a copy of the after action report:
+
+[REPORT](IMAGE/Report1.PDF)
+
+Below is commands and exploits used to demonstrate vulnerabilities on the Icecast Server: 
+
 ## Instructions
 
 You've been provided full access to the network and are getting ping responses from the CEO’s workstation.
@@ -113,7 +123,7 @@ C. Run the command that displays the target's computer system information:
 
 ### Answer: **sysinfo** 
 
-### [sysinfo information](IMAGE/meta12.md)
+### [sysinfo information](IMAGE/meta11.md)
 
 
 
