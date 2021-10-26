@@ -91,6 +91,8 @@ You've been provided full access to the network and are getting ping responses f
 
     ### [Exfiltrates command for recipe.txt](IMAGE/meta7.md) 
 
+    ### [Exfiltrates command for user.secretfile.txt](IMAGE/meta69.md) 
+
     ### [Common Meterpreter Commands](IMAGE/meta8.md) 
 
 
@@ -123,7 +125,7 @@ C. Run the command that displays the target's computer system information:
 
 ### Answer: **sysinfo** 
 
-### [sysinfo information](IMAGE/meta11.md)
+### [sysinfo information](IMAGE/meta12.md)
 
 
 
