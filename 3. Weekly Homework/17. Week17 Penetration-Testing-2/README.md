@@ -103,9 +103,9 @@ You've been provided full access to the network and are getting ping responses f
 
     ### Answer: **run post/multi/recon/local_explit_suggester
 
-Note: The exploit suggester is just that: a suggestion. Keep in mind that the listed suggestions may not include all available exploits.
+* **Note: The exploit suggester is just that: a suggestion. Keep in mind that the listed suggestions may not include all available exploits.**
 
-Bonus
+## <u>Bonus</u> 
 
 A. Run a Meterpreter post script that enumerates all logged on users.
 
