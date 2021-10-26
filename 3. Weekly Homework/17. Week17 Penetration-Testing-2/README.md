@@ -31,7 +31,6 @@ You've been provided full access to the network and are getting ping responses f
 
     ### [Searchsploit Pictures](IMAGE/search.md)
 
-
 3. Now that we know which exploits are available to us, let's start Metasploit:
 
     * Run the command that starts Metasploit:
