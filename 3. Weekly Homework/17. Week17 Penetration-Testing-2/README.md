@@ -5,7 +5,7 @@ This week I was tasked with performing an internal penetration test on GoodCorpâ
 
 For a full review of the findings here is a copy of the after action report: (Icecast Report)
 
-### [Icecast Report](Report.pdf)
+### [GoodCorp-Icecast Penetration Test Report](Report.pdf)
 
 Below is commands and exploits used to demonstrate vulnerabilities on the Icecast Server: 
 
