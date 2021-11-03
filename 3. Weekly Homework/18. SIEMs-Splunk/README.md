@@ -1,4 +1,4 @@
-## Rob Myers Unit 18 Homework: Lets go Splunking!
+# Rob Myers Unit 18 Homework: Lets go Splunking!
 ___
 
 ### Topics Covered in This Assignment
@@ -47,26 +47,21 @@ ___
 
 ### Step 2: Are We Vulnerable? 
 
-**Background:**  Due to the frequency of attacks, your manager needs to be sure that sensitive customer data on their servers is not vulnerable. Since Vandalay uses Nessus vulnerability scanners, you have pulled the last 24 hours of scans to see if there are any critical vulnerabilities.
-
-  - For more information on Nessus, read the following link: https://www.tenable.com/products/nessus
-
 **Task:** Create a report determining how many critical vulnerabilities exist on the customer data server. Then, build an alert to notify your team if a critical vulnerability reappears on this server.
 
 1. Upload the following file from the Nessus vulnerability scan.
 
-    ### [Nessus Vulnerability Log](4.md) 
-
+    ### [Nessus Vulnerability Log](IMAGE/44.md)  
 
 2. Create a report that shows the `count` of critical vulnerabilities from the customer database server.
    - The database server IP is `10.11.36.23`.
    - The field that identifies the level of vulnerabilities is `severity`.
 
-    ### [Vulnerability Report](5.md) 
+    ### [Vulnerability Report](IMAGE/5.md) 
       
 3. Build an alert that monitors every day to see if this server has any critical vulnerabilities. If a vulnerability exists, have an alert emailed to `soc@vandalay.com`.
 
-    ### [Vulnerability Alert](6.md) 
+    ### [Vulnerability Alert](IMAGE/6.md) 
 
 
 ### Step 3: Drawing the (base)line
@@ -75,7 +70,7 @@ ___
 
 1. Upload the administrator login logs.
 
-    ### [Admin Logins](7.md)
+    ### [Admin Logins](IMAGE/7.md)
 
 2. When did the brute force attack occur?
 
@@ -89,10 +84,14 @@ ___
 
     * The Threshold should be set at 35 or more "failed login" attempts
 
-   ### [Failed Login/Brute Force Report](8.md) 
+   ### [Failed Login/Brute Force Report](IMAGE/8.md) 
 
 4. Design an alert to check the threshold every hour and email the SOC team at SOC@vandalay.com if triggered. 
 
-    ### [Failed Login/Brute Force Alert](9.md) 
+    ### [Failed Login/Brute Force Alert](IMAGE/9.md) 
+
+
+
+
 
 
