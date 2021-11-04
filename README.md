@@ -7,7 +7,9 @@ At the University of Minnesota Cybersecurity Boot Camp, students get hands-on tr
 ## Networking:
 
     - Packet Analysis
+    - Splunk
     - Wireshark
+    - Kibana
     - Security Onion
     - SNORT 
     - Azure Virtual Machines
@@ -56,4 +58,4 @@ Identify suspicious patterns of user behavior to identify bots, intruders, and o
 
 Write Bash scripts to automate security and operating systems tasks
 
-Last, you should be prepared to succesfully complete the **<u>CompTIA Security +</u>** Certification
+Last, you should be prepared to successfully complete the **<u>CompTIA Security +</u>** Certification
