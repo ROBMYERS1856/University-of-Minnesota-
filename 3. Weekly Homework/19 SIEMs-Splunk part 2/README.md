@@ -1,7 +1,7 @@
 ## Rob Myers Week 19 Homework: Protecting VSI from Future Attacks
 ---
 
-### <u>Part 1: Windows Server Attack</u> 
+### <u> Part 1: Windows Server Attack </u> 
 
 ### Question 1
 
@@ -75,7 +75,7 @@ What other rules can you create to protect VSI from attacks against your webserv
 
 * Ensure that all GLOBAL SOLUTIONS are implemented
 * Specifically ensure that all Known VPN IP address's are blocked
-* Block all known 'user_agents" associated with the attack
+* Block all known 'user_agents" and "attack_signatures" associated with the attack
   
 
 
