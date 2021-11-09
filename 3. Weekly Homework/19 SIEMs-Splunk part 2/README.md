@@ -76,6 +76,7 @@ What other rules can you create to protect VSI from attacks against your webserv
 * Ensure that all GLOBAL SOLUTIONS are implemented
 * Specifically ensure that all Known VPN IP address's are blocked
 * Block all known 'user_agents" and "attack_signatures" associated with the attack
+* Block multiple (more than 5) GET and POST requests from the same IP Address (within 1 min)
   
 
 
