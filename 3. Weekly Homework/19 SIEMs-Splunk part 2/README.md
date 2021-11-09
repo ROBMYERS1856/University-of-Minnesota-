@@ -63,21 +63,15 @@ Based on the geographic map, recommend a firewall rule that the networking team 
 
 * The Firewall rule should state the following: "Block ALL incoming HTTP and IP Address traffic from the Ukraine."
 
+## [Geographical Map](IMAGE/3.md) 
 
-  
+#### Question 2  
 
 - VSI has insider information that JobeCorp will launch the same webserver attack but use a different IP each time in order to avoid being stopped by the rule you just created.
 
 - What other rules can you create to protect VSI from attacks against your webserver?
-  - Conceive of two more rules in "plain english". 
-  - Hint: Look for other fields that indicate the attacker.
+
+* Ensure that all GLOBAL SOLUTIONS are implemented
+* Specifically ensure that all Known VPN IP address's are blocked
+* Block all known 'user_agents" associated with the attack
   
-
-
-### Guidelines for your Submission:
-  
-In a word document, provide the following:
-- Answers for all questions.
-- Screenshots where indicated
-
-Submit your findings in BootCampSpot!
