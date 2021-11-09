@@ -12,15 +12,15 @@ A report that provides a comparison between the success and failure of Windows a
 
 - source="windows_server_logs.csv" | top  status
        
-Determine an appropriate baseline and threshold for hourly level of failed Windows activity. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
+Determine an appropriate baseline and threshold for hourly level of failed Windows activity. 
        
 - source="windows_server_logs.csv"  status=failure 
 	         
-Determine a baseline and threshold for hourly count of the signature **an account was successfully logged on**. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.
+Determine a baseline and threshold for hourly count of the signature **an account was successfully logged on**. 
 
 - source="windows_server_logs.csv" signature="An account was successfully logged on"	         
                   
-Determine a baseline and threshold for hourly count of the signature **a user account was deleted**. Design the alert based on the corresponding SignatureID. Create an alert to trigger when the threshold has been reached. The alert should trigger an email to SOC@VSI-company.com.   
+Determine a baseline and threshold for hourly count of the signature **a user account was deleted**. 
 		
 - source="windows_server_logs.csv" signature_id=4726
 	                  
