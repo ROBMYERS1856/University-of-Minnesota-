@@ -1,13 +1,13 @@
 ## Rob Myers Week 19 Homework: Protecting VSI from Future Attacks
 ---
 
-### Part 1: Windows Server Attack
+### <u>Part 1: Windows Server Attack</u> 
 
-#### Question 1
+### Question 1
 
 Based on the attack signatures, what mitigations would you recommend to protect each user account? Provide global mitigations that the whole company can use and individual mitigations that are specific to each user.
 
-### Global Solution:
+### <u>Global Solution:</u>
 
 * Ensure that all server software updates have been completed and are updated weekly
 * Ensure that username and password policies are up-to-date and being enforced
@@ -18,14 +18,14 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 * Block all known VPN IP Address traffic 
 * Ensure that all firewall rules are up to industry standards 
 
-### Individual Solution:
+### <u>Individual Solution:</u>
 
 **User K:** 
 
 * On 3/25/2020 between 9am - 10am USER K had a high amount of failed password reset alerts
 * No evidence that the attacker was successful gaining access however, the logs indicate a high volume of failed password resets
 
-**Individual Mitigation Strategy:** 
+### <u>Individual Mitigation Strategy:</U>
 
 * **Ensure that ALL Global Solutions are in effect and specifically for USER K, manually reset their password** 
 
@@ -36,7 +36,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 * On 3/25/2020 between 1am - 2am USER A had a high amount of account lock out's
 * There were approximately **<u>1694</u>** "lock outs" which would indicate the attacker was attempting to use a Brute Force Attack.  
 
-**Individual Mitigation Strategy:**
+### <u>Individual Mitigation Strategy:</U>
 
 * **Ensure that ALL Global Solutions are in effect and specifically for USER A, manually reset their password**
 
@@ -45,7 +45,8 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 ## [User A: Graphs](IMAGE/2.md) 
 
   
-#### Question 2
+### Question 2
+
 VSI has insider information that JobeCorp attempted to target users by sending "Bad Logins" to lock out every user.
 
 What sort of mitigation could you use to protect against this?
@@ -54,9 +55,10 @@ What sort of mitigation could you use to protect against this?
 * Ensure that the Global Solutions are in place. This should prevent this specific type of attack as well as other common attacks as well
 * Always share information with all employees and provide routine training to educate cyber security practices 
   
-### Part 2: Apache Webserver Attack:
+### <u>Part 2: Apache Webserver Attack:</u>
 
-#### Question 1
+### Question 1
+
 Based on the geographic map, recommend a firewall rule that the networking team should implement.
 
 * The majority of the attacks came from the Ukrain, and it would be a good practice to block traffic from the Ukraine.
@@ -65,13 +67,17 @@ Based on the geographic map, recommend a firewall rule that the networking team 
 
 ## [Geographical Map](IMAGE/3.md) 
 
-#### Question 2  
+### Question 2  
 
-- VSI has insider information that JobeCorp will launch the same webserver attack but use a different IP each time in order to avoid being stopped by the rule you just created.
+VSI has insider information that JobeCorp will launch the same webserver attack but use a different IP each time in order to avoid being stopped by the rule you just created.
 
-- What other rules can you create to protect VSI from attacks against your webserver?
+What other rules can you create to protect VSI from attacks against your webserver?
 
 * Ensure that all GLOBAL SOLUTIONS are implemented
 * Specifically ensure that all Known VPN IP address's are blocked
 * Block all known 'user_agents" associated with the attack
   
+
+
+
+
