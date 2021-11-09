@@ -51,7 +51,7 @@ VSI has insider information that JobeCorp attempted to target users by sending "
 
 What sort of mitigation could you use to protect against this?
 
-* Ensure that you have industry standard policies and security measures in places
+* Ensure that you have industry standard policies and security measures in place
 * Ensure that the Global Solutions are in place. This should prevent this specific type of attack as well as other common attacks as well
 * Always share information with all employees and provide routine training to educate cyber security practices 
   
