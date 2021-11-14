@@ -30,7 +30,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 
 * **Ensure that ALL Global Solutions are in effect and specifically for USER K, manually reset their password** 
 
-## [User K: Graphs](IMAGE/1.md) 
+### [User K: Graphs](IMAGE/1.md) 
 
 **USER A:** 
 
@@ -57,7 +57,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 * **Assign a Level 2 Tech to review Logs to ensure no data was compromised** 
 
 
-## [User J: Graphs](IMAGE/99.md) 
+### [User J: Graphs](IMAGE/99.md) 
   
 ### Question 2
 
