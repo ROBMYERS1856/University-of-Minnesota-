@@ -17,7 +17,7 @@ As <u>**BLUE TEAM**</u>, you will use Kibana to review logs taken during the RED
 
 ### RED TEAM Pen Test
 
-For this scenerio I will be using my KALI LINUX Virtual Machine to attack the following CAPSTONE Virtual Machine.
+For this scenario I will be using my AZURE KALI LINUX Virtual Machine to attack the following CAPSTONE Virtual Machine.
 
 * KALLI LINUX VM:
     
@@ -25,7 +25,7 @@ For this scenerio I will be using my KALI LINUX Virtual Machine to attack the fo
 
 * CAPSTONE VM:
 
-    - IP Adress: 192.168.1.105 
+    - IP Address: 192.168.1.105 
 
 ### [RED TEAM PEN TEST](IMAGE/REDTEAM.md)  
 
