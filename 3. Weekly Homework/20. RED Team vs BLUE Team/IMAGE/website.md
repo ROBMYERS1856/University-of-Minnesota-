@@ -23,7 +23,7 @@ Meet our team link:
 
 ![pic](file.PNG) 
 
-**NOTE:** The error mesege states that the secret-folder is not accessible to the public and it is not located on the public viewable links on the web site
+**NOTE:** The error message states that the secret-folder is not accessible to the public and it is not located on the public viewable links on the web site
 
-![pic](2.PNG) 
+
  
