@@ -16,7 +16,7 @@ Enter the command: NMAP -sV 192.168.1.105
 
 ![pic](1.PNG)
 
-### From the Nmap scan we can see that port 80 is open. Open a web browser and navigate the Summit Card Union Website.
+### From the Nmap scan we can see that port 80 is open. Open a web browser and Investigate the Summit Card Union Website for any potential vulnerabilities.
 
 ![pic](2.PNG)
 
