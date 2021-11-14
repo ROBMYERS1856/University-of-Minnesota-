@@ -22,7 +22,6 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 ### <u>Individual Solution:</u>
 
 ### **USER K:** 
----
 
 * On 3/25/2020 between 9am - 10am **USER K** had a high amount of failed password reset alerts
 * No evidence that the attacker was successful gaining access however, the logs indicate a high volume of failed password resets and a potential Brute Force Attack
@@ -32,9 +31,9 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 * **Ensure that ALL Global Solutions are in effect and specifically for USER K, manually reset their password** 
 
 ### [User K: Graphs](IMAGE/1.md) 
+---
 
 ### **USER A:** 
----
 
 * On 3/25/2020 between 1am - 2am **USER A** had a high amount of account lock out's
 * There were approximately **<u>1694</u>** "lock outs" which would indicate the attacker was attempting to use a Brute Force Attack 
@@ -46,6 +45,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 * **Follow up with the IT Dept, and perform a Pen Test to verify that the system is secure against Brute Force Attacks** 
 
 ### [User A: Graphs](IMAGE/2.md) 
+---
 
 ### **USER J:**
 
@@ -58,8 +58,9 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 
 * **Assign a Level 2 Tech to review Logs to ensure no data was compromised** 
 
-### [User J: Graphs](IMAGE/99.md) 
----
+
+### [User J: Graphs](IMAGE/99.md)
+--- 
   
 ### Question 2
 
