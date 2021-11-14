@@ -43,7 +43,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 
 * **Follow up with the IT Dept, and perform a Pen Test to verify that the system is secure against Brute Force Attacks** 
 
-## [User A: Graphs](IMAGE/2.md) 
+### [User A: Graphs](IMAGE/2.md) 
 
 **USER J:**
 
@@ -58,11 +58,6 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 
 
 ## [User J: Graphs](IMAGE/99.md) 
-
-
-
-
-
   
 ### Question 2
 
