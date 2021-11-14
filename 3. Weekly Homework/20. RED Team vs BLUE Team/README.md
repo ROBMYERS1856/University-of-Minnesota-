@@ -1,5 +1,4 @@
-## Rob Myers Week 20 Project 2: RED TEAM vs BLUE TEAM
----
+## Rob Myers Week 20 Project 2: RED TEAM vs BLUE TEAM---
 
 ### Overview:
 
