@@ -83,7 +83,6 @@ Based on the geographic map, recommend a firewall rule that the networking team 
 * The Firewall rule should state the following: "Block ALL incoming HTTP and IP Address traffic from the Ukraine."
 
 ## [Geographical Map](IMAGE/3.md)
---- 
 
 ### Question 2  
 
