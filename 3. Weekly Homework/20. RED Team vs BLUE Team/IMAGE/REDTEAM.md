@@ -45,7 +45,7 @@ Click on the WEB SITE Link to see questionable vulnerabilities:
 
 ### [BRUTE FORCE](brute.md) 
 
-Now that we have learned Ashton's Password from using Hydra, enter them into the Sign-in page:
+Now that we know Ashton's Username and Password from using Hydra, enter them into the Sign-in page:
 
 * Username: ashton
 
