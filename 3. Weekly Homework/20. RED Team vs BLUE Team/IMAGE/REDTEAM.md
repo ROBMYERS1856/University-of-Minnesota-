@@ -20,7 +20,7 @@ Enter the command: NMAP -sV 192.168.1.105
 
 ![pic](2.PNG)
 
-* Navigating the website you find access to the following:
+* Investigating the website you find access to the following:
     - Company Blog
     - Company Folders
     - Company Share Folder
@@ -34,6 +34,8 @@ Click on the WEB SITE Link to see questionable vulnerabilities:
 
 * we discovered the error: "company_folders/secret_folder is no longer accessible to the public"
 
+* This looks like a direct path to me and.........
+
 * Look what we discovered!
 
 ![pic](3.PNG) 
@@ -42,7 +44,7 @@ Click on the WEB SITE Link to see questionable vulnerabilities:
 
 ### [BRUTE FORCE](brute.md) 
 
-Now that we have learned Ashtons Password from using Hydra, enter them into the Sign-in page:
+Now that we have learned Ashton's Password from using Hydra, enter them into the Sign-in page:
 
 * Username: ashton
 
@@ -58,13 +60,13 @@ Now that we have learned Ashtons Password from using Hydra, enter them into the 
 
 **NOTE**: Notice that there are instructions on how to establish a remote connection using the companies webdav server.
 
-* NOTE: Ashton has access to Ryan's user name and password. THis is another example of poor security practices
+* NOTE: Ashton has access to Ryan's user name and password. This is another example of poor security practices
 
 ![pic](7.PNG) 
 
 ### Connect to the WebDAV
 
-* we need to crack Ryan's Hash to access his password:  Hash:d7dad0a5cd7c8376eeb50d69b3ccd352
+* We need to crack Ryan's Hash to access his password:  Hash:d7dad0a5cd7c8376eeb50d69b3ccd352
 * Connect to the server via WebDAV to establish a remote connection
 
 ### [Webdav](webdav.md) 
@@ -74,7 +76,7 @@ Now that we have learned Ashtons Password from using Hydra, enter them into the 
 * We can establish our remote connection via WebDev and establish our reverse shell one of two ways:
 
     - Upload our PHP reverse shell payload using msfvenom 
-    - Upload our PHP reverse shell payload using pre-installed webshells in our LINUX Terminal
+    - Upload our PHP reverse shell payload using pre-installed web-shells in our LINUX Terminal
 
 ![pic](rev.PNG) 
 
@@ -82,11 +84,11 @@ NOTE: Nano reverse_shell.php and set your local host IP (192.168.1.90) and Port 
 
 ![pic](rev1.PNG)
 
-Lets load our reverse_shell.php Payload into our WebDev establish our reverse shell
+Lets load our reverse_shell.php Payload into our WebDev to establish our (PHP)Reverse Shell
 
 ![pic](10.PNG) 
 
-Before we can deploy our payload to establish our reverse shell we neeD to run the Net Cat command to establish communication on port 4444
+Before we can deploy our payload to establish our reverse shell we need to run the Net Cat command to establish communication on port 4444
 
 * nc -lvnp 4444
 
@@ -102,11 +104,13 @@ Now lets establish remote access control of the server (192.168.1.105) via our W
 * NOTE: if the connection is successful the webpage should "hang"
 * Linux Terminal will also change from root@Kali to a $ symbol 
 
-## You have now successfully established the reverse shell and have full control of the all data in the server. 
+## You have now successfully established the reverse shell and have full control of all data in the server. 
 
 ![pic](13.PNG)  
 
 Picture: Example of the attacker having access to ROOT and changing directory to /USR
+
+* The attacker could now download private, sensitive proprietary information, delete files, and or basically take down the entire server
 
 ![pic](14.PNG)  
 
