@@ -20,11 +20,12 @@ Enter the command: NMAP -sV 192.168.1.105
 
 ![pic](2.PNG)
 
-* Investigating the website you find access to the following:
-    - Company Blog
-    - Company Folders
-    - Company Share Folder
-    - Meet our Team Link
+### Investigating the website you find access to the following:
+
+- Company Blog
+- Company Folders
+- Company Share Folder
+- Meet our Team Link
 
 Click on the WEB SITE Link to see questionable vulnerabilities:
 
