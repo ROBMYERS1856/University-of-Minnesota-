@@ -17,7 +17,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 * Ensure that user's with 3 failed log-in attempts are locked out for 15 minutes 
 * Ensure that ALL Users after 6 failed log-in's are locked out until their account is manually unlocked by the IT Department
 * Block all known VPN IP Address traffic 
-* Ensure that all firewall rules are up to industry standards 
+* Ensure that all firewall rules are up to industry standards: specifically blocking all PHP or other known "scripts" from being uploaded as well as all webdev or remote access from outside the network  
 
 ### <u>Individual Solution:</u>
 
@@ -65,9 +65,9 @@ VSI has insider information that JobeCorp attempted to target users by sending "
 
 What sort of mitigation could you use to protect against this?
 
-* Ensure that you have industry standard policies and security measures in place
-* Ensure that the Global Solutions are in place. This should prevent this specific type of attack as well as other common attacks as well
-* Always share information with all employees and provide routine training to educate cyber security practices 
+* Ensure that you have industry standard policies, practices, and security measures in place. This will help keep the company safe from social engineering, and phishing attacks 
+* Ensure that the Global Solution recommendations are in place. This should prevent basic Script Kitty, Injection, Cross Script and Brute Force attacks 
+* Always share information with all employees and provide routine training to educate employees on potential Cyber Security Threats and best practices 
   
 ### <u>Part 2: Apache Webserver Attack:</u>
 
