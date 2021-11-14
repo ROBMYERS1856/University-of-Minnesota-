@@ -12,7 +12,7 @@
 * Crack user passwords
 * Establish Remote Access via Reverse Shell
 
-### NMAP -sV 192.168.1.105
+Enter the command: NMAP -sV 192.168.1.105
 
 ![pic](1.PNG)
 
@@ -30,7 +30,7 @@ Click on the WEB SITE Link to see questionable vulnerabilities:
 
 ### [WEB SITE](website.md) 
 
-### From navigating the Summit Card Union Website we discovered that the "Secret Folder" is not accessible to the public. Lets try and find it!
+### From our investigation navigating the Summit Card Union Website we discovered the "Secret Folder" is not accessible to the public. Lets try and find it!
 
 * we discovered the error: "company_folders/secret_folder is no longer accessible to the public"
 
