@@ -24,7 +24,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 **USER K:** 
 
 * On 3/25/2020 between 9am - 10am **USER K** had a high amount of failed password reset alerts
-* No evidence that the attacker was successful gaining access however, the logs indicate a high volume of failed password resets
+* No evidence that the attacker was successful gaining access however, the logs indicate a high volume of failed password resets and a potential Brute Force Attack
 
 ### <u>Individual Mitigation Strategy:</U>
 
