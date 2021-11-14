@@ -38,11 +38,15 @@ Click on the WEB SITE Link to see questionable vulnerabilities:
 
 ![pic](3.PNG) 
 
-### We know the Ashton manages the "Secret Folder". Lets try HYDRA and BRUTE FORCE to gain access to the Secret Folder.
+### We know that Ashton manages the "Secret Folder". Lets try HYDRA and BRUTE FORCE to gain access to the Secret Folder.
 
 ### [BRUTE FORCE](brute.md) 
 
-### Now that we have got Ashton's logon credentials, Lets see if they work.
+Now that we have learned Ashtons Password from using Hydra, enter them into the Sign-in page:
+
+* Username: ashton
+
+* Password: leopoldo 
 
 ![pic](5.PNG) 
 
