@@ -17,7 +17,7 @@ Based on the attack signatures, what mitigations would you recommend to protect 
 * Ensure that user's with 3 failed log-in attempts are locked out for 15 minutes 
 * Ensure that ALL Users after 6 failed log-in's are locked out until their account is manually unlocked by the IT Department
 * Block all known VPN IP Address traffic 
-* Ensure that all firewall rules are up to industry standards: specifically blocking all PHP or other known "scripts" from being uploaded as well as all webdev or remote access from outside the network  
+* Ensure that all firewall rules are up to industry standards: specifically blocking all PHP or other known "scripts" from being uploaded as well as blocking all webdev or remote access from outside the network  
 
 ### <u>Individual Solution:</u>
 
