@@ -12,7 +12,7 @@
 * Crack user passwords
 * Establish Remote Access via Reverse Shell
 
-Enter the command: NMAP -sV 192.168.1.105
+### Enter the command: NMAP -sV 192.168.1.105
 
 ![pic](1.PNG)
 
