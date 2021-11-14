@@ -33,7 +33,7 @@ Click on the WEB SITE Link to see questionable vulnerabilities:
 
 ### From our investigation navigating the Summit Card Union Website we discovered the "Secret Folder" is not accessible to the public. Lets try and find it!
 
-* we discovered the error: "company_folders/secret_folder is no longer accessible to the public"
+* We discovered the error: "company_folders/secret_folder is no longer accessible to the public"
 
 * This looks like a direct path to me and.........
 
@@ -81,21 +81,21 @@ Now that we have learned Ashton's Password from using Hydra, enter them into the
 
 ![pic](rev.PNG) 
 
-NOTE: Nano reverse_shell.php and set your local host IP (192.168.1.90) and Port (4444)
+### NOTE: Nano reverse_shell.php and set your local host IP (192.168.1.90) and Port (4444)
 
 ![pic](rev1.PNG)
 
-Lets load our reverse_shell.php Payload into our WebDev to establish our (PHP)Reverse Shell
+### Lets load our reverse_shell.php Payload into our WebDev to establish our (PHP)Reverse Shell
 
 ![pic](10.PNG) 
 
-Before we can deploy our payload to establish our reverse shell we need to run the Net Cat command to establish communication on port 4444
+### Before we can deploy our payload to establish our reverse shell we need to run the Net Cat command to establish communication on port 4444
 
 * nc -lvnp 4444
 
 ![pic](11.PNG) 
   
-Now lets establish remote access control of the server (192.168.1.105) via our WebDav connection and deliver our payload effectively establishing a reverse shell
+### Now lets establish remote access control of the server (192.168.1.105) via our WebDav connection and deliver our payload effectively establishing a reverse shell
 
 * Return to the website: 192.168.1.105/webdev
 
@@ -109,7 +109,7 @@ Now lets establish remote access control of the server (192.168.1.105) via our W
 
 ![pic](13.PNG)  
 
-Picture: Example of the attacker having access to ROOT and changing directory to /USR
+### Picture: Example of the attacker having access to ROOT and changing directory to /USR
 
 * The attacker could now download private, sensitive proprietary information, delete files, and or basically take down the entire server
 
