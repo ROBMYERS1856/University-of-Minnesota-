@@ -17,7 +17,9 @@ As <u>**BLUE TEAM**</u>, you will use Kibana to review logs taken during the RED
 
 ### RED TEAM Pen Test
 
-For this scenario I will be using my AZURE KALI LINUX Virtual Machine to attack the following CAPSTONE Virtual Machine.
+A Red team is a group of offensive security professionals whose role is to use real world techniques to perform attacks on an organization with an aim to identify vulnerabilities, bugs and weakness in the infrastructure of an organization. A Red team could be a team from within an organization or can be hired exclusively to perform attacks. 
+
+For this scenario we will be using our AZURE KALI LINUX Virtual Machine to attack the following CAPSTONE Virtual Machine.
 
 * KALLI LINUX VM:
     
@@ -27,11 +29,17 @@ For this scenario I will be using my AZURE KALI LINUX Virtual Machine to attack 
 
     - IP Address: 192.168.1.105 
 
-### [RED TEAM PEN TEST](IMAGE/REDTEAM.md)  
+### [RED TEAM](IMAGE/REDTEAM.md)  
 
+### BLUE TEAM 
 
+Now that we have performed our REDTEAM Pen Test we now will take on the role of the BLUE TEAM SOC Analysist.
 
+A Blue team is a group of internal security professionals who defend the organization from cyber attacks through threat prevention, detection and response. They work to improve the security of the organization round the clock. They closely monitor the network traffic, data flow and suspicious activities and work to detect and prevent them. In case of any attacks, their role is to recover the organization from the damage and apply even stronger defense mechanism for future attacks.
 
+Last, we will by using KIBANA to analyze logs taken during the Red Team attack.
+
+### [BLUE TEAM](IMAGE/BLUETEAM.md)  
 
 
 
