@@ -1,6 +1,6 @@
 # Rob Myers Week 20 Project 2: BLUE TEAM SOC Analysist 
 
-1. Identify the offensive traffic.
+1. **Identify the offensive traffic.**
 
    - Identify the traffic between your machine and the web machine:
 
@@ -34,7 +34,7 @@
 
         ### [BLUE TEAM Examples #1](b1.md)
 
-2. Find the request for the hidden directory.
+2. **Find the request for the hidden directory.**
 
    - How many requests were made to this directory? At what time and from which IP address(es)?
 
@@ -72,7 +72,7 @@
 
         ### [BLUE TEAM Examples #2](b2.md) 
 
-3. Identify the brute force attack.
+3. **Identify the brute force attack.**
 
     - Can you identify packets specifically from Hydra? 
 
@@ -96,20 +96,24 @@
     
     - Identify at least one way to harden the vulnerable machine that would mitigate this attack.
 
+        * I would recommend restricting access to the source.ip address after 15 400 code HTTP Status Error's 
+
         * I would recommend implementing a strong password policy that locks out a user for 15 minutes after 3 unsuccessful login's as well as completely locking the user out after 6 unsuccessful login's 
 
         * I would recommend implementing a multi-authentication procedure when resetting passwords 
 
         * I would recommend restricting common injection attacks or brute force attacks by improving firewall rules. For example restricting all PHP files, executable files, and webdav or remote control access  
 
-4. Find the WebDav connection.
+        ### [BLUE TEAM Examples #3](b3.md) 
+
+4. **Find the WebDav connection.**
    - Use your dashboard to answer the following questions:
      - How many requests were made to this directory? 
      - Which file(s) were requested?
      - What kind of alarm would you set to detect such access in the future?
      - Identify at least one way to harden the vulnerable machine that would mitigate this attack.
 
-5. Identify the reverse shell and meterpreter traffic.
+5. **Identify the reverse shell and meterpreter traffic.**
    - To finish off the attack, you uploaded a PHP reverse shell and started a meterpreter shell session. Answer the following questions:
      - Can you identify traffic from the meterpreter session?
      - What kinds of alarms would you set to detect this behavior in the future?
