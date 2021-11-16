@@ -2,21 +2,21 @@
 
 1. **Identify the offensive traffic.**
 
-   - Identify the traffic between your machine and the web machine:
+   - **Identify the traffic between your machine and the web machine:**
 
         * Looking at the dashboard there was heavy traffic between source.ip: 192.168.1.90 and destination.ip: 192.1.105, port 4444
 
         * The dashboard indicates there were 499,498 hits
 
-    - When did the interaction occur?
+    - **When did the interaction occur?**
 
         * Looking at the Dashboard there was heavy traffic on November 12, 2021 and November 13th between 2pm and 2am
 
-    - What responses did the victim send back?
+    - **What responses did the victim send back?**
 
-        * Looking at the Dashboard there was approximately: **62723 401 HTTP Response Status Code Errors**  
+        * Looking at the Dashboard there was a large amount of 401 HTTP Response Status Code Errors**  
 
-    - What data is concerning from the Blue Team perspective?
+    - **What data is concerning from the Blue Team perspective?**
 
         * The 62723 401 HTTP Response Status Codes Errors is concerning to the BLUE TEAM
 
@@ -36,7 +36,7 @@
 
 2. **Find the request for the hidden directory.**
 
-   - How many requests were made to this directory? At what time and from which IP address(es)?
+   - **How many requests were made to this directory? At what time and from which IP address(es)?**
 
         * The dashboard indicates that there were 64,001 HTTP Requests between November 12th, 2021 and November 14th 2021. 
 
@@ -44,7 +44,7 @@
 
         * At approximately 3am on November  14th, 2021 there was also 62737 HTTP Requests between source.ip: 192.168.1.90 and destination.ip: 192.168.1.105  
 
-    - Which files were requested? What information did they contain?
+    - **Which files were requested? What information did they contain?**
 
         * According to the Log, there was 84,907 HTTP Get Requests from November 12, 2021 through November 14th, 2021
 
@@ -56,7 +56,7 @@
 
         * Per the Dashboard http://192.168.1.105/company_folders/secret_folder/  was accessed 13 times 
 
-    - What kind of alarm would you set to detect this behavior in the future?
+    - **What kind of alarm would you set to detect this behavior in the future?**
 
         * I would recommend setting up an ALARM anytime a remote access connection is attempted and or established
 
@@ -68,7 +68,7 @@
 
         * I would ensure that access to the secret folder is limited and establish an ALARM anytime that folder is accessed
 
-    - Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+    - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.**
 
         * I would recommend keeping the "secret file" on a separate server that is not accessible via any publicly accessible server 
 
@@ -78,21 +78,21 @@
 
 3. **Identify the brute force attack.**
 
-    - Can you identify packets specifically from Hydra? 
+    - **Can you identify packets specifically from Hydra?**
 
         * YES: searching using - http.request.method : get and url.full : "http://192.168.1.105/company_folders/secret_folder" shows 62,735 hits
 
         * Clicking on the drop down arrow shows more specific information. Specifically: user_agent.original Mozilla/4.0 (Hydra)
 
-    - How many requests were made in the brute-force attack? 
+    - **How many requests were made in the brute-force attack?** 
 
         * The Dashboard shows a count of 62,735 for URL: http://192.168.1.105/company_folders/secret_folder
 
-    - How many requests had the attacker made before discovering the correct password in this one?
+    - **How many requests had the attacker made before discovering the correct password in this one?**
 
         * Dashboard indicates that out of the 62,737 requests the attacker was successful 6 times 
 
-    - What kind of alarm would you set to detect this behavior in the future and at what threshold(s)?
+    - **What kind of alarm would you set to detect this behavior in the future and at what threshold(s)?**
 
         * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
 
@@ -100,7 +100,7 @@
 
         * I would recommend setting up an alarm if the user-agent.original indicates: Mozilla/4.0 (Hydra). Set Threshold to Zero       
     
-    - Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+    - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.**
 
         * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
 
