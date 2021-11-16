@@ -2,7 +2,7 @@
 
 1. **Identify the offensive traffic.**
 
-   - **Identify the traffic between your machine and the web machine:**
+   - <u>**Identify the traffic between your machine and the web machine:**</u>
 
         * Looking at the dashboard there was heavy traffic between source.ip: 192.168.1.90 and destination.ip: 192.1.105, port 4444
 
@@ -14,7 +14,7 @@
 
     - **What responses did the victim send back?**
 
-        * Looking at the Dashboard there was a large amount of 401 HTTP Response Status Code Errors**  
+        * Looking at the Dashboard there was a large amount of 401 HTTP Response Status Code Errors 
 
     - **What data is concerning from the Blue Team perspective?**
 
