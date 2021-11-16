@@ -1,10 +1,10 @@
-## Rob Myers Week 20 Project 2: RED TEAM vs BLUE TEAM
+# Rob Myers Week 20 Project 2: RED TEAM vs BLUE TEAM
 
-### Overview:
+## Overview:
 
 We have covered a lot of Cyber Security Fundamentals up to this point. We have experience attacking machines as well as monitoring and protecting against breaches during our SIEMs units. Now, we are ready to apply our knowledge to many real-life scenarios. 
 
-### RED TEAM vs BLUE TEAM Project:
+## RED TEAM vs BLUE TEAM Project:
 
 For this project, you will work on a Red Team vs. Blue Team scenario in which you will play the role of both <u>**Pentester** and **SOC analyst**</u>.
 
@@ -15,7 +15,7 @@ As <u>**BLUE TEAM**</u>, you will use Kibana to review logs taken during the RED
 
 ---
 
-### RED TEAM Pen Test
+## RED TEAM Pen Test
 
 A Red team is a group of offensive security professionals whose role is to use real world techniques to perform attacks on an organization with an aim to identify vulnerabilities, bugs and weakness in the infrastructure of an organization. A Red team could be a team from within an organization or can be hired exclusively to perform attacks. 
 
@@ -31,7 +31,7 @@ For this scenario we will be using our AZURE KALI LINUX Virtual Machine to attac
 
 ### [RED TEAM](IMAGE/REDTEAM.md)  
 
-### BLUE TEAM 
+## BLUE TEAM 
 
 Now that we have performed our REDTEAM Pen Test we now will take on the role of the BLUE TEAM SOC Analysist.
 
@@ -41,8 +41,13 @@ Last, we will by using KIBANA to analyze logs taken during the Red Team attack.
 
 ### [BLUE TEAM](IMAGE/BLUETEAM.md)  
 
+## RED vs BLUE Report
 
+Communication skills are vital in the cybersecurity field. That is why cybersecurity professionals need to have a solid foundation knowing how to attack vulnerable networks as well as how to defend against attacks.
 
+In the below link you will find a detailed report describing how the RED TEAM penetrated the network, evidence of the attack analyzing Kibana logs, as well as recommendations on how to secure the network.
+
+[RED vs BLUE Report](IMAGE/Red_vs_Blue_Report.PDF)  
 
 
 

@@ -42,7 +42,7 @@
 
         * Between November 12, 2021 at 6pm through November 13, 2021 between the hours of 6pm and midnight there was 46,899 HTTP Requests between source.ip: 192.168.1.90 and destination.ip: 192.168.1.105
 
-        * At approximately 3am on November  14th, 2021 there was also 16508 HTTP Requests between source.ip: 192.168.1.90 and destination.ip: 192.168.1.105  
+        * At approximately 3am on November  14th, 2021 there was also 62737 HTTP Requests between source.ip: 192.168.1.90 and destination.ip: 192.168.1.105  
 
     - Which files were requested? What information did they contain?
 
@@ -52,7 +52,9 @@
 
         * The specific folder being requested: "secret folder" contains all the credit card and security information for the company
 
-        * Per the Dashboard http://192.168.1.105/company_folders/secret_folder/  was accessed 13 times
+        * It also contained the HASH for Ryans password and instructions on how to establish a remote access connection 
+
+        * Per the Dashboard http://192.168.1.105/company_folders/secret_folder/  was accessed 13 times 
 
     - What kind of alarm would you set to detect this behavior in the future?
 
@@ -60,13 +62,15 @@
 
         * I would recommend setting up an ALARM anytime a PHP file is detected
 
-        * I would recommend setting up an ALARM anytime there are more then 15 400 HTTP Status Code Errors in 1 hour
+        * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
+
+        * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
 
         * I would ensure that access to the secret folder is limited and establish an ALARM anytime that folder is accessed
 
     - Identify at least one way to harden the vulnerable machine that would mitigate this attack.
 
-        * I would recommend keeping the "secret file" on a separate server that is not accessible via any publicly accessible server
+        * I would recommend keeping the "secret file" on a separate server that is not accessible via any publicly accessible server 
 
         * I would restrict user access to very specific users 
 
@@ -90,13 +94,17 @@
 
     - What kind of alarm would you set to detect this behavior in the future and at what threshold(s)?
 
-        * I would recommend setting up an ALARM anytime there are more then 15 400 HTTP Status Code Errors in 1 hour
+        * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
 
-        * I would recommend setting up an alarm if the user-agent.original indicates: Mozilla/4.0 (Hydra)      
+        * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
+
+        * I would recommend setting up an alarm if the user-agent.original indicates: Mozilla/4.0 (Hydra). Set Threshold to Zero       
     
     - Identify at least one way to harden the vulnerable machine that would mitigate this attack.
 
-        * I would recommend restricting access to the source.ip address after 15 400 code HTTP Status Error's 
+        * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
+
+        * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
 
         * I would recommend implementing a strong password policy that locks out a user for 15 minutes after 3 unsuccessful login's as well as completely locking the user out after 6 unsuccessful login's 
 
