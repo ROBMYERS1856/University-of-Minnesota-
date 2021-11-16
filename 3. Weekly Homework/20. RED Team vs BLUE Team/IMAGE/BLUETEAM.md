@@ -2,7 +2,7 @@
 
 1. **Identify the offensive traffic.**
 
-   - <u>Identify the traffic between your machine and the web machine:</u>
+   - **Identify the traffic between your machine and the web machine:**
 
         * Looking at the dashboard there was heavy traffic between source.ip: 192.168.1.90 and destination.ip: 192.1.105, port 4444
 
