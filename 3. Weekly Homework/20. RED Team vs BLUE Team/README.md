@@ -47,9 +47,9 @@ Communication skills are vital in the cybersecurity field. That is why cybersecu
 
 In the below link you will find a detailed report describing how the RED TEAM penetrated the network, evidence of the attack analyzing Kibana logs, as well as recommendations on how to secure the network.
 
-### [RED vs BLUE Report](IMAGE/report1.PDF)   
+### [RED vs BLUE Report](https://docs.google.com/presentation/d/1oIb_I9fsn5YTH5ajB-SNCZrTIrE-fZVwhRBUR_jbBMk/edit#slide=id.g8798eb4c44_0_205)   
 
-[test](IMAGE/testtt.pdf) 
+ 
 
 
 
