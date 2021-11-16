@@ -18,13 +18,13 @@
 
     - **What data is concerning from the Blue Team perspective?**
 
-        * The 62723 401 HTTP Response Status Codes Errors is concerning to the BLUE TEAM
+        * The amount of 401 HTTP Response Status Code Errors is concerning to the BLUE TEAM
 
-        * There was also a total COUNT of 62,737 URL HTTP Requests for: http://192.168.1.105/company_folders/secret_folder 
+        * There was also a large amount of URL HTTP Requests for: http://192.168.1.105/company_folders/secret_folder 
 
         * Another concern to the BLUE TEAM was the high number of Errors vs Successful Transactions
 
-        * The Dashboard indicates that there was a total count of **920** (http://192.168.1.105/webdav indicating a remote connection to the server. This is an extremely unusual information as only the system administrator is authorized to establish a remote access connection
+        * The BLUE TEAM observed "WebDAV" in the logs (http://192.168.1.105/webdav) indicating a remote connection to the server. This is an extremely unusual information as only the system administrator is authorized to establish a remote access connection 
 
         * The Dashboard is also indicating a total count of **116** 192.168.1.105/webdev/passwd.dav indicating a potential BRUTEFORCE Attack
 
@@ -50,9 +50,7 @@
 
         * According to the Dashboard there was 62,735 HTTP Get Requests for (http://192.168.1.105/company_folders/secret_folder) 
 
-        * The specific folder being requested: "secret folder" contains all the credit card and security information for the company
-
-        * It also contained the HASH for Ryans password and instructions on how to establish a remote access connection 
+        * The specific folder being requested: "secret folder" contained the HASH for Ryans password and instructions on how to establish a remote access connection 
 
         * Per the Dashboard http://192.168.1.105/company_folders/secret_folder/  was accessed 13 times 
 
@@ -60,13 +58,13 @@
 
         * I would recommend setting up an ALARM anytime a remote access connection is attempted and or established
 
-        * I would recommend setting up an ALARM anytime a PHP file is detected
+        * I would recommend setting up an ALARM anytime a PHP, or executable file is detected
 
-        * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
+        * I would recommend setting up an ALARM anytime there are more then 10 401 (Logon failed) Error requests in ONE minute  
 
         * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
 
-        * I would ensure that access to the secret folder is limited and establish an ALARM anytime that folder is accessed
+        * I would ensure that access to the secret folder is restricted to authorized users only and establish an ALARM anytime that folder is accessed
 
     - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.**
 
@@ -94,7 +92,7 @@
 
     - **What kind of alarm would you set to detect this behavior in the future and at what threshold(s)?**
 
-        * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
+        * I would recommend setting up an ALARM anytime there are more then 10 401 Error requests in ONE minute 
 
         * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
 
@@ -102,15 +100,13 @@
     
     - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.**
 
-        * I would recommend setting up an ALARM anytime there are more then 16,000 400 Error requests in FIVE minutes 
-
-        * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
-
         * I would recommend implementing a strong password policy that locks out a user for 15 minutes after 3 unsuccessful login's as well as completely locking the user out after 6 unsuccessful login's 
 
         * I would recommend implementing a multi-authentication procedure when resetting passwords 
 
-        * I would recommend restricting common injection attacks or brute force attacks by improving firewall rules. For example restricting all PHP files, executable files, and webdav or remote control access  
+        * I would recommend restricting common injection attacks or brute force attacks by improving firewall rules. For example restricting all PHP files, executable files, and webdav or remote control access 
+
+        * I would recommend dropping traffic from any IP Address after 15 400 error codes for ONE hour  
 
         ### [BLUE TEAM Examples #3](b3.md) 
 
