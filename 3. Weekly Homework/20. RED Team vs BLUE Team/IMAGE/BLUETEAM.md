@@ -34,7 +34,7 @@
 
         * Any PHP, executable, or file that appears to be injected or used to establish a remote connection is extremely concerning
 
-        ### [BLUE TEAM Examples #1](b1.md)
+            ## [BLUE TEAM Examples #1](b1.md)
 
 2. **Find the request for the hidden directory.**
 
@@ -77,7 +77,7 @@
 
         * I would recommend implementing a strong password policy that blocks users based on the number of attempted logins (401 errors) 
 
-        ### [BLUE TEAM Examples #2](b2.md) 
+            ## [BLUE TEAM Examples #2](b2.md) 
 
 3. **Identify the brute force attack.**
 
@@ -115,7 +115,7 @@
 
         * I would recommend dropping traffic from any IP Address after 15 400 error codes for ONE hour  
 
-        ### [BLUE TEAM Examples #3](b3.md) 
+            ## [BLUE TEAM Examples #3](b3.md) 
 
 4. **Find the WebDav connection.**
   
@@ -137,7 +137,7 @@
 
         * Establish a rule that blocks: WebDAV, PHP, or remote access connections
 
-        ### [BLUE TEAM Examples #4](b4.md)
+            ## [BLUE TEAM Examples #4](b4.md)
 
 5. **Identify the reverse shell and meterpreter traffic.**
    
@@ -161,7 +161,7 @@
 
         * Establish rules that restrict users from uploading or downloading files without permission
 
-        ### [BLUE TEAM Examples #5](b5.md)
+            ## [BLUE TEAM Examples #5](b5.md)
 
 
 
