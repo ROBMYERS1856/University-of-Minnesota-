@@ -70,7 +70,7 @@ Now that we know Ashton's Username and Password from using Hydra, enter them int
 * We need to crack Ryan's Hash to access his password:  Hash:d7dad0a5cd7c8376eeb50d69b3ccd352
 * Connect to the server via WebDAV to establish a remote connection
 
-### [Webdav](webdav.md) 
+### [WebDAV](webdav.md) 
 
 ## Set up our reverse shell payload:
 

@@ -48,38 +48,27 @@
 
     - **Which files were requested? What information did they contain?**
 
-        * According to the Log, there was 84,907 HTTP Get Requests from November 12, 2021 through November 14th, 2021
-
         * According to the Dashboard there was 62,735 HTTP Get Requests for (http://192.168.1.105/company_folders/secret_folder) 
 
-        * The specific folder being requested: "secret folder" contained the HASH for Ryans password and instructions on how to establish a remote access connection 
-
-        * Per the Dashboard http://192.168.1.105/company_folders/secret_folder/  was accessed 13 times 
+        * The specific folder being requested: "company_folders/secret_folder" contained the HASH for Ryans password and instructions on how to establish a remote access connection 
 
         * **NOTE:** This folder is not accessible via the company website and any traffic to this folder indicates a severe breach in security
 
     - **What kind of alarm would you set to detect this behavior in the future?**
-        * I would recommend setting up an ALARM anytime a remote access connection is attempted and or established
 
-        * I would recommend setting up an ALARM anytime a PHP, or executable file is detected
+        * I would recommend creating an alarm any time restricted folders or directories are accessed by unauthorized users/machines
 
-        * I would recommend setting up an ALARM anytime there are more then 10 401 (Logon failed) Error requests in ONE minute  
-
-        * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
-
-        * I would ensure that access to the secret folder is restricted to authorized users only and establish an ALARM anytime that folder is accessed
+        * Anytime a user attempts to accesses restricted Folders or Directories an alert should be sent to the appropriate team or manager
 
     - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.**
 
-        * I would recommend keeping the "secret file" on a separate server that is not accessible via any publicly accessible server 
+        * Create user permissions restricting access to specific Folders and Directories 
 
-        * I would restrict user access to very specific users
-
-        * I would recommend implementing a strong password policy that blocks users based on the number of attempted logins (401 errors) 
+        * Restrict traffic to specific directories by keeping them on secure servers that are not accessible via the internet (closed network)  
 
             ## [BLUE TEAM Examples #2](b2.md) 
 
-3. **Identify the brute force attack.**
+3. **Identify the Brute Force attack.**
 
     - **Can you identify packets specifically from Hydra?**
 
@@ -95,7 +84,7 @@
 
     - **How many requests had the attacker made before discovering the correct password in this one?**
 
-        * Dashboard indicates that out of the 62,737 requests the attacker was successful 6 times 
+        * Dashboard indicates that out of the 62,737 requests the attacker was successful 3 times 
 
     - **What kind of alarm would you set to detect this behavior in the future and at what threshold(s)?**
 
@@ -103,7 +92,9 @@
 
         * I would recommend setting up an ALARM anytime there are more then 10 Port Scans in ONE Minute  
 
-        * I would recommend setting up an alarm if the user-agent.original indicates: Mozilla/4.0 (Hydra). Set Threshold to Zero       
+        * I would recommend setting up an ALARM if the user-agent.original indicates: Mozilla/4.0 (Hydra). Set Threshold to Zero
+
+        * I would recommend setting an ALARM after SIX unsuccessful login attempts       
     
     - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.**
 
@@ -121,7 +112,7 @@
   
     - **How many requests were made to this directory?**
 
-        * over 14,000 requests
+        * 62,737 requests 
 
     - **Which file(s) were requested?**
 
@@ -133,9 +124,11 @@
 
         * I would recommend setting up an ALARM anytime a PHP, or executable file is detected 
 
+        * I would recommend setting up an ALARM anytime WebDav is detected
+
     - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.**
 
-        * Establish a rule that blocks: WebDAV, PHP, or remote access connections
+        * Establish a rule that blocks: WebDAV, PHP, executable files, or remote access connections
 
             ## [BLUE TEAM Examples #4](b4.md)
 
@@ -145,13 +138,15 @@
 
         * YES, the Top 10 HTTP requests shows several URL concerns, specifically WebDAV/reverse.php  
 
-        * NOTE: The logs also show that the payload - reverse.php was successfully delivered 
+        * **NOTE:** The logs also show that the payload - reverse.php was successfully delivered 
 
     - **What kinds of alarms would you set to detect this behavior in the future?**
 
         * I would recommend setting up an ALARM anytime a remote access connection or WebDAV is attempted and or established 
 
         * I would recommend setting up an ALARM anytime a PHP, or executable file is detected
+
+        * **NOTE:** Any remote access connection is unauthorized and requires immediate response
 
     - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.** 
 
@@ -161,7 +156,7 @@
 
         * Establish rules that restrict users from uploading or downloading files without permission
 
-            ## [BLUE TEAM Examples #5](b5.md)
+            ## [BLUE TEAM Examples #5](b5.md) 
 
 
 
