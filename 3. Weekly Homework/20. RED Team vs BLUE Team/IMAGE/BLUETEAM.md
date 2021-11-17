@@ -146,6 +146,8 @@
 
         * I would recommend setting up an ALARM anytime a PHP, or executable file is detected
 
+        * I would recommend setting up an ALARM anytime a file is uploaded from OUTSIDE the internal network
+
         * **NOTE:** Any remote access connection is unauthorized and requires immediate response
 
     - **Identify at least one way to harden the vulnerable machine that would mitigate this attack.** 
