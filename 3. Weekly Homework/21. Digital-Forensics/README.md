@@ -15,7 +15,7 @@ In this unit, we will explore the the unique field of digital forensics -- a fie
 * Use Autopsy to view and tag evidence in an iPhone image.
 * Extract image content for offline viewing in other applications (logs, text, pictures, video, audio).
 
-## For a full review of the case study please review the following information for more information about the case.
+## For a full review of the case study please review the following for more information about the case.
 
 ##[2012-National Gallery DC Attack](https://drive.google.com/file/d/1agrtpcOHG2WkWeA7Mx4c1Nc5qvB9NTSY/view?usp=sharing) 
 
