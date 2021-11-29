@@ -30,7 +30,7 @@ At the University of Minnesota Cybersecurity Boot Camp, students get hands-on tr
     - Cloud Security
     - Ethical Hacking and Penetration:
     - Digital Forensics 
-        - Autopsy and iPhone Forensics 
+        - Autopsy and Cell Phone Forensics 
     - Web Vulnerabilities and Security
 
 ## Cybersecurity Careers:
