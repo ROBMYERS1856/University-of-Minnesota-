@@ -7,11 +7,11 @@ At the University of Minnesota Cybersecurity Boot Camp, students get hands-on tr
 ## Networking:
 
     - Packet Analysis
-    - Splunk
-    - Wireshark
-    - Kibana
-    - Security Onion
-    - SNORT 
+        - Splunk
+        - Wireshark
+        - Kibana
+        - Security Onion
+        - SNORT 
     - Azure Virtual Machines
 
 ## Systems:
@@ -25,14 +25,12 @@ At the University of Minnesota Cybersecurity Boot Camp, students get hands-on tr
     - Risk Management
     - Cryptography
     - Vulnerability Assessment
+        - Red and Blue Teams 
     - Identity and Access Management
     - Cloud Security
     - Ethical Hacking and Penetration:
-    - Kali Linux
-    - Metasploit
-    - Hashcat
-    - Burp Suite
-    - BeEf (Browser Exploitation Framework)
+    - Digital Forensics 
+        - Autopsy and iPhone Forensics 
     - Web Vulnerabilities and Security
 
 ## Cybersecurity Careers:
