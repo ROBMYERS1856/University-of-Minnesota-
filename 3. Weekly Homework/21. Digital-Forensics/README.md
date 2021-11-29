@@ -19,7 +19,7 @@ In this unit, we will explore the the unique field of digital forensics -- a fie
 
 ## [2012-National Gallery DC Attack](https://drive.google.com/file/d/1agrtpcOHG2WkWeA7Mx4c1Nc5qvB9NTSY/view?usp=sharing) 
 
-## For this weeks homework I gathered Email, SMS, WIFI/GPS Locations in-order to gather information pertaining to a case involving individuals attempting to steal exhibits as well as conspiring to deface Museum Art.  
+## For this weeks homework I was hired by DigiTech Inc. to gather Email, SMS, WIFI/GPS Locations in-order to gather information pertaining to a case involving individuals attempting to steal exhibits as well as conspiring to deface Museum Art.  
 
 ## [Rob Myers NGDC Case Report](https://docs.google.com/document/d/149rRpXMRYljN5gz0xSztGqN2RDj7I2aV/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true) 
 
