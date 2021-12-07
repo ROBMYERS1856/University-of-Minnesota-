@@ -1,7 +1,5 @@
 # Rob Myers: Certification and Trainings
 
-
-
 ### Please click on the links below to view specific trainings and certifications I have completed. 
 
 * ## [Microsoft Azure Fundamentals](IMAGE/1.md) 
