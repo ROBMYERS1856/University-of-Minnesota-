@@ -128,12 +128,27 @@ Picture of Desktop Background from the Windows Host:
 
 ## Illegal Downloads
 
-1. Find the following information about the machine with IP address `10.0.0.201`:
-    - MAC address
-    - Windows username
-    - OS version
+1. Find the following information about the machine with IP address 10.0.0.201:
 
-* 23.43.62.169 (a1449.dscg2.akamai.net)
-* 10.0.0.201 (BLANCO-DESKTOP.dogoftheyear.net)
+- MAC address: **00:16:17:18:66:c8**
+- Wireshark Filter: **ip.addr == 10.0.0.201**
+
+![pic](IMAGE/net/16.PNG) 
+
+- Windows username: **elmer.blanco**
+- Wireshark Filter: **ip.addr == 10.0.0.201 and kerberos.CName.String**
+
+![pic](IMAGE/net/17.PNG) 
+
+- OS version: **Windows NT 10.0**
+- Wireshark Filter: **ip.addr == 10.0.0.201 and http.request**
+    - **Right click > Follow > TCP Stream**
+
+![pic](IMAGE/net/18.PNG) 
 
 2. Which torrent file did the user download?
+
+- Wireshark Filter: **ip.src == 10.0.0.201 and http.request.method == GET**
+    - **Look for a Torrent File** 
+
+![pic](IMAGE/net/19.PNG)  
