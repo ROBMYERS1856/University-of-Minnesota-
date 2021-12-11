@@ -24,39 +24,39 @@
 
 **You must inspect your traffic capture to answer the following questions:**
 
-1. What is the domain name of the users' custom site?
+1. **What is the domain name of the users' custom site?**
 
     * Wireshark Filter: **ip.addr == 10.6.12.0/24**
     * Domain Name: **frank-n-frankted-dc.frank-n-ted.com**
 
 ![pic](IMAGE/net/1.PNG) 
 
-2. What is the IP address of the Domain Controller (DC) of the AD network?
+2. **What is the IP address of the Domain Controller (DC) of the AD network?**
 
     * Wireshark Filter: **ip.addr == 10.6.12.0/24**
     * Domain Name: **frank-n-frankted-dc.frank-n-ted.com (10.6.12.12)**
 
 ![pic](IMAGE/net/2.PNG)
 
-3. What is the name of the malware downloaded to the 10.6.12.203 machine?
+3. **What is the name of the malware downloaded to the 10.6.12.203 machine?**
 
     * Wireshark Filter: **ip.addr == 10.6.12.203 and http.request.method = = GET**
     * Malware Downloaded: **june11.dll**
 
 ![pic](IMAGE/net/3.PNG)
 
-- Once you have found the file, export it to your Kali machine's desktop.
+- **Once you have found the file, export it to your Kali machine's desktop.**
 
-    * File > Export Object > HTTP
+    * **File > Export Object > HTTP**
 
 ![pic](IMAGE/net/4.PNG) 
 
-4. Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/). 
+4. **Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/).** 
 
 
 ![pic](IMAGE/net/5.PNG) 
 
-5. What kind of malware is this classified as?
+5. **What kind of malware is this classified as?**
 
     * Malware Classification: **Trojan** 
 
@@ -73,7 +73,7 @@
 * The DC for this network lives at 172.16.4.4 and is named Mind-Hammer-DC.
 * The network has standard gateway and broadcast addresses.
 
-1. Find the following information about the infected Windows machine:
+1. **Find the following information about the infected Windows machine:**
 
     - Host name: **Rotterdam-PC.mind-hammer.net**
     - IP address **172.16.4.205** 
@@ -82,14 +82,14 @@
 
 ![pic](IMAGE/net/7.PNG)
     
-2. What is the username of the Windows user whose computer is infected?
+2. **What is the username of the Windows user whose computer is infected?**
 
-- Wireshark Filter: **ip.src == 172.16.4.0/24**
+- Wireshark Filter: **ip.src == 172.16.4.0/24 and kerberos.CName.String**
 - User Name: **matthijs.devries**
 
 ![pic](IMAGE/net/8.PNG)
 
-3. What are the IP addresses used in the actual infection traffic?
+3. **What are the IP addresses used in the actual infection traffic?**
 
 * Four IP Address with High Packet Volume
 * 172.16.4.205 (Rotterdam-PC.mind-hammer.net)
@@ -102,25 +102,25 @@
 
 **Digging Deeper**
 
-Reviewing traffic between 172.16.4.205 (Rotterdam-PC.mind-hammer.net) and 185.243.115.84 (b5689023.green.mattingsolutions.co) a high volume of files were down loaded: 
+**Reviewing traffic between 172.16.4.205 (Rotterdam-PC.mind-hammer.net) and 185.243.115.84 (b5689023.green.mattingsolutions.co) a high volume of files were down loaded: **"empty.gif"**
 
 ![pic](IMAGE/net/10.PNG) 
 
-Example of the file empty.gif
+**Example of the file empty.gif**
 
 ![pic](IMAGE/net/11.PNG) 
 
-Traffic between 172.16.4.205 (Rotterdam-PC.mind-hammer.net) and 31.7.62.214 reveal 31.7.62.214 is a fake URL website.
+**Traffic between 172.16.4.205 (Rotterdam-PC.mind-hammer.net) and 31.7.62.214 reveal 31.7.62.214 is a fake URL download website.**
 
 ![pic](IMAGE/net/12.PNG) 
 
-4. As a bonus, retrieve the desktop background of the Windows host.
+4. **As a bonus, retrieve the desktop background of the Windows host.**
 
-185.243.115.84 (b5689023.green.mattingsolutions.co) had a lot of empty.gif. I went back through the HTTP Object List and discovered the following: 
+**185.243.115.84 (b5689023.green.mattingsolutions.co) had a lot of empty.gif. I went back through the HTTP Object List and discovered the following:** 
 
 ![pic](IMAGE/net/14.PNG) 
 
-Picture of Desktop Background from the Windows Host: 
+**Picture of Desktop Background from the Windows Host:** 
 
 ![pic](IMAGE/net/15.PNG)  
 
@@ -128,7 +128,7 @@ Picture of Desktop Background from the Windows Host:
 
 ## Illegal Downloads
 
-1. Find the following information about the machine with IP address 10.0.0.201:
+1. **Find the following information about the machine with IP address 10.0.0.201:**
 
 - MAC address: **00:16:17:18:66:c8**
 - Wireshark Filter: **ip.addr == 10.0.0.201**
@@ -146,9 +146,21 @@ Picture of Desktop Background from the Windows Host:
 
 ![pic](IMAGE/net/18.PNG) 
 
-2. Which torrent file did the user download?
+2. **Which torrent file did the user download?**
 
 - Wireshark Filter: **ip.src == 10.0.0.201 and http.request.method == GET**
     - **Look for a Torrent File** 
 
 ![pic](IMAGE/net/19.PNG)  
+
+**Once you have found the file, export it to your Kali machine's desktop.**
+
+* **File > Export Object > HTTP**
+* **Save to /root/Documents**
+
+![pic](IMAGE/net/20.PNG) 
+
+### Movie Downloaded was Betty Boop Rhythm on the Reservation.avi
+
+## https://archive.org/details/BettyBoopTheater11
+
