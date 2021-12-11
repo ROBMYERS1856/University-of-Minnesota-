@@ -118,8 +118,8 @@
 
 **185.243.115.84 (b5689023.green.mattingsolutions.co) had a lot of empty.gif. I went back through the HTTP Object List and discovered the following:**
 
-    * empty.gif?ss&ss1
-    * empty.gif?ss&ss2
+* empty.gif?ss&ss1
+* empty.gif?ss&ss2
 
 ![pic](IMAGE/net/14.PNG) 
 
