@@ -11,6 +11,7 @@ At the University of Minnesota Cybersecurity Boot Camp, students get hands-on tr
         - Wireshark
         - Kibana
         - Security Onion
+        - Nessus
         - SNORT 
     - Azure Virtual Machines
 
