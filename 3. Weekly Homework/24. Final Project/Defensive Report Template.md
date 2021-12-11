@@ -53,7 +53,7 @@ The target of this attack was on Virtual Machine: **Target 1 IP Address 192.168.
 
 **Target 1** is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
-### Monitoring the Targets
+### Monitoring the Targets: Create Alerts using Kibana
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
