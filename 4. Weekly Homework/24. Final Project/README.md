@@ -18,9 +18,9 @@ For this Final Project I will be demonstrating THREE critical area's of knowledg
 
 * Description of Targets: **Azure VM (Hyer-V), Kali Linux, ELK Server, Capstone and a Target Machine to perform Pen Test** 
 
-* Monitoring the Targets: **Creating Alerts using Kibana**
+* Monitoring the Targets: **Creating Alerts using KIBANA**
 
-* Patterns of Traffic & Behavior: **Reviewing pcap files using Wire Shark**
+* Patterns of Traffic & Behavior: **Reviewing pcap files using WIRESHARK** 
 
 * Mitigation Strategies: **Understanding how to defend and safe guard the network**
 
