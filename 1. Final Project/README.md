@@ -31,11 +31,11 @@ For this Final Project I will be demonstrating THREE critical area's of knowledg
 
 ## RED TEAM OPERATIONS:
 
-Exposed Services: **Using NMAP to identify points of entry**
+* Exposed Services: **Using NMAP to identify points of entry**
 
-Critical Vulnerabilities: **Knowing how to Enumerate websites, MySQL Database Access, Open Ports, vulnerable software, and remote access (SSH/Shell)**
+* Critical Vulnerabilities: **Knowing how to Enumerate websites, MySQL Database Access, Open Ports, vulnerable software, and remote access (SSH/Shell)**
 
-Exploitation: **Perform Pen Test applying the skills learned (SSH, wpscan, nmap, MySQL exploits, cracking pass words using John The Ripper/HYDRA and other common Pen Testing techniques)** 
+* Exploitation: **Perform Pen Test applying the skills learned (SSH, wpscan, nmap, MySQL exploits, cracking pass words using John The Ripper/HYDRA and other common Pen Testing techniques)** 
 
 * ## [RED TEAM Operations](Offensive_Report.md) 
 
