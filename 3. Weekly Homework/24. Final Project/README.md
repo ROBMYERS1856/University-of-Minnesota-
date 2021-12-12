@@ -39,7 +39,7 @@ Exploitation: **Perform Pen Test applying the skills learned (SSH, wpscan, nmap,
 
 * ## [RED TEAM Operations](Offensive_Report.md) 
 
-* ## [RED Team Operations Power Point](https://docs.google.com/presentation/d/1K2FzM89F97vCKFCNGbhZlyl2rF_Vj3Rg/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
+* ## [Red Team Operations Power Point](https://docs.google.com/presentation/d/1K2FzM89F97vCKFCNGbhZlyl2rF_Vj3Rg/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
 
 ## NETWORK FORENSIC ANALYSIS: 
 
