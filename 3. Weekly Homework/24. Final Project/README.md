@@ -16,18 +16,18 @@ For this Final Project I will be demonstrating THREE critical area's of knowledg
 
 * Network Topology: **Creating Network Diagram**
 
-* Description of Targets: **Azure VM (Hyer-V), Kali Linux, ELK Server, Capston and a Target Machine to perform Pen Test** 
+* Description of Targets: **Azure VM (Hyer-V), Kali Linux, ELK Server, Capstone and a Target Machine to perform Pen Test** 
 
-* Monitoring the Targets: **Creating Alerts using Wire Shark**
+* Monitoring the Targets: **Creating Alerts using Kibana**
 
-* Patterns of Traffic & Behavior: **Reviewing pcap files**
+* Patterns of Traffic & Behavior: **Reviewing pcap files using Wire Shark**
 
 * Mitigation Strategies: **Understanding how to defend and safe guard the network**
 
 
 * ## [BLUE TEAM Operations](Defensive_Report.md) 
 
-* ## [Blue Team Operations Power Point](https://docs.google.com/presentation/d/1wlvUW6V1WachDOgo7w1WExSHeAGNFPt7/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
+* ## [Blue Team Operations Power Point](https://docs.google.com/presentation/d/10Fv2QVbhw3KvRNoO31m1XBrYzTLomuBC/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
 
 ## RED TEAM OPERATIONS:
 
@@ -39,8 +39,7 @@ Exploitation: **Perform Pen Test applying the skills learned (SSH, wpscan, nmap,
 
 * ## [RED TEAM Operations](Offensive_Report.md) 
 
-* ## [RED Team Operations Power Point](https://docs.google.com/presentation/d/1WNTRRbPCrAbGy_D454ng4JhcfsPsSJws/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
-
+* ## [RED Team Operations Power Point](https://docs.google.com/presentation/d/1K2FzM89F97vCKFCNGbhZlyl2rF_Vj3Rg/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
 
 ## NETWORK FORENSIC ANALYSIS: 
 
