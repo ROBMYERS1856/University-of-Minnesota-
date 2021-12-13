@@ -29,6 +29,7 @@ At the University of Minnesota Cybersecurity Boot Camp, students get hands-on tr
         - Red and Blue Teams 
     - Identity and Access Management
     - Cloud Security
+        - AWS, IaaS, PaaS, SaaS
     - Ethical Hacking and Penetration:
     - Digital Forensics 
         - Autopsy and Cell Phone Forensics 
