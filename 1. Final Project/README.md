@@ -6,7 +6,8 @@ For this Final Project I will be demonstrating THREE critical area's of knowledg
 
 * BLUE TEAM Operations: Security Analysis
 * RED TEAM Operations: Pen Testing
-* NETWORK FORENSIC ANALYSIS: Investigating and applying both RED and BLUE Team Skills
+* NETWORK FORENSIC ANALYSIS: Investigating and applying both RED and BLUE Team Skills 
+    * Cloud Security: AWS, IaaS, PaaS, SaaS 
 
 ### Please review the following Reports I have completed for my Final Project.
 
