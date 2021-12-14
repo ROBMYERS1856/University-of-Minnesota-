@@ -28,7 +28,7 @@ For this Final Project I will be demonstrating THREE critical area's of knowledg
 
 * ## [BLUE TEAM Operations](Defensive_Report.md) 
 
-* ## [Blue Team Operations Power Point](https://docs.google.com/presentation/d/10Fv2QVbhw3KvRNoO31m1XBrYzTLomuBC/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
+* ## [Blue Team Operations Power Point](https://docs.google.com/presentation/d/10nbjL31li3u0991xSRdNmZd9g4yBNtsh/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
 
 ## RED TEAM OPERATIONS:
 
@@ -40,7 +40,7 @@ For this Final Project I will be demonstrating THREE critical area's of knowledg
 
 * ## [RED TEAM Operations](Offensive_Report.md) 
 
-* ## [Red Team Operations Power Point](https://docs.google.com/presentation/d/1K2FzM89F97vCKFCNGbhZlyl2rF_Vj3Rg/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
+* ## [Red Team Operations Power Point](https://docs.google.com/presentation/d/1FGn_BOyz3_bWZIsdhQQydlQ-zQrFWaGx/edit?usp=sharing&ouid=105064530145638612367&rtpof=true&sd=true)
 
 ## NETWORK FORENSIC ANALYSIS: 
 
