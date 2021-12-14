@@ -95,68 +95,68 @@ The logs and alerts generated during the assessment suggest that this network is
 
   **Patch: WordPress Hardening**
 
-    * Update WordPress and other software: apt-get upgrade weekly
-    * Popular WordPress Plugins: Loginizer, WP Limit Login Attempts, Brute Force Login Protection: These plugins help protect websites from malicious attacks
-    * Implement a strong password policy: 12 characters/2 special characters and password reset every 60 days
-    * Create alerts when when a user has met the "failed login" threshold and lock out the user
-    * Implement a Multi-Factor Authentication password reset policy
-    * Establish rule to block all known VPN Traffic
-    * Disable unused features such as WordPress REST API 
+  * Update WordPress and other software: apt-get upgrade weekly
+  * Popular WordPress Plugins: Loginizer, WP Limit Login Attempts, Brute Force Login Protection: These plugins help protect websites from malicious attacks
+  * Implement a strong password policy: 12 characters/2 special characters and password reset every 60 days
+  * Create alerts when when a user has met the "failed login" threshold and lock out the user
+  * Implement a Multi-Factor Authentication password reset policy
+  * Establish rule to block all known VPN Traffic
+  * Disable unused features such as WordPress REST API 
 
   **Why It Works**: 
 
-    * Updating software weekly typically will automatically fix errors and update patches
-    * Plugins help secure the website based on their intended purpose. 
-    * Strong password policies help reduce BruteForce Attacks
-    * Alerts help notify Cyber Professionals when there is unusual activity like a large amount of HTTP Requests
-    * Multi-Factor Authentication is a useful tool to ensure attackers can not gain access to another user's account 
-    * Blocking VPN Traffic is one way monitor and identify traffic
-    * Disabling REST API prevents enumeration of users 
+  * Updating software weekly typically will automatically fix errors and update patches
+  * Plugins help secure the website based on their intended purpose. 
+  * Strong password policies help reduce BruteForce Attacks
+  * Alerts help notify Cyber Professionals when there is unusual activity like a large amount of HTTP Requests
+  * Multi-Factor Authentication is a useful tool to ensure attackers can not gain access to another user's account 
+  * Blocking VPN Traffic is one way monitor and identify traffic
+  * Disabling REST API prevents enumeration of users 
 
 **Vulnerability 2: Code Injection attacks (XSS or CRLF)**
  
   **Patch: Code Injection/DDOS Hardening**
 
-    * Update Software weekly: apt-get upgrade
-    * Create Playbook to include Code Injection plugins like:
+  * Update Software weekly: apt-get upgrade
+  * Create Playbook to include Code Injection plugins like:
       * XSStrike 
       * BruteXSS Terminal
       * BruteXSS GUI
       * XSS Scanner Online 
       * XSSer
       * xsscrapy
-    * Restrict PHP and EXE 
-    * Establish HTTP Request Limit Rules 
-        - Max URL Length
-        - Max length of a query string
-        - Max size of a request
+  * Restrict PHP and EXE 
+  * Establish HTTP Request Limit Rules 
+      - Max URL Length
+      - Max length of a query string
+      - Max size of a request
     
   **Why It Works**: 
 
-    * Updating software weekly typically will automatically fix errors and update patches
-    * Creating Ansible Playbook with Industry Standard plugins improve automation/efficiency and improve security for Code Injection Attacks
-    * Restricting PHP and EXE helps reduce Injection Attacks on the front end
-    * Establishing HTTP Request Limit Rules automatically drops traffic when threshold has been met
+  * Updating software weekly typically will automatically fix errors and update patches
+  * Creating Ansible Playbook with Industry Standard plugins improve automation/efficiency and improve security for Code Injection Attacks
+  * Restricting PHP and EXE helps reduce Injection Attacks on the front end
+  * Establishing HTTP Request Limit Rules automatically drops traffic when threshold has been met
 
 **Vulnerability 3: Virus or Malware** 
 
   **Patch**: Virus and Malware Hardening
 
-    * Update software: apt-get upgrade weekly
-    * Code Injection Plugins help mitigate XSS attacks
-    * Update and install industry standard Anti-Virus Software
-    * Implement and Monitor Network using Intrusion Detection System (IDS) 
-        - SNORT
-        - Kibana
-        - Wireshark
-        - Nessus
+  * Update software: apt-get upgrade weekly
+  * Code Injection Plugins help mitigate XSS attacks
+  * Update and install industry standard Anti-Virus Software
+  * Implement and Monitor Network using Intrusion Detection System (IDS) 
+      - SNORT
+      - Kibana
+      - Wireshark
+      - Nessus
     
   **Why It Works**: 
 
-     * Updating software weekly typically will automatically fix errors and update patches
-     * Installing Anti-Virus Software is critical to any Network Security. Installing Anti-Virus Software is an Industry Standard Practice.
-     * Create Ansible Playbook to automate and update Virus Protection
-     * IDS is critical for network security because it enables you to detect and respond to malicious traffic
+  * Updating software weekly typically will automatically fix errors and update patches
+  * Installing Anti-Virus Software is critical to any Network Security. Installing Anti-Virus Software is an Industry Standard Practice.
+  * Create Ansible Playbook to automate and update Virus Protection
+  * IDS is critical for network security because it enables you to detect and respond to malicious traffic
 
 
 
