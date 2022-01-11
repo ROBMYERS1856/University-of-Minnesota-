@@ -56,6 +56,7 @@ By the time you complete the program, you will know how to:
 Conduct vulnerability assessments using tools like Metasploit to profile an application for vulnerabilities, and then exploit those vulnerabilities
 
 Configure machines on a virtual network, deploy them to the cloud, and investigate cloud security risks
+
 Identify suspicious patterns of user behavior to identify bots, intruders, and other malicious actors
 
 Write Bash scripts to automate security and operating systems tasks
