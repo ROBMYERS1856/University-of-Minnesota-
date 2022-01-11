@@ -2,7 +2,7 @@
 
 ![pic](cybersecurity-boot-camp.png)
 
-I had the opportunity to attend the University of Minnesota Cybersecurity Boot Camp where I learned hands-on training in Networking, Systems like Linux and Windows, Web, Databases, as well as defensive and offensive cybersecurity practices. 
+I had the opportunity to attend the University of Minnesota Cybersecurity Boot Camp where I learned hands-on training in Networking, Systems like Linux and Windows, Web, Databases, as well as Defensive and Offensive Cybersecurity practices. 
 
 I have also completed the CompTIA Security + Certification and have learned many Cyber Security Industry Standard practices to include the following: Packet Analysis, Attacks, Threats, and Vulnerabilities, Cryptography, Architecture and Design, Implementation, Operations and Incident Response, and last, Governance, Risk, and Compliance 
  
