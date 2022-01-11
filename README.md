@@ -1,6 +1,6 @@
 # University-of-Minnesota-Cyber Security Bootcamp
 
-![pic](cybersecurity-boot-camp.PNG)
+![pic](cybersecurity-boot-camp.png)
 
 At the University of Minnesota Cybersecurity Boot Camp, students get hands-on training in networking, systems, web technologies, databases, as well as defensive and offensive cybersecurity. Students also learn methods, techniques, and best practices for accurately reporting and documenting the risks facing an organization’s security posture.
 
