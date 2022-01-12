@@ -23,9 +23,9 @@ Please review the information below to learn more about all the skills and exper
         - Windows OS
         - Linux OS
         - Firewalls
-        - Permissions
+        - User/Group Permissions
         - Security Rules
-            - Security Alerts and Alarms
+          - Security Alerts and Alarms
         - Penetration Testing (Red vs Blue)
 
 ## Systems:
