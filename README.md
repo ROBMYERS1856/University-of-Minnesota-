@@ -17,6 +17,7 @@ Please review the information below to learn more about all the skills and exper
         - Security Onion
         - Nessus
         - SNORT 
+        - SEIM/IDPS
 
     - Azure Virtual Machines
         - Windows OS
@@ -24,6 +25,7 @@ Please review the information below to learn more about all the skills and exper
         - Firewalls
         - Permissions
         - Security Rules
+            - Security Alerts and Alarms
         - Penetration Testing (Red vs Blue)
 
 ## Systems:
@@ -49,6 +51,7 @@ Please review the information below to learn more about all the skills and exper
         - Autopsy and Cell Phone Forensics 
     - Web Vulnerabilities and Security 
         - Firewalls, and other rules/policies
+        - Web content filtering
 
 ## Programming and Scripting:
 
