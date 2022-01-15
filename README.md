@@ -1,6 +1,6 @@
 # University-of-Minnesota-Cyber Security Bootcamp
 
-![pic](cybersecurity-boot-camp.png)
+ ![pic](UofM_Degree.png)
 
 I had the opportunity to attend the University of Minnesota Cybersecurity Boot Camp where I learned hands-on training in Networking, Systems like Linux and Windows, Web, Databases (ELK Stack), as well as Defensive and Offensive Cybersecurity practices. 
 
